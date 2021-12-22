@@ -64,7 +64,7 @@ module.exports = {
       // }
     },
     nav: [
-      { text: '博客（零散文章）', link: 'https://blog.csdn.net/maoyeqiu' },
+      { text: '博客（csdn）', link: 'https://blog.csdn.net/maoyeqiu' },
       {
         text: '设计模式', items: [
           { text: '设计模式（慕课）', link: '/imocc/design_pattern/' },
