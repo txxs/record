@@ -2,7 +2,7 @@
   "name": "note-book",
   "version": "0.0.1",
   "description": "使用 vuepress 生成的 markdown 文档站点",
-  "author": "mrcode <99299684@qq.com>",
+  "author": "maoyeqiu <sdlyjhm01@sina.com>",
   "private": false,
   "scripts": {
     "docs:devx": "vuepress dev docs --open",

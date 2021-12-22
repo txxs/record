@@ -64,7 +64,7 @@ module.exports = {
       // }
     },
     nav: [
-      { text: '博客（零散文章）', link: '/posts/' },
+      { text: '博客（零散文章）', link: 'https://blog.csdn.net/maoyeqiu' },
       {
         text: '设计模式', items: [
           { text: '设计模式（慕课）', link: '/imocc/design_pattern/' },
@@ -140,11 +140,9 @@ module.exports = {
           {
             text: '笔记精选汇总',
             items: [
-              { text: 'GitHub 站', link: 'https://github.com/zq99299/repository-summary' },
-              { text: '国内镜像站', link: 'http://book.mrcode.cn/' }
+              { text: 'GitHub 站', link: 'https://blog.csdn.net/maoyeqiu' }
             ]
-          },
-          { text: '博客文章 /_posts/ 路径失效说明', link: '/posts-failure.md' },
+          }
         ]
       }
       /*
