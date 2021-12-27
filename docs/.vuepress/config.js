@@ -66,7 +66,7 @@ module.exports = {
     },
     nav: [
       { text: '博客（csdn）', link: 'https://blog.csdn.net/maoyeqiu' },
-      { text: '算法', link: '/leetcode/ },
+      { text: '算法', link: '/leetcode/' },
       {
         text: '设计模式', items: [
           { text: '设计模式（慕课）', link: '/imocc/design_pattern/' },

@@ -57,9 +57,6 @@
 
 如果你在刷leetcode，强烈建议先按照本攻略刷题顺序来刷，刷完了你会发现对整个知识体系有一个质的飞跃，不用在题海茫然的寻找方向。
 
-<div align="center"><strong>最新文章会首发在公众号「代码随想录」，扫码看看吧，你会发现相见恨晚！</strong></img></div>
-
-<div align="center"><img src='./pics/公众号二维码.jpg' width=150 alt=''> </img></div> 
 
 ## 如何使用该刷题攻略
 
