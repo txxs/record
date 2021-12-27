@@ -9,6 +9,7 @@ const gitScmSc = require('../git-scm')
 const backEndStorageSc = require('../back-end-storage')
 const middlegroundSc = require('../middle-office')
 const oath2Sc = require('../oath2')
+const leetcode = require('../leetcode')
 
 module.exports = {
   title: 'Record',
@@ -65,6 +66,7 @@ module.exports = {
     },
     nav: [
       { text: '博客（csdn）', link: 'https://blog.csdn.net/maoyeqiu' },
+      { text: '算法', link: '/leetcode/ },
       {
         text: '设计模式', items: [
           { text: '设计模式（慕课）', link: '/imocc/design_pattern/' },
@@ -151,6 +153,7 @@ module.exports = {
     ],
     sidebar: {
       '/introduce/': introduceGenSidebarConfig(),
+      '/leetcode/': leetcode(),
       '/imocc/design_pattern/': imoccDesignPatternGenSidebarConfig(),
       '/design_pattern/': designPatternGenSidebarConfig(),
       '/mycat/': mycatGenSidebarConfig(),
