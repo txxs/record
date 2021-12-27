@@ -9,7 +9,7 @@ const gitScmSc = require('../git-scm')
 const backEndStorageSc = require('../back-end-storage')
 const middlegroundSc = require('../middle-office')
 const oath2Sc = require('../oath2')
-const leetcode = require('../leetcode')
+const leetcodeSc = require('../leetcode')
 
 module.exports = {
   title: 'Record',
@@ -153,7 +153,7 @@ module.exports = {
     ],
     sidebar: {
       '/introduce/': introduceGenSidebarConfig(),
-      '/leetcode/': leetcode(),
+      '/leetcode/': leetcodeSc(),
       '/imocc/design_pattern/': imoccDesignPatternGenSidebarConfig(),
       '/design_pattern/': designPatternGenSidebarConfig(),
       '/mycat/': mycatGenSidebarConfig(),
