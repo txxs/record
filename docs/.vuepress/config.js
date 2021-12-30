@@ -54,11 +54,6 @@ module.exports = {
     // 主题级别的配置
     serviceWorker: {
       updatePopup: true // Boolean | Object, 默认值是 undefined.
-      // 如果设置为 true, 默认的文本配置将是:
-      // updatePopup: {
-      //    message: "New content is available.",
-      //    buttonText: "Refresh"
-      // }
     },
     nav: [
       { text: '博客（csdn）', link: 'https://blog.csdn.net/maoyeqiu' },
@@ -78,7 +73,7 @@ module.exports = {
       {
         text: '设计', items: [
           { text: '后端存储实战', link: '/design/back-end-storage/' },
-          { text: '后端存储实战', link: '/design/cache-pdp/' }
+          { text: '复杂缓存架构', link: '/design/cache-pdp/' }
         ]
       },
       {
