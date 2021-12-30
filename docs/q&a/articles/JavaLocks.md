@@ -1,6 +1,6 @@
-[TOC]
+# java锁
 
----
+------------
 ### 锁分类
 > 引用自：https://mp.weixin.qq.com/s/1cWszX8MWXq_XNMXNyeDMg
 

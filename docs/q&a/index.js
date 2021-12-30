@@ -1,4 +1,3 @@
-// 侧边栏目录构建配置
 module.exports = () => {
     return [
         {

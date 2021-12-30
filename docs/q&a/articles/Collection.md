@@ -1,6 +1,7 @@
-[TOC]
+# 集合
 
----
+------------
+
 ### 一、整体知识
 
 Java集合主要可以划分为4个部分：List列表、Set集合、Map映射、工具类(Iterator迭代器、Enumeration枚举类、Arrays和Collections)

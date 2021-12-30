@@ -6,10 +6,11 @@ const elasticsearchSeniorSC = require('../imocc/elasticsearch-senior')
 const cachePdpSc = require('../design/cache-pdp')
 const backEndStorageSc = require('../design/back-end-storage')
 const leetcodeDaiSc = require('../leetcode/daimasuixiang')
+const qaSc = require('../q&a')
 
 module.exports = {
   title: 'Record',
-  description: '本博客主要是用来记录系统化的知识，内容部分来自github上的其他开源仓库',
+  description: '本博客主要是用来记录系统化的知识，内容部分来自github上的其他开源仓库，如有问题联系sdlyjhm01@sina.com',
   base: '/record/', // gh-page 中是增加了项目名
   dest: 'build/.vuepress/dist',  // 目录配置在外,纯粹是有代码洁癖和强迫症，并不能规避开发模式下同时构建不报错的问题
   host: 'localhost', // dev 的域名
@@ -103,6 +104,7 @@ module.exports = {
     ],
     sidebar: {
       '/introduce/': introduceGenSidebarConfig(),
+      '/q&a/': qaSc(),
       '/leetcode/daimasuixiang/': leetcodeDaiSc(),
       '/imocc/design_pattern/': imoccDesignPatternGenSidebarConfig(),
       '/imocc/design_pattern_li/': designPatternGenSidebarConfig(),
