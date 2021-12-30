@@ -78,7 +78,7 @@ module.exports = {
       },
       {
         text: 'q&a', items: [
-          { text: '代码随想', link: '/leetcode/daimasuixiang/' }
+          { text: '问答', link: '/q&a/' }
         ]
       },
       {
