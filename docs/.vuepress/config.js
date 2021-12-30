@@ -1,15 +1,11 @@
 const introduceGenSidebarConfig = require('../introduce')
 const imoccDesignPatternGenSidebarConfig = require('../imocc/design_pattern')
-const designPatternGenSidebarConfig = require('../design_pattern')
-const mycatGenSidebarConfig = require('../mycat')
-const elasticsearchCoreSC = require('../elasticsearch-core')
-const elasticsearchSeniorSC = require('../elasticsearch-senior')
-const cachePdpSc = require('../cache-pdp')
-const gitScmSc = require('../git-scm')
-const backEndStorageSc = require('../back-end-storage')
-const middlegroundSc = require('../middle-office')
-const oath2Sc = require('../oath2')
-const leetcodeSc = require('../leetcode')
+const designPatternGenSidebarConfig = require('../imocc/design_pattern_li')
+const elasticsearchCoreSC = require('../imocc/elasticsearch-core')
+const elasticsearchSeniorSC = require('../imocc/elasticsearch-senior')
+const cachePdpSc = require('../design/cache-pdp')
+const backEndStorageSc = require('../design/back-end-storage')
+const leetcodeDaiSc = require('../leetcode/daimasuixiang')
 
 module.exports = {
   title: 'Record',
@@ -26,7 +22,7 @@ module.exports = {
   //     // }
   // },
   head:[
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/mlogo.svg' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
   ],
   markdown: {
@@ -66,104 +62,40 @@ module.exports = {
     },
     nav: [
       { text: '博客（csdn）', link: 'https://blog.csdn.net/maoyeqiu' },
-      { text: '算法', link: '/leetcode/' },
       {
-        text: '设计模式', items: [
+        text: '算法', items: [
+          { text: '代码随想', link: '/leetcode/daimasuixiang/' }
+        ]
+      },
+      {
+        text: '课程', items: [
           { text: '设计模式（慕课）', link: '/imocc/design_pattern/' },
-          { text: '研磨设计模式（李兴华）', link: '/design_pattern/' }
+          { text: '研磨设计模式（李兴华）', link: '/imocc/design_pattern_li/' },
+          { text: 'ES核心知识篇', link: '/imocc/elasticsearch-core/' },
+          { text: 'ES高级知识篇', link: '/imocc/elasticsearch-senior/' }
         ]
       },
       {
-        text: 'Elasticsearch', items: [
-          { text: '核心知识篇', link: '/elasticsearch-core/' },
-          { text: '高级知识篇', link: '/elasticsearch-senior/' }
-        ]
-      },
-      {
-        text: '缓存架构-亿级流量电商详情页系统实战',
-        ariaLabel: '缓存架构-亿级流量电商详情页系统实战',
-        items: [
-          {
-            text: '综合性导航',
-            items: [
-              { text: '全目录导航', link: '/cache-pdp/' },
-              { text: '第一版（001 ~ 123 章）', link: '/cache-pdp/001-introduce.md' },
-              { text: '第二版（124 ~ 195 章）', link: '/cache-pdp/124.md' },
-              { text: '课程总结（难题与解决方案）', link: '/cache-pdp/121.md' }
-            ]
-          },
-          {
-            text: '精彩知识精选',
-            items: [
-              { text: 'Redis 篇（redis 企业级集群架构）', link: '/cache-pdp/redis/007.md' },
-              { text: '多级缓存架构设计', link: '/cache-pdp/035.md' },
-              { text: '数据库 + 缓存双写一致性解决方案', link: '/cache-pdp/040.md' },
-              { text: '缓存维度化拆分解决方案', link: '/cache-pdp/045.md' },
-              { text: '缓存命中率提升解决方案', link: '/cache-pdp/051.md' },
-              { text: '缓存并发重建冲突解决方案', link: '/cache-pdp/057.md' },
-              { text: '缓存预热解决方案', link: '/cache-pdp/069.md' },
-              { text: '热点缓存自动降级方案', link: '/cache-pdp/077.md' },
-              { text: '缓存雪崩解决方案', link: '/cache-pdp/110.md' },
-              { text: '缓存穿透解决方案', link: '/cache-pdp/117.md' },
-              { text: '缓存失效解决方案', link: '/cache-pdp/119.md' },
-              { text: '高可用分布式系统架构设计（hystrix 篇）', link: '/cache-pdp/hystrix/084.md' },
-              { text: 'spring boot 整合 ehcache', link: '/cache-pdp/047.md' },
-              { text: '史上最通俗易懂 Storm 教程', link: '/cache-pdp/storm/062.md' }
-            ]
-          }
+        text: '设计', items: [
+          { text: '后端存储实战', link: '/design/back-end-storage/' },
+          { text: '后端存储实战', link: '/design/cache-pdp/' }
         ]
       },
       {
         text: '更多', items: [
-          { text: '本笔记介绍', link: '/introduce/' },
-          { text: 'Linux 基础篇', link: 'https://zq99299.github.io/linux-tutorial/' },
-          { text: 'Spring Cloud', link: '/spring-cloud-tutorial/' },
-          { text: 'CSS 深入理解（张鑫旭）', link: '/css-zxx/' },
-          { text: '正则入门', link: '/regular/' },
-          {
-            text: '思路拓展', items: [
-              { text: '后端存储实战', link: '/back-end-storage/' },
-              { text: '说透中台', link: '/middle-office/' },
-              { text: 'Oath 2.0 实战', link: '/oath2/' },
-            ]
-          },
-          {
-            text: 'Git', items: [
-              { text: 'Git 零散知识', link: '/git/' },
-              { text: 'Git 系统学习笔记', link: '/git-scm/' },
-            ]
-          },
-          {
-            text: 'Mycat', items: [
-              { text: 'Mycat 1', link: '/mycat/' },
-              { text: 'Mycat 2', link: '/mycat2/' }
-            ]
-          },
-          {
-            text: '笔记精选汇总',
-            items: [
-              { text: 'GitHub 站', link: 'https://blog.csdn.net/maoyeqiu' }
-            ]
-          }
+          { text: '本笔记介绍', link: '/introduce/' }
         ]
       }
-      /*
-      {text: 'MyCat', link: '/mycat/'},
-      {text: 'Vue', link: '/vue/'},*/
     ],
     sidebar: {
       '/introduce/': introduceGenSidebarConfig(),
-      '/leetcode/': leetcodeSc(),
+      '/leetcode/daimasuixiang/': leetcodeDaiSc(),
       '/imocc/design_pattern/': imoccDesignPatternGenSidebarConfig(),
-      '/design_pattern/': designPatternGenSidebarConfig(),
-      '/mycat/': mycatGenSidebarConfig(),
-      '/elasticsearch-senior/': elasticsearchSeniorSC(),
-      '/elasticsearch-core/': elasticsearchCoreSC(),
-      '/cache-pdp/': cachePdpSc(),
-      '/git-scm/': gitScmSc(),
-      '/back-end-storage/': backEndStorageSc(),
-      '/middle-office/': middlegroundSc(),
-      '/oath2/': oath2Sc()
+      '/imocc/design_pattern_li/': designPatternGenSidebarConfig(),
+      '/imocc/elasticsearch-senior/': elasticsearchSeniorSC(),
+      '/imocc/elasticsearch-core/': elasticsearchCoreSC(),
+      '/design/cache-pdp/': cachePdpSc(),
+      '/design/back-end-storage/': backEndStorageSc()
     }
   },
   plugins: [
