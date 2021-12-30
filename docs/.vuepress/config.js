@@ -9,7 +9,7 @@ const leetcodeDaiSc = require('../leetcode/daimasuixiang')
 
 module.exports = {
   title: 'Record',
-  description: '用来记录工作和学习过程中的笔记，汇总成册方便查阅，类容涵盖各类技术，如：Java、Git、ElasticSearch、MyCat、设计模式、Gradle、Vue - mrcode.cn',
+  description: '本博客主要是用来记录系统化的知识，内容部分来自github上的其他开源仓库',
   base: '/record/', // gh-page 中是增加了项目名
   dest: 'build/.vuepress/dist',  // 目录配置在外,纯粹是有代码洁癖和强迫症，并不能规避开发模式下同时构建不报错的问题
   host: 'localhost', // dev 的域名
@@ -59,6 +59,25 @@ module.exports = {
       { text: '博客（csdn）', link: 'https://blog.csdn.net/maoyeqiu' },
       {
         text: '算法', items: [
+          { text: '代码随想', link: '/leetcode/daimasuixiang/' }
+        ]
+      },
+      {
+        text: 'java', items: [
+          { text: 'jvm', link: '/leetcode/daimasuixiang/' },
+          { text: '知识', link: '/leetcode/daimasuixiang/' },
+          { text: 'spring', link: '/leetcode/daimasuixiang/' },
+          { text: '源码', link: '/leetcode/daimasuixiang/' }
+        ]
+      },
+      {
+        text: '中间件', items: [
+          { text: 'mysql', link: '/leetcode/daimasuixiang/' },
+          { text: 'redis', link: '/leetcode/daimasuixiang/' },
+        ]
+      },
+      {
+        text: 'q&a', items: [
           { text: '代码随想', link: '/leetcode/daimasuixiang/' }
         ]
       },
