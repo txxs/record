@@ -6,7 +6,15 @@ const elasticsearchSeniorSC = require('../imocc/elasticsearch-senior')
 const cachePdpSc = require('../design/cache-pdp')
 const backEndStorageSc = require('../design/back-end-storage')
 const leetcodeDaiSc = require('../leetcode/daimasuixiang')
+const jvmSc = require('../java/jvm')
+const collectionSc = require('../java/collection')
+const threadSc = require('../java/thread')
+const springSc = require('../java/spring')
+const sourceSc = require('../java/source')
 const qaSc = require('../q&a')
+
+
+
 
 module.exports = {
   title: 'Record',
@@ -65,10 +73,11 @@ module.exports = {
       },
       {
         text: 'java', items: [
-          { text: 'jvm', link: '/leetcode/daimasuixiang/' },
-          { text: '知识', link: '/leetcode/daimasuixiang/' },
-          { text: 'spring', link: '/leetcode/daimasuixiang/' },
-          { text: '源码', link: '/leetcode/daimasuixiang/' }
+          { text: 'jvm', link: '/java/jvm/' },
+          { text: '集合', link: '/java/collection/' },
+          { text: '线程', link: '/java/thread/' },
+          { text: 'spring', link: '/java/spring/' },
+          { text: '源码', link: '/java/source/' }
         ]
       },
       {
@@ -111,8 +120,14 @@ module.exports = {
       '/imocc/elasticsearch-senior/': elasticsearchSeniorSC(),
       '/imocc/elasticsearch-core/': elasticsearchCoreSC(),
       '/design/cache-pdp/': cachePdpSc(),
+      '/java/jvm/': jvmSc(),
+      '/java/collection/': collectionSc(),
+      '/java/thread/': threadSc(),
+      '/java/spring/': springSc(),
+      '/java/source/': sourceSc(),
       '/design/back-end-storage/': backEndStorageSc()
     }
+
   },
   plugins: [
     ['@vuepress/back-to-top', true],
