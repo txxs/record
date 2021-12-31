@@ -19,7 +19,7 @@
 
 流程图如下：
 
-![image.png](https://github.com/txxs/pic/blob/master/interviewGuide-storage/2.png)
+![image.png](https://txxs.github.io/pic/interviewGuide-storage/2.png)
 
 #### 1.初始化table
 
@@ -142,7 +142,7 @@ final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
 
 这是我自己阅读源码后，比HashMap的会复杂很多，画的一个流程图如下所示：
 
-![image.png](https://github.com/txxs/pic/blob/master/interviewGuide-storage/3.png)
+![image.png](https://txxs.github.io/pic/interviewGuide-storage/3.png)
 
 #### 1.判断null值
 
@@ -199,13 +199,13 @@ final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
 
 添加键值对的putVal方法的源码：
 
-![image](https://github.com/txxs/pic/blob/master/interviewGuide-storage/12609483-f49199a436960c2b.png)
+![image](https://txxs.github.io/pic/interviewGuide-storage/12609483-f49199a436960c2b.png)
 
 <figcaption style="box-sizing: border-box; display: block; text-align: center; font-size: 0.8em; line-height: 2em; color: rgb(144, 144, 144);"></figcaption>
 
 treeifyBin方法的源码： MIN_TREEIFY_CAPACITY是64
 
-![image](https://github.com/txxs/pic/blob/master/interviewGuide-storage/12609483-31cdd1cc821d9c8d.png)
+![image](https://txxs.github.io/pic/interviewGuide-storage/12609483-31cdd1cc821d9c8d.png)
 
   
 
@@ -800,7 +800,7 @@ abstract class HashIterator {
 
 LinkedHashMap是HashMap的子类，与HashMap的实现基本一致，只是说在HashMap的基础上做了一些扩展，所有的节点都有一个before指针和after指针，根据插入顺序形成一个**双向链表**。默认accessOrder是false，也就是按照**插入顺序**来排序的，每次新插入的元素都是插入到链表的末尾。map.keySet().iterator().next()第一个元素是最早插入的元素的key。LinkedHashMap可以用来实现LRU算法。(accessOrder为true，会按照访问顺序来排序。)
 
-![img](https://github.com/txxs/pic/blob/master/interviewGuide-storage/249993-20161215143120620-1544337380-20201130113344624.png)LRU算法实现：
+![img](https://txxs.github.io/pic/interviewGuide-storage/249993-20161215143120620-1544337380-20201130113344624.png)LRU算法实现：
 
 ```java
 //使用LinkedHashMap实现LRU算法(accessOrder为false的实现方式)

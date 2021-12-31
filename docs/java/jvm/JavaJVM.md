@@ -19,7 +19,7 @@
 
 ### Java内存区域怎么划分的？
 运行时数据区域包含以下五个区域：程序计数器，Java虚拟机栈，本地方法栈，堆，方法区（其中前三个区域各线程私有，相互独立，后面两个区域所有线程共享）
-![](https://github.com/txxs/pic/blob/master/interviewGuide-storage/16f98e68c8fed611.png)
+![](https://txxs.github.io/pic/interviewGuide-storage/16f98e68c8fed611.png)
 
 ### 线程私用的部分(Java虚拟机栈,本地方法栈,程序计数器)
 
@@ -54,7 +54,7 @@
 
 这是网上看到的一张流程图：
 
-![java对象创建流程](https://github.com/txxs/pic/blob/master/interviewGuide-storage/20160505123459787.jpeg)
+![java对象创建流程](https://txxs.github.io/pic/interviewGuide-storage/20160505123459787.jpeg)
 
 #### 1.类加载检查
 
@@ -115,7 +115,7 @@
 
 这是网上看到的一张图：
 
-![5401975-4c082ac80e1c042c](https://github.com/txxs/pic/blob/master/interviewGuide-storage/5401975-4c082ac80e1c042c.png)
+![5401975-4c082ac80e1c042c](https://txxs.github.io/pic/interviewGuide-storage/5401975-4c082ac80e1c042c.png)
 
 #### 对象头
 
@@ -123,7 +123,7 @@
 
 **Mark Word**：存储对象自身的运行时数据，例如hashCode，GC分代年龄，锁状态标志，线程持有的锁等等。在32位系统占4字节，在64位系统中占8字节。
 
-![在这里插入图片描述](https://github.com/txxs/pic/blob/master/interviewGuide-storage/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI5NDY4NTcz,size_16,color_FFFFFF,t_70.jpeg)
+![在这里插入图片描述](https://txxs.github.io/pic/interviewGuide-storage/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI5NDY4NTcz,size_16,color_FFFFFF,t_70.jpeg)
 
  **Class Pointer**：用来指向对象对应的Class对象（其对应的元数据对象）的内存地址。在开启了指针压缩时，占4字节。（默认是开启的）
 
@@ -186,7 +186,7 @@
 
 ### 双亲委派机制是什么？
 
-![img](https://github.com/txxs/pic/blob/master/interviewGuide-storage/4491294-8edc15f60a58bd0b.png)
+![img](https://txxs.github.io/pic/interviewGuide-storage/4491294-8edc15f60a58bd0b.png)
 
 就是类加载器一共有三种：
 
@@ -317,7 +317,7 @@ public class DelegationClassLoader extends ClassLoader {
 
 类加载器是 Java 运行时环境（Java Runtime Environment）的一部分，负责动态加载 Java 类到 Java 虚拟机的内存空间中。**类通常是按需加载，即第一次使用该类时才加载。** 由于有了类加载器，Java 运行时系统不需要知道文件与文件系统。每个 Java 类必须由某个类加载器装入到内存。
 
-![jvm_classloader_architecture](https://github.com/txxs/pic/blob/master/interviewGuide-storage/jvm_classlaoder_architecture.svg)
+![jvm_classloader_architecture](https://txxs.github.io/pic/interviewGuide-storage/jvm_classlaoder_architecture.svg)
 
 类装载器除了要定位和导入二进制 class 文件外，还必须负责验证被导入类的正确性，为变量分配初始化内存，以及帮助解析符号引用。这些动作必须严格按一下顺序完成：
 
@@ -477,7 +477,7 @@ Java中的类在编译后会生成class文件，class文件除了包含变量，
 
 垃圾回收算法一般有四种
 
-![1581500802565](https://github.com/txxs/pic/blob/master/interviewGuide-storage/1581500802565.jpg)
+![1581500802565](https://txxs.github.io/pic/interviewGuide-storage/1581500802565.jpg)
 
 #### 标记-清除算法(一般用于老年代)
 
@@ -545,7 +545,7 @@ GCRoots对象一般是当前肯定不会被回收的对象，一般是虚拟机�
 
 #### 内存划分策略：
 
-![image-20200303152150129](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200303152150129.png)
+![image-20200303152150129](https://txxs.github.io/pic/interviewGuide-storage/image-20200303152150129.png)
 
 Serial收集器中，新生代与老年代的内存分配是1：2，然后新生代分为Eden区，From区，To区，比例是8:1:1。
 
@@ -650,7 +650,7 @@ Full GC：也叫 Major GC，对整个堆进行回收，包括新生代和老年�
 
 跟Serial收集器一样，不过是应用于老年代，使用标记-整理算法。
 
-![image-20200228184419205](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200228184419205.png)
+![image-20200228184419205](https://txxs.github.io/pic/interviewGuide-storage/image-20200228184419205.png)
 
 #### ParNew收集器（标记-复制算法）
 
@@ -658,7 +658,7 @@ ParNew收集器是Serial收集器的多线程并行版本，在进行垃圾收�
 
 与Serial收集器主要区别就是支持多线程收集，ParNew收集器应用广泛（JDK9以前，服务端模式垃圾收集组合官方推荐的是ParNew+CMS），因为只有Serial和ParNew才能配合CMS收集器(应用于老年代的并发收集器)一起工作。
 
-![image-20200228185412716](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200228185412716.png)
+![image-20200228185412716](https://txxs.github.io/pic/interviewGuide-storage/image-20200228185412716.png)
 
 #### Parallel Scanvenge收集器（吞吐量优先收集器）
 
@@ -668,7 +668,7 @@ ParNew收集器是Serial收集器的多线程并行版本，在进行垃圾收�
 
 是Parallel Scanvenge老年代版本，支持多线程收集，使用标记整理法实现的。
 
-![image-20200228191619466](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200228191619466.png)
+![image-20200228191619466](https://txxs.github.io/pic/interviewGuide-storage/image-20200228191619466.png)
 
 #### CMS 收集器（老年代并发低停顿收集器）
 
@@ -676,7 +676,7 @@ CMS收集器是第一个支持并发收集的垃圾收集器，在垃圾收集�
 
 CMS英文是Concurrent Mark Sweep，是基于标记-清除法+标记-整理算法实现的，步骤如下：
 
-![image-20200228195544758](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200228195544758.png)
+![image-20200228195544758](https://txxs.github.io/pic/interviewGuide-storage/image-20200228195544758.png)
 
 #### 1.初始标记
 
@@ -706,14 +706,14 @@ CMS英文是Concurrent Mark Sweep，是基于标记-清除法+标记-整理算�
 
 ##### 1.对于多标的情况，会生成浮动垃圾
 
-![img](https://github.com/txxs/pic/blob/master/interviewGuide-storage/7779607-7a5ce353116237e2.png)
+![img](https://txxs.github.io/pic/interviewGuide-storage/7779607-7a5ce353116237e2.png)
 对于这种多标的情况，对象E/F/G是“应该”被回收的。然而因为E已经变为灰色了，其仍会被当作存活对象继续遍历下去。最终的结果是：这部分对象仍会被标记为存活，即本轮GC不会回收这部分内存。
 这部分本应该回收 但是 没有回收到的内存，被称之为“浮动垃圾”。浮动垃圾并不会影响垃圾回收的正确性，只是需要等到下一轮垃圾回收中才被清除。
 另外，针对并发标记开始后的新对象，通常的做法是直接全部当成黑色，本轮不会进行清除。这部分对象期间可能会变为垃圾，这也算是浮动垃圾的一部分。
 
 ##### 2.对于引用变动后导致漏标情况的处理
 
- ![](https://github.com/txxs/pic/blob/master/interviewGuide-storage/7779607-dab8f35ecb417433.png)
+ ![](https://txxs.github.io/pic/interviewGuide-storage/7779607-dab8f35ecb417433.png)
 ##### 增量更新法
 
 对于这种漏标的情况，CMS垃圾收集器使用的是增量更新法，就是将引用变化后的引用情况进行记录，然后之后进行标记。也就是当E->G变成了E->null,D->G，会对更改后的引用D->G进行记录，用于在重新标记阶段对这种情况进行处理。
@@ -737,7 +737,7 @@ JDK9以前，服务端模式默认的收集器是Parallel Scavenge+Serial Old。
 
 JDK 8 和9中，Region的大小是通过(最大堆大小+最小堆大小)的平均值/2048，一般是需要在1到32M之间。G1认为2048是比较理想的Region数量
 
-![img](https://github.com/txxs/pic/blob/master/interviewGuide-storage/640.jpeg)
+![img](https://txxs.github.io/pic/interviewGuide-storage/640.jpeg)
 
 **G1对象分配策略**
 
@@ -758,7 +758,7 @@ JDK 8 和9中，Region的大小是通过(最大堆大小+最小堆大小)的平�
 
 Young GC主要是对Eden区进行GC，它在Eden空间耗尽时会被触发。在这种情况下，Eden空间的数据移动到Survivor空间中，如果Survivor空间不够，Eden空间的部分数据会直接晋升到年老代空间。Survivor区的数据移动到新的Survivor区中，也有部分数据晋升到老年代空间中。最终Eden空间的数据为空，GC停止工作，应用线程继续执行。
 
-![img](https://github.com/txxs/pic/blob/master/interviewGuide-storage/640-20200510171526372.jpeg)
+![img](https://txxs.github.io/pic/interviewGuide-storage/640-20200510171526372.jpeg)
 
 ##### Region如何解决跨代指针？
 
@@ -776,7 +776,7 @@ Young GC主要是对Eden区进行GC，它在Eden空间耗尽时会被触发。�
 
 如果Rset是记录每个外来Region对当前Region中对象的引用，这样数量就太多了，所以Card Table只是有很多Byte字节，每个字节记录了Region对应的一个内存区域(卡页)是否是dirty的，为1代表dirty，也就是有其他Region对这个卡页中的对象进行引用。
 
-![img](https://github.com/txxs/pic/blob/master/interviewGuide-storage/2579123-e0b8898d895aee05.png)
+![img](https://txxs.github.io/pic/interviewGuide-storage/2579123-e0b8898d895aee05.png)
 
 **G1 MixGC**
 
@@ -804,7 +804,7 @@ MixGC不仅进行正常的新生代垃圾收集，同时也回收部分后台扫
 
 ##### 收集步骤：
 
-![image-20200302181639409](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200302181639409.png)
+![image-20200302181639409](https://txxs.github.io/pic/interviewGuide-storage/image-20200302181639409.png)
 
 **初始标记** 只标记GC Roots直接引用的对象
 
@@ -882,7 +882,7 @@ JDK8默认情况下服务端模式下JVM垃圾回收参数是-XX:+UseParallelGC�
 
 
 
-![img](https://github.com/txxs/pic/blob/master/interviewGuide-storage/519126-20180623154635076-953076776.png)
+![img](https://txxs.github.io/pic/interviewGuide-storage/519126-20180623154635076-953076776.png)
 
 ### 容器的内存和 jvm 的内存有什么关系？参数怎么配置？
 
@@ -898,7 +898,7 @@ JDK8默认情况下服务端模式下JVM垃圾回收参数是-XX:+UseParallelGC�
 下面是MaxRAMFraction取不同的值时，最大堆内存与容器最大内存限制的比例。考虑到除了内存中除了最大堆内存以外，还有方法区，线程栈等需要需要占用内存，所以MaxRAMFraction一般至少取2会比较合适。如果取值为1，在最大堆内存占满时，可能Java应用占用的总内存会超过容器最大内存限制。
 
 
-![image-20210207145307777](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20210207145307777.png)
+![image-20210207145307777](https://txxs.github.io/pic/interviewGuide-storage/image-20210207145307777.png)
 
 3.在JDK8以后，JVM增加了容器感知功能，就是如果不显示指定-Xmx2048m 最大堆内存大小， -Xms2048m最小堆内存大小，会取容器所在的物理机的内存的25%作为最大堆内存大小，也可以通过这几个参数来设置堆内存占容器内存的比例
 -XX:MinRAMPercentage 最小堆内存大小占容器内存限制的比例
@@ -978,7 +978,7 @@ jmap -dump:format=b,file=/home/admin/logs/heap.hprof 6214
 
  PS：有一个网站，可以对上传GC.log的日志进行分析，解析日志文件，统计出垃圾收集总占用的时间，以及新生代，老年代的内存使用峰值，https://gceasy.io/
 
-![image-20210208162512025](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20210208162512025.png)
+![image-20210208162512025](https://txxs.github.io/pic/interviewGuide-storage/image-20210208162512025.png)
 
 ### cpu 使用率特别高，怎么排查？通用方法？定位代码？cpu高的原因？
 
@@ -1053,7 +1053,7 @@ jstat -gc 5828 1000 100
 
 打印结果如下：
 
-![image-20200725204237083](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200725204237083.png)
+![image-20200725204237083](https://txxs.github.io/pic/interviewGuide-storage/image-20200725204237083.png)
 
 各个参数的含义如下：
 
@@ -1087,7 +1087,7 @@ jstat -gc 5828 1000 100
 
 例如，S0代表 新生代中第一个survivor区的空间使用了73.19%，E代表新生代Eden区使用了51%，O代表老年代食堂了98%
 
-![image-20200725204859356](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200725204859356.png)
+![image-20200725204859356](https://txxs.github.io/pic/interviewGuide-storage/image-20200725204859356.png)
 
 | 参数 | 描述                                                     |
 | ---- | -------------------------------------------------------- |
@@ -1102,7 +1102,7 @@ jstat -gc 5828 1000 100
 | FGCT | 老年代垃圾回收消耗时间                                   |
 | GCT  | 垃圾回收消耗总时间                                       |
 
-![image-20200731152050340](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200731152050340.png)
+![image-20200731152050340](https://txxs.github.io/pic/interviewGuide-storage/image-20200731152050340.png)
 
 #### jstack
 
@@ -1150,11 +1150,11 @@ public static void main(String[] args) {
 
 使用`jstack -l 进程id`就可以打印出当前的线程信息
 
-![image-20200726165954263](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200726165954263.png)
+![image-20200726165954263](https://txxs.github.io/pic/interviewGuide-storage/image-20200726165954263.png)
 
 以及各个线程的状态，执行的方法（pool-1-thread-1和pool-1-thread-2分别代表线程池的第一个线程和第二个线程）：
 
-![image-20200726170056096](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200726170056096.png)
+![image-20200726170056096](https://txxs.github.io/pic/interviewGuide-storage/image-20200726170056096.png)
 
 #### jmap
 
@@ -1164,7 +1164,7 @@ public static void main(String[] args) {
 
 使用jmap -heap查看内存使用情况的案例
 
-![image-20200726173723112](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200726173723112.png)
+![image-20200726173723112](https://txxs.github.io/pic/interviewGuide-storage/image-20200726173723112.png)
 
 ##### jmap -histo
 
@@ -1178,7 +1178,7 @@ class name列：表示的就是当前类的名称，class name 对于基本数�
 对象数组用`[L+类名`表示 
 ```
 
-![image-20200726174009407](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200726174009407.png) 
+![image-20200726174009407](https://txxs.github.io/pic/interviewGuide-storage/image-20200726174009407.png) 
 
 
 
@@ -1222,15 +1222,15 @@ public class Test018 {
 
 造成OOM问题的代码位置：
 
-![image-20200726190137193](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200726190137193.png)
+![image-20200726190137193](https://txxs.github.io/pic/interviewGuide-storage/image-20200726190137193.png)
 
 堆内对象列表
 
-![image-20200726190451781](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200726190451781.png)
+![image-20200726190451781](https://txxs.github.io/pic/interviewGuide-storage/image-20200726190451781.png)
 
 占用内存最多的实例对象就是这个placeholder对象
 
-![image-20200726190549717](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200726190549717.png)
+![image-20200726190549717](https://txxs.github.io/pic/interviewGuide-storage/image-20200726190549717.png)
 
 #### MAT
 
@@ -1256,21 +1256,21 @@ public class Test018 {
 
 在详情页面Shortest Paths To the Accumulation Point表示GC root对象到内存消耗聚集点的最短路径，内存聚集点的意思就是占用了大量内存的对象，也就是可能发生； 内存泄露的对象。
 
-![image-20200726205127282](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200726205127282.png)
+![image-20200726205127282](https://txxs.github.io/pic/interviewGuide-storage/image-20200726205127282.png)
 
 
 
 然后在主页点击Histogram，进入Histogram页面可以看到对象列表，with incomming references 也就是可以查看所有对这个对象的引用（思路一般优先看占用内存最大对象；其次看数量最多的对象。）。我们这个例子中主要是byte[]数组分配了占用了大量的内存空间，而byte[]主要来自于Test018类的静态变量arrayList的每个TestObject类型的元素的placeholder属性。
 
-![image-20200726205515840](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200726205515840.png)
+![image-20200726205515840](https://txxs.github.io/pic/interviewGuide-storage/image-20200726205515840.png)
 
-![image-20200726205837727](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200726205837727.png)
+![image-20200726205837727](https://txxs.github.io/pic/interviewGuide-storage/image-20200726205837727.png)
 
 同时可以点击 内存快照对比 功能对两个dump文件进行对比，判断两个dump文件生成间隔期间，各个对象的数量变化，以此来判断内存泄露问题。
 
-![img](https://github.com/txxs/pic/blob/master/interviewGuide-storage/640-20200726210041919.jpeg)
+![img](https://txxs.github.io/pic/interviewGuide-storage/640-20200726210041919.jpeg)
 
-![img](https://github.com/txxs/pic/blob/master/interviewGuide-storage/640-20200726210058837.jpeg)
+![img](https://txxs.github.io/pic/interviewGuide-storage/640-20200726210058837.jpeg)
 
 ### happens-before指的是什么？
 happens-before主要是为保证Java多线程操作时的有序性和可见性，防止了编译器重排序对程序结果的影响。

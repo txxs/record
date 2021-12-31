@@ -447,7 +447,7 @@ Exception in thread "main" java.util.ConcurrentModificationException
 
 第4种方法其实是第3种方法在编译后的代码，所以第四种写法也会抛出ConcurrentModificationException异常。这种需要注意的是，每次调用iterator的next()方法，会导致游标向右移动，从而达到遍历的目的。所以在单次循环中不能多次调用next()方法，不然会导致每次循环时跳过一些元素，我在一些博客里面看到了一些错误的写法，比如这一篇[《在ArrayList的循环中删除元素，会不会出现问题？》](https://juejin.im/post/5b92844a6fb9a05d290ed46c)文章中：
 
-![image-20200101124822998](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200101124822998.png)
+![image-20200101124822998](https://txxs.github.io/pic/interviewGuide-storage/image-20200101124822998.png)
 
 先调用iterator.next()获取元素，与elem进行比较，如果相等，再调用list.remove(iterator.next());来移除元素，这个时候的iterator.next()其实已经不是与elem相等的元素了，而是后一个元素了，我们可以写个demo来测试一下
 
@@ -535,7 +535,7 @@ while (iterator.hasNext()) {
 
 ### java容器类的层次是怎么样的？
 
-![1](https://github.com/txxs/pic/blob/master/interviewGuide-storage/1.png)
+![1](https://txxs.github.io/pic/interviewGuide-storage/1.png)
 
 大致是这样一个图，Collection是一个接口，代表是集合，它有三个子接口，分别是有序集合List，队列Queue，无序集合Set。Map代表键值对。实际上关系会更加复杂一些，以ArrayList为例：
 

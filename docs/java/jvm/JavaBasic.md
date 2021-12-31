@@ -536,7 +536,7 @@ notifyAll()方法与notify()方法类似，只是会将等待队列中的所有�
 
 可以看看这张图。
 
-![4](https://github.com/txxs/pic/blob/master/interviewGuide-storage/4.png)
+![4](https://txxs.github.io/pic/interviewGuide-storage/4.png)
 
 #### finalize
 
@@ -681,7 +681,7 @@ public @interface Override {
 
 ### Java 异常体系是怎么样的？
 
-![img](https://github.com/txxs/pic/blob/master/interviewGuide-storage/1415794-20190804110605330-45276489.png)
+![img](https://txxs.github.io/pic/interviewGuide-storage/1415794-20190804110605330-45276489.png)
 
 Throwable的子类为Error和Exception
 

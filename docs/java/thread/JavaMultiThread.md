@@ -169,13 +169,13 @@ public synchronized void start() {
 
 会抛出IllegalThreadStateException异常。其实在Thread#start()方法里面的的注释中有提到，多次调用start()方法是非法的，所以在上面的start()方法源码中一开始就是对threadStatus进行判断，不为0就会抛出IllegalThreadStateException异常。
 
-![image-20200105144159345](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200105144159345.png)
+![image-20200105144159345](https://txxs.github.io/pic/interviewGuide-storage/image-20200105144159345.png)
 
 ##### 注意事项：
 
 start()方法中判断threadStatus是否为0，是判断当前线程是否新建态，0是代表新建态(上图中的源码注释里面有提到)，而不是就绪态，因为Java的Thread类中，Thread的Runnable状态包括了线程的就绪态和运行态，（Thread的state为RUNNABLE时(也就是threadStatus为4时)，代表线程为就绪态或运行态）。执行start()方法的线程还不是JVM新建的线程，所以不是就绪态。有一些技术文章把这里弄错了，例如这一篇[《深入浅出线程Thread类的start()方法和run()方法》](https://juejin.im/post/5b09274af265da0de25759d5)
 
-![image-20200105144031591](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200105144031591.png)
+![image-20200105144031591](https://txxs.github.io/pic/interviewGuide-storage/image-20200105144031591.png)
 
 ##### 总结
 
@@ -201,7 +201,7 @@ class ThreadTarget implements Runnable {
 
 输出结果如下：
 
-![image-20200105163553969](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200105163553969.png)
+![image-20200105163553969](https://txxs.github.io/pic/interviewGuide-storage/image-20200105163553969.png)
 
 ##### 原理
 
@@ -622,7 +622,7 @@ get() {
 
 在操作系统中，线程等同于轻量级的进程。
 
-![img](https://github.com/txxs/pic/blob/master/interviewGuide-storage/4621.png)
+![img](https://txxs.github.io/pic/interviewGuide-storage/4621.png)
 
 所以传统的操作系统线程一般有以下状态
 
@@ -659,7 +659,7 @@ public enum State {
 }
 ```
 
-![线程状态图](https://github.com/txxs/pic/blob/master/interviewGuide-storage/watermark.jpeg)
+![线程状态图](https://txxs.github.io/pic/interviewGuide-storage/watermark.jpeg)
 
 
 
@@ -830,7 +830,7 @@ https://www.jianshu.com/p/5d88b122a050
 
 5.三种方法让线程进入阻塞态后，都可以响应中断，也就是调用Thread.interrupt()方法会设置中断标志位，之前执行Thread.sleep(),Object.wait()了的线程会抛出InterruptedException异常，然后需要代码进行处理。而调用了park()方法的线程在响应中断只会相当于一次正常的唤醒操作（等价于调用unpark()方法），让线程唤醒，继续执行后面的代码，不会抛出InterruptedException异常。
 
-![img](https://github.com/txxs/pic/blob/master/interviewGuide-storage/5bff9535e4b04dd2799a6ae8.png)
+![img](https://txxs.github.io/pic/interviewGuide-storage/5bff9535e4b04dd2799a6ae8.png)
 
 参考链接：
 
@@ -1037,7 +1037,7 @@ synchronized(对象) { while(条件不满足) {
 
 等待/通知机制，是指一个线程A调用了对象objectA的wait()方法进入等待状态，而另一个线程B调用了对象objectA的notify()或者notifyAll()方法，线程A收到通知后从对象objectA的wait()方法返回，进而执行后续操作。上述两个线程通过对象objectA来完成交互，而对象上的wait()和notify/notifyAll()的关系就如同开关信号一样，用来完成等待方和通知方之间的交互工作。
 
-![image-20200518195123985](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200518195123985.png)
+![image-20200518195123985](https://txxs.github.io/pic/interviewGuide-storage/image-20200518195123985.png)
 
 1)使用wait()、notify()和notifyAll()时需要先对调用对象加锁。 
 
@@ -1051,7 +1051,7 @@ synchronized(对象) { while(条件不满足) {
 
 5)从wait()方法返回的前提是获得了调用对象的锁。 
 
-![image-20200518195448708](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20200518195448708.png)
+![image-20200518195448708](https://txxs.github.io/pic/interviewGuide-storage/image-20200518195448708.png)
 
 ##### 3.管道
 
@@ -1254,7 +1254,7 @@ Condition customerQueue = lock.newCondition();
 ```
 ReentrantLock的Condition相关的实现
 
-![img](https://github.com/txxs/pic/blob/master/interviewGuide-storage/640-5667220.jpeg)
+![img](https://txxs.github.io/pic/interviewGuide-storage/640-5667220.jpeg)
 
 ```java
 abstract static class Sync extends AbstractQueuedSynchronizer {
@@ -1500,7 +1500,7 @@ public interface ThreadFactory {
 
 #### 线程池执行任务的过程？
 
-![图4 任务调度流程](https://github.com/txxs/pic/blob/master/interviewGuide-storage/31bad766983e212431077ca8da92762050214.png)
+![图4 任务调度流程](https://txxs.github.io/pic/interviewGuide-storage/31bad766983e212431077ca8da92762050214.png)
 
 #### Executors提供的四种线程池的使用场景。
 
@@ -1606,7 +1606,7 @@ public ScheduledThreadPoolExecutor(int corePoolSize,
 
 - **TERMINATED**：表示线程池处于终止状态。值是3
 
-  ![img](https://github.com/txxs/pic/blob/master/interviewGuide-storage/640-20200728210136673.jpeg)
+  ![img](https://txxs.github.io/pic/interviewGuide-storage/640-20200728210136673.jpeg)
 
 ### 怎么根据业务场景确定线程池的参数corePoolSize和maximumPoolSize？
 
@@ -1642,7 +1642,7 @@ public ScheduledThreadPoolExecutor(int corePoolSize,
 
 ThreadPoolExecutor提供了如下几个public的setter方法
 
-![image-20210119104549770](https://github.com/txxs/pic/blob/master/interviewGuide-storage/image-20210119104549770.png)
+![image-20210119104549770](https://txxs.github.io/pic/interviewGuide-storage/image-20210119104549770.png)
 
 调用corePoolSize方法之后，线程池会直接覆盖原来的corePoolSize值，并且基于当前值和原始值的比较结果采取不同的处理策略。（总得来说就是，多退少补的策略）
 
@@ -1658,7 +1658,7 @@ setCorePoolSize的方法的执行流程入下图所示：
 
 
 
-![图20 setCorePoolSize方法执行流程](https://github.com/txxs/pic/blob/master/interviewGuide-storage/9379fe1666818237f842138812bf63bd85645.png)
+![图20 setCorePoolSize方法执行流程](https://txxs.github.io/pic/interviewGuide-storage/9379fe1666818237f842138812bf63bd85645.png)
 
 扩展资料：
 [Java并发（八）计算线程池最佳线程数](https://www.cnblogs.com/jpfss/p/11016169.html)
@@ -1711,7 +1711,7 @@ ThreadLocalMap getMap(Thread t) {
 
 ##### ThreadLocal中的Entry的key使用了弱引用，为什么使用弱引用？
 
-![thread](https://github.com/txxs/pic/blob/master/interviewGuide-storage/thread.png)
+![thread](https://txxs.github.io/pic/interviewGuide-storage/thread.png)
 
 首先在上面类A的代码中，类A中有一个ThreadLocal类型的变量
 
