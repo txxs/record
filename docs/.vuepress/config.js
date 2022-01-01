@@ -84,6 +84,9 @@ module.exports = {
         text: '中间件', items: [
           { text: 'mysql', link: '/leetcode/daimasuixiang/' },
           { text: 'redis', link: '/leetcode/daimasuixiang/' },
+          { text: 'es', link: '/leetcode/daimasuixiang/' },
+          { text: 'zk', link: '/leetcode/daimasuixiang/' },
+          { text: 'kafka', link: '/leetcode/daimasuixiang/' }
         ]
       },
       {
