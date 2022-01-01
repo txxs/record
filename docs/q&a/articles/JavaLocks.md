@@ -66,7 +66,7 @@
    > 图来自：https://mp.weixin.qq.com/s/E2fOUHOabm10k_EVugX08g
    总结成一个图：
    
-   ![图片](images/WX20210810-112632@2-1x.png)
+   ![图片](https://txxs.github.io/pic/q&a/WX20210810-112632@2-1x.png)
 
 #### 2. CAS
 
@@ -96,7 +96,7 @@
 
 另外一种解释：假如有 5 个线程要对 i 进行自增操作，由于 5 个线程的话，不是很多，起冲突的几率较小，那就让他们按照以往正常的那样，采用 CAS 来自增吧。如果有 100 个线程要对 i 进行自增操作的话，这个时候，冲突就会大大增加，系统就会把这些线程分配到不同的 cell 数组元素去。假如 cell[10] 有 10 个元素吧，且元素的初始化值为 0，那么系统就会把 100 个线程分成 10 组，每一组对 cell 数组其中的一个元素做自增操作，这样到最后，cell 数组 10 个元素的值都为 10，系统在把这 10 个元素的值进行汇总，进而得到 100，二这，就等价于 100 个线程对 i 进行了 100 次自增操作。
 
- ![图片](images/WX20210810-112632@2-7x.png)
+ ![图片](https://txxs.github.io/pic/q&a/WX20210810-112632@2-7x.png)
 
 #### 3. synchronized
 
@@ -121,11 +121,11 @@
 **3.2 原理**
 
    Java Object对象的存储结构：在HotspotJVM中，JavaObject对象在内存中存储中的存储布局分为三个区域，分别是对象头、示例数据、对象填充。如图所示，数组和对象的存储布局十分相似，只是对象的头部大于数组的长度，因为数组需要存储自身的长度，为4Byte。对象头部包括两部分，分别是对象标记和类元信息（类型指针）。对象标记，也就是Markword存储对象的hashCode、GC信息和锁等信息。类元信息存储“类对象信息的指针”。在32位的JVM中，对象头占用8个byte，另外在64位的 JVM 占用16个字节。
-    ![图片](images/WX20210810-112632@2-2x.png)
+    ![图片](https://txxs.github.io/pic/q&a/WX20210810-112632@2-2x.png)
 
    Mark Word用于存储对象自身的运行时数据，如哈希码（HashCode）、GC分代年龄、锁状态标志、线程持有的锁、偏向线程 ID、偏向时间戳等等。Java对象头一般占有两个机器码（在32位虚拟机中，1个机器码等于4字节，也就是32bit），但是如果对象是数组类型，则需要三个机器码，因为JVM虚拟机可以通过Java对象的元数据信息确定Java对象的大小，但是无法从数组的元数据来确认数组的大小，所以用一块来记录数组长度。对象头信息是与对象自身定义的数据无关的额外存储成本，但是考虑到虚拟机的空间效率，Mark Word被设计成一个非固定的数据结构以便在极小的空间内存存储尽量多的数据，它会根据对象的状态复用自己的存储空间，也就是说，Mark Word会随着程序的运行发生变化，变化状态如下（32位虚拟机）：
 
-![图片](images/WX20210810-112632@2-4x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210810-112632@2-4x.png)
 
    synchronized，底层是利用monitor对象（很多线程竞争对象的monitor），CAS和mutex互斥锁来实现的。任何对象都有一个monitor与之关联，当且一个monitor被持有后，它将处于锁定状态。线程执行到monitorenter指令时，将会尝试获取对象所对应的monitor的所有权，即尝试获得对象的锁。修饰代码块，编译后的字节码文件会被加上 monitorenter、monitorexit 指令；修饰方法，锁对象就是当前类的实例，该方法会被打上标记ACC_SYNCHRONIZED，标识是同步方法；修饰静态方法，锁对象则是当前类Class对象。利用javap查看字节码文件，同步代码块中有**两个monitorexit**是因为需要考虑异常情况也要释放锁。
 
@@ -160,7 +160,7 @@
 
    objectMonitor内部会有等待队列（cxq和Entrylist）和条件等待队列（waitSet）来存放相应的阻塞线程。未竞争到锁的线程存储到等待队列中，获得锁的线程调用wait后存放到条件等待队列中，解锁会唤醒相应队列中的等待线程来竞争锁。使用 _cxq 和 _EntryList 两个列表来放线程的原因是，多个线程同时竞争锁，先放到 _cxq 单链表基于 CAS 来 hold 住并发，根据策略每次唤醒的时候搬迁一些线程节点到 _EntryList 这个双向链表，降低 _cxq 的尾部竞争。线程的阻塞和唤醒，需要调用操作系统进行上下文切换，开销比较大，所以称为重量级锁。
 
-![图片](images/WX20210810-112632@2-3x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210810-112632@2-3x.png)
 
 > 引用自（非常好）：https://mp.weixin.qq.com/s/esLXkYi3KiYMxYDiVXSnkA
    
@@ -230,7 +230,7 @@ monitorenter指令插入到同步代码块的开始位置，monitorexit指令插
 
 **锁升级：重量级锁**：轻量级锁膨胀之后，就升级为重量级锁，重量级锁是依赖操作系统的MutexLock（互斥锁）来实现的，需要从用户态转到内核态，这个成本非常高，这就是为什么Java1.6之前Synchronized效率低的原因。升级为重量级锁时，锁标志位的状态值变为10，此时Mark Word中存储内容的是重量级锁的指针，等待锁的线程都会进入阻塞状态，下面是简化版的锁升级过程。锁升级的过程如下：
 
-![图片](images/WX20210810-112632@2-5x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210810-112632@2-5x.png)
 
 1. 当没有被加锁时，Mark Word 记录对象的 HashCode，是否偏向锁是 0，锁标志位是 01。
 2. 当对象被作为同步锁，并且线程 A 抢到锁时，锁标志位仍是 01，是否偏向锁标记为 1，前 54 位写入线程 A 的 id，此时进入偏向锁状态。
@@ -251,7 +251,7 @@ monitorenter指令插入到同步代码块的开始位置，monitorexit指令插
 
 当一个线程尝试获得锁时，如果该锁已经被占用，则会将该线程封装成一个ObjectWaiter对象插入到cxq的队列尾部，然后暂停当前线程。当持有锁的线程释放锁前，会将cxq中的所有元素移动到EntryList中去，并唤醒EntryList的队首线程。如果一个线程在同步块中调用了Object#wait方法，会将该线程对应的ObjectWaiter从EntryList移除并加入到WaitSet中，然后释放锁。当wait的线程被notify之后，会将对应的ObjectWaiter从WaitSet移动到EntryList中。Monitor对象 中包含一个同步队列（由 _cxq 和 _EntryList 组成）和一个等待队列（ _WaitSet ）。注意：synchronized的同步队列和等待队列 与 基于AQS（lock/condition）的同步队列和等待队列实现原理类似，只不过前者是一个同步队列对应一个等待队列，而后者是一个同步队列可以对应多个等待队列。1、为什么要有Object.wait/notify，只使用synchronized不能也能实现线程阻塞然后被其他线程唤醒（通知）么？2、执行Object.wait/notify，为什么必须要在synchronized中呢？关于第一个问题，只使用synchronized是为了简单的加解锁，而使用Object.wait/notify是为了实现被通知后，再执行下一步动作的逻辑。如果Object.wait后没有任何逻辑的话，这里的Object.wait是没有意义的，可以直接去掉。对于第二个问题，为什么必须要在synchronized中呢，我们都知道synchronized锁机制大都是为了保证原子性，因此我们有理由相信，这里的原因大概率就是原子性。那么是为了什么的原子性呢？是为了保证在Object.wait时，将当前线程添加到_WaitSet等待队列和monitor out唤醒其他线程的原子性；为了保证在Object.notify 时，在将当前线程从WaitSet移到同步队列时，锁相关的线程状态不会发生变化。
 
-![图片](images/WX20210810-112632@2-6x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210810-112632@2-6x.png)
 
 其他不错的文章：
 1. https://mp.weixin.qq.com/s/E2fOUHOabm10k_EVugX08g
@@ -281,11 +281,11 @@ AQS是JDK1.5提供的一个基于FIFO等待队列实现的一个用于实现同�
 
 AbstractQueuedSynchronizer抽象同步队列简称AQS，它是实现同步器的基础组件，如常用的ReentrantLock、Semaphore、CountDownLatch等。AQS定义了一套多线程访问共享资源的同步模板，解决了实现同步器时涉及的大量细节问题，能够极大地减少实现工作，AQS的原理对于架构设计还是很有帮助的。下面是AQS的组成结构：
 
-![图片](images/WX20210725-165411@2-1x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210725-165411@2-1x.png)
 
 作为AQS的核心实现的一部分，举个例子来描述一下这个队列长什么样子，我们假设目前有三个线程Thread1、Thread2、Thread3同时去竞争锁，如果结果是Thread1获取了锁，Thread2和Thread3进入了等待队列，那么他们的样子如下：
 
-![图片](images/WX20210725-165411@2-2x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210725-165411@2-2x.png)
 
 AQS由三部分组成，**state同步状态**、**Node组成的CLH队列**、**ConditionObject条件变量（包含Node组成的条件单向队列）**，线程的阻塞和解除阻塞。AQS中采用了LockSupport.park(thread) 来挂起线程，用unpark来唤醒线程。因为争抢锁的线程可能很多，但是只能有一个线程拿到锁，其他的线程都必须等待，这个时候就需要一个queue来管理这些线程，AQS用的是一个FIFO的队列，就是一个链表，每个node都持有后继节点的引用。下面会分别对这三部分做介绍。
 
@@ -312,7 +312,7 @@ CLH数据模型：CLH队列中的结点QNode中含有一个locked字段，该字
 
 - 通过等待锁的每个线程在自己的某个变量上自旋等待，这个变量将由前一个线程写入。由于某个线程获取锁操作时总是通过尾节点指针获取到前一线程写入的变量，而尾节点指针又是原子引用类型，因此确保了这个变量获取出来总是线程安全的。
 
-![图片](images/WX20210725-165411@2-3x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210725-165411@2-3x.png)
 
 CLH是AQS内部维护的FIFO（先进先出）双端双向队列（方便尾部节点插入），基于链表数据结构，当一个线程竞争资源失败，就会将等待资源的线程封装成一个Node节点，通过CAS原子操作插入队列尾部，最终不同的Node节点连接组成了一个CLH队列，所以说AQS通过CLH队列管理竞争资源的线程，个人总结CLH队列具有如下几个优点：
 
@@ -472,7 +472,7 @@ public class CLHLock {
 
 CLH锁和MCS锁对比：
 
-![图片](images/WX20210725-165411@2-4x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210725-165411@2-4x.png)
 
 - 从代码实现来看，CLH比MCS要简单得多。
 - 从自旋的条件来看，CLH是在前驱节点的属性上自旋，而MCS是在本地属性变量上自旋。
@@ -543,11 +543,11 @@ public abstract class AbstractQueuedSynchronizer extends AbstractOwnableSynchron
 
 同步器(AQS)中持有同步队列的首节点和尾节点的引用，在AbstractQueuedSynchronizer中分别对应head和tail字段。
 
-![图片](images/WX20210725-165411@2-5x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210725-165411@2-5x.png)
 
 或者是下边的图：
 
-![图片](images/WX20210725-165411@2-6x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210725-165411@2-6x.png)
 
 入队：获取资源失败的线程需要封装成Node节点，接着尾部入队，在AQS中提供addWaiter函数完成Node节点的创建与入队。添加节点的时候，如果从CLH队列已经存在，通过CAS快速将当前节点添加到队列尾部，如果添加失败或队列不存在，则指向enq函数自旋入队。通过自旋CAS尝试往队列尾部插入节点，直到成功，自旋过程如果发现CLH队列不存在时会初始化CLH队列。大致过程如下：
 
@@ -611,7 +611,7 @@ public abstract class AbstractQueuedSynchronizer extends AbstractOwnableSynchron
     }
 ```
 
-![图片](images/WX20210725-165411@2-7x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210725-165411@2-7x.png)
 
 出队：CLH队列中的节点都是获取资源失败的线程节点，当持有资源的线程释放资源时，会将head.next指向的线程节点唤醒（CLH队列的第二个节点），如果唤醒的线程节点获取资源成功，线程节点清空信息设置为头部节点（新哨兵节点）。只需要关注1~3步骤即可，过程非常简单，假设获取资源成功，更换头部节点，并把头部节点的信息清除变成哨兵节点，注意这个过程是不需要使用C A S来保证，因为只有一个线程能够成功获取到资源。
 
@@ -641,19 +641,19 @@ private void setHead(Node node) {
 }
 ```
 
-![图片](images/WX20210725-165411@2-8x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210725-165411@2-8x.png)
 
 ##### 4.5 **条件变量**
 
 > 这篇不错很不错：https://mp.weixin.qq.com/s/z4IP1UE-bxwzoTLNONYbBw
 
-![图片](images/WX20210725-165411@2-10x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210725-165411@2-10x.png)
 
 条件变量中是阻塞的线程，CHL队列中是参与竞争的线程（类似于自旋），和Synchronize不同的是AQS可以有很多个条件变量。AbstractQueuedSynchronizer类中包含一个内部类ConditionObject，该类实现了Condition的接口。一个Condition对象包含一个等待队列，同时Condition对象可以实现等待/通知功能。如果当前线程调用Condition.await()时，会将当前线程信息构建一个Node节点，因为Condition持有等待队列中的首尾节点，所以将当前等待队列中的尾节点的nextWaiter指向当前线程构建的节点，同时更新lastWaiter的引用节点。上述过程中的节点、队列的操作，是获取到锁的线程来调用Condition.await()的，所以整个执行过程在没有基于 CAS 的情况下，也是线程安全的。
 
 Object的wait、notify函数是配合Synchronized锁实现线程间同步协作的功能，AQS的ConditionObject条件变量也提供这样的功能，通过ConditionObject的await和signal两类函数完成。不同于Synchronized锁，一个AQS可以对应多个条件变量，而Synchronized只有一个。ConditionObject内部维护着一个单向条件队列，不同于CHL队列，**条件队列只入队执行await的线程节点**，**并且加入条件队列的节点，不能在CHL队列**， 条件队列出队的节点，会入队到CHL队列。当某个线程执行了ConditionObject的await函数，阻塞当前线程，线程会被封装成Node节点添加到条件队列的末端，其他线程执行ConditionObject的signal函数，会将条件队列头部线程节点转移到CHL队列参与竞争资源，具体流程如下图
 
-![图片](images/WX20210725-165411@2-9x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210725-165411@2-9x.png)
 
 **CHL队列和ConditonObject的关系**
 
@@ -744,7 +744,7 @@ AQS的设计使用了模板方法的设计模式，模板方法一般在父类�
 
 从模板方法中可以看出，大多方法都是独占模式和共享模式对称出现的，除去查询等待线程方法外，可以将他们分为两类：独占式获取或释放同步状态、共享式获取或释放同步状态，并且它们的核心都是acquire与release方法，其他方法只是在它们实现的基础上做了部分的逻辑改动，增加了中断和超时功能的支持。下面对主要的4个方法进行分析。
 
-![图片](images/WX20210725-165411@2-11x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210725-165411@2-11x.png)
 
 
 **4.6.1 显式获取**
@@ -1186,7 +1186,7 @@ final void lock() {
 
 在JDK1.5以前，锁的实现只能用synchronized关键字；1.5开始提供了ReentrantLock，它是API层面的锁。它的结构如下：
 
-![图片](images/WX20210822-151155@2x-1.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210822-151155@2x-1.png)
 
 Lock接口定义的函数不多，接下来ReentrantLock要去实现这些函数，遵循着解耦可扩展设计，ReentrantLock内部定义了专门的组件Sync，Sync继承AbstractQueuedSynchronizer提供释放资源的实现，NonfairSync和FairSync是基于Sync扩展的子类，即ReentrantLock的非公平模式与公平模式，它们作为Lock接口功能的基本实现。ReentrantLock类中带有两个构造函数，一个是默认的构造函数，不带任何参数；一个是带有 fair 参数的构造函数。
 ```
@@ -1320,7 +1320,7 @@ NonfairSync继承Sync实现了lock函数，lock函数也非常简单，CAS设置
 
 公平策略就是，严格按照CLH队列顺序获取锁，线程释放锁时，会唤醒CLH队列阻塞的线程，重新竞争锁，要注意，此时可能还有非CLH队列的线程参与竞争，为了保证公平，一定会让CLH队列线程竞争成功，如果非CLH队列线程一直占用时间片，那就一直失败（构建成节点插入到CLH队尾，由A S Q模板流程执行），直到时间片轮到CLH队列线程为止，所以公平策略的性能会更差。
 
-![图片](images/WX20210822-151155@2x-2.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210822-151155@2x-2.png)
 
 ```
 static final class FairSync extends Sync {
@@ -1481,11 +1481,11 @@ ReentrantLock对Lock的实现都是基于Sync来做的，有一种神器在手�
 - 一个线程可以先进入写锁、再进入读锁、再进入写锁
 - 一个线程不能先进入读锁、再进入写锁【这种情况会导致线程卡死】
 
-![图片](images/WX20210822-151155@2x-3.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210822-151155@2x-3.png)
 
 类图结构
 
-![图片](images/WX20210822-151155@2x-4.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210822-151155@2x-4.png)
 
 
 ReentrantReadWriteLock中的类分成三个部分：
@@ -1596,7 +1596,7 @@ abstract static class Sync extends AbstractQueuedSynchronizer {
 
 读位运算：读锁使用高16位，每次获取读锁成功+1，所以读锁计数基本单位是1的高16位，即1左移16位（1 << 16）。1左移16位等于65536，每次获取读锁成功都+65536，这时有读者跳出来问，不是+1嘛，怎么变成+65536了，这不对啊。上面sharedCount函数通过位运算是做无符号右移16位获取读锁的重入数，为什么可以获取到呢？阿星原地向前走16步，再后退16步，又回到原点，1左移16位等于65536，65536右移16位等于1。比如我们获取到了3次读锁，就是65536 * 3 = 196608，转换下公式就是3左移16位等于196608，196608右移16位等于3。虽然我们每次获取到读锁都会+65536，但是获取读锁时会做右移16位，所以效果和+1是一样。
 
-![图片](images/WX20210822-151155@2x-5.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210822-151155@2x-5.png)
 
 写位运算：剩下的写锁就非常简单，获取低16位不用左右移动，只要把高16位全部补0即可。反推一下，因为不需要左右移动，其实就和正常的数字一样，只不过因为高16位补0，导致数值范围在0~65535，也就是说写锁获取成功直接+1就好了。
 
@@ -1617,7 +1617,7 @@ public final void acquireShared(int arg) {
 ```
 以共享模式获取，此方法不支持中断。通过首先至少调用一次tryAcquireShared，并在成功后返回。否则，线程将排队，并可能反复阻塞和解除阻塞，并调用tryAcquireShared直到成功。返回负数表示获取失败；返回0表示成功，但是后继争用线程不会成功；返回正数表示获取成功，并且后继争用线程也可能成功。
 
-![图片](images/WX20210822-151155@2x-6.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210822-151155@2x-6.png)
 
 > 很优秀的文章：https://www.cxyzjd.com/article/u013634213/91040619
 
@@ -1639,7 +1639,7 @@ public final void acquire(int arg) {
 	}
 }
 ```
-![图片](images/WX20210822-151155@2x-7.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210822-151155@2x-7.png)
 
 写锁的获取过程如下：
 
@@ -1793,7 +1793,7 @@ public class SemaphoreTest {
 }
 ```
 
-![图片](images/WX20210822-151155@2x-8.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210822-151155@2x-8.png)
 
 
 #### 9. 各种锁对比
@@ -1858,7 +1858,7 @@ StampedLock引入了“乐观读”策略：读的时候不加读锁，读出来
 
 第1-7位记录共享锁读锁，每获取一个读锁，该7位+1，如果溢出，每溢出一次，readerOverflow+1；每释放一个读锁，该值-1，如果不够，借位readerOverflow的值。第8位记录互斥锁写锁状态，如果存在写锁，该位记1，不存在记0；第8-64位用于记录乐观锁版本号。每获取一次写锁，state+WBIT，即从第8位开始的值。释放写锁，并不让state-WBIT，保证乐观锁版本号的单调递增，防止乐观锁出现ABA问题，即在tryOptimisticRead和validate(stamp)之间获取写锁并释放写锁。如果从第8位到第64位都是1，则再加WBIT，将导致state是0，因为64位越界，此时将state复位ORIGIN：获取写锁的时候，state+WBIT，释放的时候state+WBIT，第一次让写锁位置位1，第二次让写锁位置位0，同时乐观锁位表示的值增大。当写锁位是1的时候，悲观读锁位都是0，readerOverflow也是0。当写锁位是0的时候，如果悲观锁抢锁，则写锁位的7位以及readerOverflow用于记录cowait链表获取共享读锁的状态。
 
-![图片](images/WX20210822-151155@2x-9.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210822-151155@2x-9.png)
 
 
 ### 其他
@@ -1868,7 +1868,7 @@ StampedLock引入了“乐观读”策略：读的时候不加读锁，读出来
 
     Mark Word记录了对象和锁有关的信息，当这个对象被synchronized关键字当成同步锁时，围绕这个锁的一系列操作都和Mark Word有关。Mark Word在32位JVM中的长度是32bit，在64位JVM中长度是64bit。Mark Word在不同的锁状态下存储的内容不同，在32位JVM中是这么存的：
 
-    ![图片](images/WX20210716-113420@2-8x.png)
+    ![图片](https://txxs.github.io/pic/q&a/WX20210716-113420@2-8x.png)
     
     其中无锁和偏向锁的锁标志位都是01，只是在前面的1bit区分了这是无锁状态还是偏向锁状态。JDK1.6以后的版本在处理同步锁时存在锁升级的概念，JVM对于同步锁的处理是从偏向锁开始的，随着竞争越来越激烈，处理方式从偏向锁升级到轻量级锁，最终升级到重量级锁。JVM一般是这样使用锁和Mark Word的：
         - 当没有被当成锁时，这就是一个普通的对象，Mark Word记录对象的HashCode，锁标志位是01，是否偏向锁那一位是0。
@@ -1970,7 +1970,7 @@ StampedLock引入了“乐观读”策略：读的时候不加读锁，读出来
     
     面试官：详细说一下偏向锁？小白：偏向锁就是如果线程持有了锁，在后续的过程中，只要该锁没有被其它线程持有，那么持有偏向锁的线程将不再需要进行同步操作。这个偏向锁的相关信息是保存在Java对象的对象头中的。在HotSpot虚拟机中，Java对象在内存中存储的布局分为3块区域：对象头、实例数据和对齐填充。对象头包含两部分，第一部分包含对象的HashCode、分代年龄、锁标志位、线程持有的锁、偏向线程ID等数据，这部分数据的长度在32位和64位虚拟机中分别为32bit和64bit，官方称为Mark World，用一张图展示不同状态下，对象头中存储的内容。
     
-      ![图片](images/WX20210725-165415@2-6x.png)
+      ![图片](https://txxs.github.io/pic/q&a/WX20210725-165415@2-6x.png)
     
     一个普通Java对象刚开始是处于无锁状态的，Mark World中存储的数据如上图中的第一行所示。当虚拟机启动了偏向锁，锁对象第一次被线程获取的时候，锁标识位置为01，同时使用CAS将获取到这个锁的线程ID设置到Mark World中，如果CAS操作成功，那么这个线程将可以继续执行相关的同步代码。如果此时有其它线程尝试获取锁，有两种情况，一种是锁对象未被锁定，则偏向锁被撤销，恢复到无锁状态；另一种是对象被锁定，那么偏向锁失效，同时升级为轻量级锁，会在当前线程的栈帧中创建一个锁记录的空间，这个空间存储对象头中Mark World的拷贝，就是复制一份到这个锁记录空间，同时虚拟机使用CAS尝试将这个锁记录空间的指针更新到Mark World，如果CAS操作成功，那么当前线程获取到锁，此时锁状态处于轻量级锁，锁标志位置为00。
     

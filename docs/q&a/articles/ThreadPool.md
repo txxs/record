@@ -5,7 +5,7 @@
 > 引用自：https://blog.csdn.net/ShiXueTanLang/article/details/78888262
 源码执行流程：
 
-![图片](images/WX20210805-175031@2-8x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210805-175031@2-8x.png)
 
 > 这篇文章不错：https://zhuanlan.zhihu.com/p/346719067
 1. 池化原理是什么
@@ -27,14 +27,14 @@
 
    > 这篇文章中如何使用FutrueTask：https://blog.csdn.net/u012881584/article/details/85121144
 
-   ![图片](images/WX20210805-175031@2-9x.png)
+   ![图片](https://txxs.github.io/pic/q&a/WX20210805-175031@2-9x.png)
    异步执行的核心是FutureTask，FutureTask中有一个全局变量state，通过这个值来界定任务是否已经执行完毕；同时定义了线程执行的结果：outcome；同时定义了用于保存由于调用Future.get方法而阻塞的线程的堆：WaitNode waiters；通过上面的demo可以看到主线程在新建完FutureTask后一直阻塞等待结果，任务线程负责执行任务，并将最后结果塞回到输出outcome字段，并通知等待线程，由于可以由多个线程阻塞等待，在内部实现中使用等待链表和LockSupport的park/unpark操作来进行不同线程之间的同步操作，大致流程如下所示。
 
     1. 在主线程/其他等待线程中可以调用awaitDone，该逻辑会自旋并调用park进行阻塞等待，如果任务还未完成则放入等待链中；
     2. 执行线程执行完任务后遍历等待链表，对每个节点进行unpark操作;
     3. 在awaitDone()逻辑中会收到unpark同步信号，唤醒对应的线程已执行完任务。
 
-       ![图片](images/WX20210805-175031@2-10x.png)
+       ![图片](https://txxs.github.io/pic/q&a/WX20210805-175031@2-10x.png)
 
    > 引用自：https://blog.csdn.net/maoyeqiu/article/details/119533120
    > 这篇文章也不错：https://zhuanlan.zhihu.com/p/40047276
@@ -48,7 +48,7 @@
 
 0. 线程池核心的代码解读
 
-   ![图片](images/WX20210805-175031@2-3x.png)
+   ![图片](https://txxs.github.io/pic/q&a/WX20210805-175031@2-3x.png)
 
 我们首先要了解的线程池里面的状态控制的参数 ctl，线程池的ctl是一个原子的 AtomicInteger。这个ctl包含两个参数 ：
 - workerCount 激活的线程数
@@ -384,17 +384,17 @@ Worker的销毁过程，在运行woker的过程中，如果没有任务了就执
 ```
 0.1 添加线程池的代码流程
 
-![图片](images/WX20210805-175031@2-5x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210805-175031@2-5x.png)
 
 更详细的过程图
 
-![图片](images/WX20210805-175031@2-6x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210805-175031@2-6x.png)
 
 > 最后图引用自（特别好）：https://www.jianshu.com/p/634160933511
 
 业务主流程
 
-![图片](images/WX20210805-175031@2-7x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210805-175031@2-7x.png)
 	```
 	以下这两个类尤其关键：
 	private final BlockingQueue<Runnable> workQueue;
@@ -420,7 +420,7 @@ Worker的销毁过程，在运行woker的过程中，如果没有任务了就执
 2. 什么是线程池？
 
 线程池的本质是一个典型的生产者-消费者模式。线程池内部会有一个队列来存储我们提交的任务，而内部线程不断地从队列中索取任务来执行，这就是线程池最原始的执行机制。
-    ![图片](images/WX20210729-102013@2-1x.png)
+    ![图片](https://txxs.github.io/pic/q&a/WX20210729-102013@2-1x.png)
 
 3. 手写一个线程池？
 
@@ -475,7 +475,7 @@ public class YesThreadPool {
     - 如果阻塞队列满了，并且此时线程数小于最大线程数，那么会创建新线程来执行当前任务。
     - 如果阻塞队列满了，并且此时线程数大于最大线程数，那么会采取拒绝策略。
 
-    ![图片](images/WX20210805-175031@2-4x.png)
+    ![图片](https://txxs.github.io/pic/q&a/WX20210805-175031@2-4x.png)
    
     - 以下过程尤为关键
     - 当提交任务后,,线程池首先会检查当前线程数,如果当前线程数小于核心线程数,则新建线程并执行任务.
@@ -532,7 +532,7 @@ public class YesThreadPool {
         3. SynchronousQueue：一个不存储元素的阻塞队列（SynchronousQueue 也可以存储数据，且是无锁实现，只是size()方法直接返回0而已。）。每个插入操作必须等到另一个线程调用移除操作，否则插入操作一直处于阻塞状态，吞吐量通常要高于LinkedBlockingQueue，静态工厂方法Executors.newCachedThreadPool使用了这个队列。同步队列，阻塞队列的特殊版，即没有容量的阻塞队列，随进随出，不做停留。
         4. PriorityBlockingQueue：一个具有优先级的无限阻塞队列(优先级通过参数Comparator实现)。优先级阻塞队列，这是一个无界队列，不遵循FIFO，而是根据任务自身的优先级顺序来执行，初始化可不指定容量，默认11（既然有容量，怎么还是无界的呢？因为它添加元素时会进行扩容）。
         5. DelayedWorkQueu队列的特点是内部的任务并不是按照放入的时间排序,而是会按照延迟的时间长短对任务进行排序,内部采用的是“堆”数据结构.而且它也是一个无界队列.
-           ![图片](images/WX20210805-175031@2-1x.png)
+           ![图片](https://txxs.github.io/pic/q&a/WX20210805-175031@2-1x.png)
     
     - threadFactory：当线程池需要新的线程时，会用threadFactory来生成新的线程，默认采用的是DefaultThreadFactory，主要负责创建线程。newThread()方法。创建出来的线程都在同一个线程组且优先级也是一样的。
     - handler：拒绝策略，任务量超出线程池的配置限制或执行shutdown还在继续提交任务的话，会执行handler的逻辑。默认采用的是AbortPolicy，遇到上面的情况，线程池将直接采取直接拒绝策略，也就是直接抛出异常。RejectedExecutionException
@@ -574,7 +574,7 @@ public class YesThreadPool {
         - DiscardOldestPolicy：丢弃队列里最近的一个任务，并执行当前任务。如果线程数达到最大，且工作队列也满，此时再进来任务，则丢掉最先进入队列的任务（有点残忍了），并再次插入任务
         - DiscardPolicy：不处理，丢弃掉。如果线程数达到最大，且工作队列也满，此时再进来任务，则直接丢掉（看任务的重要程度，不重要的任务可以用这个策略）
           
-          ![图片](images/WX20210805-175031@2-2x.png)
+          ![图片](https://txxs.github.io/pic/q&a/WX20210805-175031@2-2x.png)
 
 11. 线程池的底层原理（还需要再深入）
 

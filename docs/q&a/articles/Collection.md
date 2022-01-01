@@ -6,7 +6,7 @@
 
 Java集合主要可以划分为4个部分：List列表、Set集合、Map映射、工具类(Iterator迭代器、Enumeration枚举类、Arrays和Collections)
 
-![图片](images/WX20211005-173843@2-1x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20211005-173843@2-1x.png)
 
 迭代器接口，这是Collection类的父接口。实现这个Iterable接口的对象允许使用foreach进行遍历，也就是说，所有的Collection集合对象都具有"foreach可遍历性"。这个Iterable接口只有一个方法: iterator()。它返回一个代表当前集合对象的泛型<T>迭代器，用于之后的遍历操作。
 
@@ -202,7 +202,7 @@ ReHash：遍历原Entry数组，把所有的Entry重新Hash到新数组。
 
 头插法和尾插法的示意
 
-![图片](images/WX20211005-173843@2-2x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20211005-173843@2-2x.png)
 
 > 引用自：https://blog.csdn.net/qq_26222859/article/details/46124265
 
@@ -261,7 +261,7 @@ CopyOnWriteArrayList get (需要锁）：get直接get即可，因为获取的旧
 
 #### 7.1 使用
 
-![图片](images/WX20211005-173843@2-3x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20211005-173843@2-3x.png)
 
 1. stream集合遍历forEach:
 ```

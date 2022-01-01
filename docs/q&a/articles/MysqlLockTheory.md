@@ -52,7 +52,7 @@ REDO是如何组织的
 因此mysql设计了redo log，具体来说就是只记录事务对数据页做了哪些修改，这样就能完美地解决性能问题了(相对而言文件更小并且是顺序IO)。redo log 包括两部分：一个是内存中的日志缓冲( redo log buffer )，另一个是磁盘上的日志文件(redo log file )。mysql每执行一条DML语句，先将记录写入redo log buffer，后续某个时间点再一次性将多个操作记录写到redo log file。这种先写日志，再写磁盘的技术就是MySQL里经常说到的 WAL(Write-Ahead Logging) 技术。在计算机操作系统中，用户空间(user space)下的缓冲区数据一般情况下是无法直接写入磁盘的，中间必须经过操作系统内核空间(kernel space)缓冲区(OS Buffer)。因此，redo log buffer写入 redo log
 file 实际上是先写入 OS Buffer ，然后再通过系统调用 fsync() 将其刷到redo log file中，过程如下：
 
-![图片](images/WX20210823-192114@2-2x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210823-192114@2-2x.png)
 
 一个事务要修改多张表的多条记录，多条记录分布在不同的Page里面，对应到磁盘的不同位置。如果每个事务都直接写磁盘，一次事务提交就要多次磁盘的随机I/O，性能达不到要求。怎么办呢？不写磁盘，在内存中进行事务提交。然后再通过后台线程，异步地把内存中的数据写入到磁盘中。但有个问题：机器宕机，内存中的数据还没来得及刷盘，数据就丢失了。
 为此，就有了Write-aheadLog的思路：先在内存中提交事务，然后写日志（所谓的Write-ahead Log），然后后台任务把内存中的数据异步刷到磁盘。日志是顺序地在尾部Append，从而也就避免了一个事务发生多次磁盘随机I/O的问题。明明是先在内存中提交事务，后写的日志，为什么叫作Write-Ahead呢？这里的Ahead，其实是指相对于真正的数据刷到磁盘，因为是先写的日志，后把内存数据刷到磁盘，所以叫Write-Ahead Log。
@@ -64,11 +64,11 @@ file 实际上是先写入 OS Buffer ，然后再通过系统调用 fsync() 将�
 - 1：每提交一个事务，就刷一次磁盘（这个最安全）。
 - 2：不刷盘。然后根据参数innodb_flush_log_at_timeout设置的值决定刷盘频率。
 
-![图片](images/WX20210823-192114@2-3x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210823-192114@2-3x.png)
 
 很显然，该参数设置为0或者2都可能丢失数据。设置为1最安全，但性能最差。InnoDB设置此参数，也是为了让应用在数据安全性和性能之间做一个权衡。
 
-![图片](images/WX20210823-192114@2-1x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210823-192114@2-1x.png)
 
 同时我们很容易得知， 在innodb中，既有 redo log 需要刷盘，还有 数据页 也需要刷盘， redo log 存在的意义主要就是降低对 数据页 刷盘的要求 。在上图中， write pos 表示 redo log 当前记录的 LSN (逻辑序列号)位置， check point 表示 数据页更改记录** 刷盘后对应 redo log 所处的 LSN (逻辑序列号)位置。 write pos 到 check point 之间的部分是 redo log 空着的部分，用于记录新的记录； check point 到 write pos 之间是 redo log 待落盘的数据页更改记录。当 write pos 追上 check point 时，会先推动 check point 向前移动，空出位置再记录新的日志。
 
@@ -81,7 +81,7 @@ checkpoint 的刷盘过程，且数据页的刷盘进度超过了日志页的刷
 
 ##### 1.1.2 Redo log写入流程
 
-![图片](images/WX20210823-192114@2-4x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210823-192114@2-4x.png)
 
 上边面以一个更新事务为例，宏观执行流程：
 
@@ -94,7 +94,7 @@ checkpoint 的刷盘过程，且数据页的刷盘进度超过了日志页的刷
 
 更为详细的过程：
 
-![图片](images/WX20210823-192114@2-5x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210823-192114@2-5x.png)
 
 ##### 1.1.3 Redo redo如何保证事务的持久性？
 
@@ -136,7 +136,7 @@ show variables like '%innodb_data_file_path%'
 查看系统表空间，结果显示格式为name:size:attributes，分别表示名称，大小和属性，autoextend表示其会随着数据增多自动扩容。相对于redo log是一种物理日志（记录了某个数据页发生了什么更改）来说，undo log则是一种逻辑日志，当一个事务对记录做了变更操作就会产生undo log，也就是说undo log记录了记录变更的逻辑过程。笼统的说，当一个事务要更新一行记录时，会把当前记录当做历史快照保存下来，多个历史快照会用两个隐藏字段trx_id和roll_pointer串起来，形成一个历史版本链，当需要事务回滚时，可以依赖这个历史版本链将记录回滚到事务开始之前的状态，从而保证了事务的原子性（一个事务对数据库的所有操作，要么全部成功，要么全部失败）。
 
 
-![图片](images/WX20210823-192114@2-6x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210823-192114@2-6x.png)
 
 总结来说，在InnoDB里，undo log分为两种类型：
 
@@ -160,7 +160,7 @@ show variables like '%innodb_data_file_path%'
 
 当我们查询数据的时候，会先去Buffer Pool中查询。如果Buffer Pool中不存在，存储引擎会先将数据从磁盘加载到Buffer Pool中，然后将数据返回给客户端；同理，当我们更新某个数据的时候，如果这个数据不存在于Buffer Pool，同样会先数据加载进来，然后修改修改内存的数据。被修改过的数据会在之后统一刷入磁盘。
 
-![图片](images/WX20210823-192114@2-7x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210823-192114@2-7x.png)
 
 假设我们修改Buffer Pool中的数据成功，但是还没来得及将数据刷入磁盘MySQL就挂了怎么办？按照上图的逻辑，此时更新之后的数据只存在于Buffer Pool中，如果此时MySQL宕机了，这部分数据将会永久的丢失；2而Redo Log和Undo Log，可以解决这个问题
 
@@ -178,7 +178,7 @@ show variables like '%innodb_data_file_path%'
 
 从这你可以发现一个关键的问题，**那就是必须保证Redo Log和Binlog在事务提交时的数据一致性**，要么都存在，要么都不存在。MySQL是通过 2PC（two-phase commit protocol）来实现的。
 
-![图片](images/WX20210823-192114@2-8x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210823-192114@2-8x.png)
 
 它是一种保证分布式事务数据一致性的协议，它中文名叫两阶段提交，它将分布式事务的提交拆分成了2个阶段，分别是Prepare和Commit/Rollback。
 
@@ -187,7 +187,7 @@ show variables like '%innodb_data_file_path%'
 
 协调器最终就是一个协调者的角色，最终会在Redolog中记录写入成功，如下图：
 
-![图片](images/WX20210823-192114@2-9x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210823-192114@2-9x.png)
 
 
 MySQL最开始是没有InnoDB引擎的，binlog日志位于Server层，只是用于归档和主从复制，本身不具备crashsafe的能力。而InnoDB依靠redolog具备了crashsafe的能力，redolog和binlog同时记录，就需要保证两者的一致性。在前面小节中已经体现了，两个log的写入流程是：
@@ -218,13 +218,13 @@ redo log buffer主要可以在buffer pool数据还未刷盘宕机时保证事务
 - 0：不立即刷盘，由系统决定何时将binlog cache刷盘，性能最高，但是可能会丢失多个事务的数据
 - N：每N个事务提交之后，将binlog cache刷盘，当N=1时，数据最安全，最多丢失一个事务的数据，但是性能也最低；当N大于1时，会累积多个事务，类似于0的情况，可能会丢失多个事务的数据
 
-![图片](images/WX20210823-192114@2-10x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210823-192114@2-10x.png)
 
 > 引用自：http://www.jiangxinlingdu.com/mysql/2019/06/07/binlog.html
 
 主动复制主要分为三个步骤，如如下图：
 
-![图片](images/WX20210823-192114@2-11x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210823-192114@2-11x.png)
 
 - master在每次准备提交事务完成数据更新前，将改变记录到二进制日志(binary log)中（这些记录叫做二进制日志事件，binary log event，简称event)
 - slave启动一个I/O线程来读取主库上binary log中的事件，并记录到slave自己的中继日志(relay log)中。
@@ -250,7 +250,7 @@ redo log buffer主要可以在buffer pool数据还未刷盘宕机时保证事务
 
 事务的4个隔离级别以及对应的3种异常：
 
-![图片](images/WX20210823-192114@2-13x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210823-192114@2-13x.png)
 
 - 脏读：一个事务读取到了另外一个事务没有提交的数据；
 - 不可重复读：在同一事务中，两次读取同一数据，得到内容不同；
@@ -305,7 +305,7 @@ MVCC提供了 时间一致性的 处理思路，在MVCC下读事务时，通常�
 
 `roll_pointer`每次对记录修改的时候，都会把老版本写入undo log中。新纪录中`roll_pointer`就是存了一个指针，它指向这条记录的上一个版本的位置，通过它来获得上一个版本的记录信息。记录每次更新后，都会将旧值放到一条undo日志中，就算是该记录的一个旧版本，随着更新次数的增多，所有的版本都会被roll_pointer属性连接成一个链表，我们把这个链表称之为版本链，版本链的头节点就是当前记录最新的值。另外，每个版本中还包含生成该版本时对应的事务id，这个信息很重要，我们稍后就会用到。
 
-![图片](images/WX20210823-192114@2-12x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210823-192114@2-12x.png)
 
 ##### 2.3.3 ReadView
 
@@ -441,7 +441,7 @@ MVCC（Multi-Version Concurrency Control ，多版本并发控制）指的就是
 
 #### 3.1 锁的分类
 
-![图片](images/WX20210823-192114@2-14x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210823-192114@2-14x.png)
 
 ##### 3.1.1 按使用方式
 
@@ -514,7 +514,7 @@ InnoDB的行锁，是通过锁住索引来实现的，如果加锁查询的时�
 
 在了解 InnoDB 的加锁原理前，需要对其存储结构有一定的了解。InnoDB是聚簇索引，也就是B+树的叶节点既存储了主键索引也存储了数据行。而InnoDB的二级索引的叶节点存储的则是主键值，所以通过二级索引查询数据时，还需要拿对应的主键去聚簇索引中再次进行查询。关于 InnoDB 和 MyISAM 的索引的详细知识可以阅读《Mysql探索(一):B+Tree索引》一文。
 
-![图片](images/WX20210823-192114@2-15x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210823-192114@2-15x.png)
 
 下面以两条 SQL 的执行为例，讲解一下 InnoDB 对于单行数据的加锁原理。
 

@@ -29,7 +29,7 @@ Kafka 本质上是一个 MQ（Message Queue），使用消息队列的好处？
 
 #### 1.2 Kakfa架构
 
-![图片](images/WX20210705-111618@2-1x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210705-111618@2-1x.png)
 
 
 Kafka 存储的消息来自任意多被称为 Producer 生产者的进程。数据从而可以被发布到不同的 Topic 主题下的不同 Partition 分区。在一个分区内，这些消息被索引并连同时间戳存储在一起。其它被称为 Consumer 消费者的进程可以从分区订阅消息。Kafka 运行在一个由一台或多台服务器组成的集群上，并且分区可以跨集群结点分布。下面给出 Kafka 一些重要概念，让大家对 Kafka 有个整体的认识和感知，后面还会详细的解析每一个概念的作用以及更深入的原理：
@@ -52,7 +52,7 @@ Kafka 存储的消息来自任意多被称为 Producer 生产者的进程。数�
 
 Kafka集群将 Record 流存储在称为 Topic 的类别中，每个记录由一个键、一个值和一个时间戳组成。
 
-![图片](images/WX20210705-111618@2-2x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210705-111618@2-2x.png)
 
 Kafka 是一个分布式流平台，这到底是什么意思？发布和订阅记录流，类似于消息队列或企业消息传递系统。以容错的持久方式存储记录流。处理记录流。Kafka 中消息是以 Topic 进行分类的，生产者生产消息，消费者消费消息，面向的都是同一个 Topic。
 
@@ -65,7 +65,7 @@ Kafka 是一个分布式流平台，这到底是什么意思？发布和订阅�
 
 ### 三、存储机制
 
-![图片](images/WX20210705-111618@2-3x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210705-111618@2-3x.png)
 
 由于生产者生产的消息会不断追加到 log 文件末尾，为防止 log 文件过大导致数据定位效率低下，Kafka 采取了分片和索引机制。
 
@@ -83,7 +83,7 @@ leader-epoch-checkpoint
 ```
 index 和 log 文件以当前 Segment 的第一条消息的 Offset 命名。下图为 index 文件和 log 文件的结构示意图：
 
-![图片](images/WX20210705-111618@2-5x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210705-111618@2-5x.png)
 
 “.index” 文件存储大量的索引信息，“.log” 文件存储大量的数据，索引文件中的元数据指向对应数据文件中 Message 的物理偏移量。
 
@@ -118,13 +118,13 @@ segment文件存储
 
 为保证 Producer 发送的数据，能可靠地发送到指定的 Topic，Topic 的每个 Partition 收到 Producer 发送的数据后，都需要向 Producer 发送 ACK（ACKnowledge 确认收到）。如果 Producer 收到 ACK，就会进行下一轮的发送，否则重新发送数据。
 
-![图片](images/WX20210705-111618@2-6x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210705-111618@2-6x.png)
 
 ##### 4.2.1 副本数据同步策略
 
 何时发送 ACK？确保有 Follower 与 Leader 同步完成，Leader 再发送 ACK，这样才能保证 Leader 挂掉之后，能在 Follower 中选举出新的 Leader 而不丢数据。多少个 Follower 同步完成后发送 ACK？全部 Follower 同步完成，再发送 ACK。
 
-![图片](images/WX20210705-111618@2-7x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210705-111618@2-7x.png)
 
 ##### 4.2.2 ISR
 
@@ -134,7 +134,7 @@ segment文件存储
 
 对于某些不太重要的数据，对数据的可靠性要求不是很高，能够容忍数据的少量丢失，所以没必要等 ISR 中的 Follower 全部接受成功。所以 Kafka 为用户提供了三种可靠性级别，用户根据可靠性和延迟的要求进行权衡，选择以下的配置。
 
-![图片](images/WX20210705-111618@2-8x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210705-111618@2-8x.png)
 
 ACK 参数配置：
 
@@ -144,7 +144,7 @@ ACK 参数配置：
 
 ##### 4.2.4 故障处理细节
 
-![图片](images/WX20210705-111618@2-9x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210705-111618@2-9x.png)
 
 LEO：每个副本最大的 Offset。HW：消费者能见到的最大的 Offset，ISR 队列中最小的 LEO。
 
@@ -199,17 +199,17 @@ Kafka集群保持所有的消息，直到它们过期（无论消息是否被消
 
 RoundRobin 轮询方式将分区所有作为一个整体进行 Hash 排序，消费者组内分配分区个数最大差别为 1，是按照组来分的，可以解决多个消费者消费数据不均衡的问题。但是，当消费者组内订阅不同主题时，可能造成消费混乱，如下图所示，Consumer0 订阅主题 A，Consumer1 订阅主题 B。
 
-![图片](images/WX20210705-111618@2-10x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210705-111618@2-10x.png)
 
 将 A、B 主题的分区排序后分配给消费者组，TopicB 分区中的数据可能分配到 Consumer0 中。
 
 ##### 5.2.2 Range
 
-![图片](images/WX20210705-111618@2-11x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210705-111618@2-11x.png)
 
 Range 方式是按照主题来分的，不会产生轮询方式的消费混乱问题。但是，如下图所示，Consumer0、Consumer1 同时订阅了主题 A 和 B，可能造成消息分配不对等问题，当消费者组内订阅的主题越多，分区分配可能越不均衡。
 
-![图片](images/WX20210705-111618@2-12x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210705-111618@2-12x.png)
 
 #### 5.3 Offset 的维护
 
@@ -387,7 +387,7 @@ Kafka 充分利用二分法来查找对应 offset 的消息位置：
 
 #### 7.3 Kafka和ZK的关系
 
-![图片](images/WX20210705-111618@2-13x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210705-111618@2-13x.png)
 
 ##### 7.3.1 注册中心
 
@@ -417,7 +417,7 @@ broker向Zookeeper进行注册后，生产者根据broker节点来感知broker�
 
 下面这张图展示了 Controller、Zookeeper 和 broker 的交互细节：图片Controller选举成功后，会从Zookeeper集群中拉取一份完整的元数据初始化ControllerContext，这些元数据缓存在Controller节点。
 
-![图片](images/WX20210705-111618@2-14x.png)
+![图片](https://txxs.github.io/pic/q&a/WX20210705-111618@2-14x.png)
 
 当集群发生变化时，比如增加topic分区，Controller不仅需要变更本地的缓存数据，还需要将这些变更信息同步到其他Broker。Controller监听到Zookeeper事件、定时任务事件和其他事件后，将这些事件按照先后顺序暂存到LinkedBlockingQueue中。由事件处理线程按顺序处理，这些处理多数需要跟Zookeeper交互，Controller则需要更新自己的元数据。
 
