@@ -19,10 +19,10 @@ const collectionSc = require('../java/collection')
 const threadSc = require('../java/thread')
 const springSc = require('../java/spring')
 const sourceSc = require('../java/source')
-const javajdkconSC = require('../java/JDK/con')
-const javajdkjacocoSC = require('../java/JDK/jacoco')
-const javajdkJava8SC = require('../java/JDK/Java8')
-const javajdkJVMSC = require('../java/JDK/JVM')
+const javajdkconSC = require('../java/jdk/con')
+const javajdkjacocoSC = require('../java/jdk/jacoco')
+const javajdkJava8SC = require('../java/jdk/Java8')
+const javajdkJVMSC = require('../java/jdk/jvm')
 const javajvmSC = require('../java/jvm')
 const javasourceSC = require('../java/source')
 const javaspringSC = require('../java/spring')
@@ -118,10 +118,10 @@ module.exports = {
       {
         text: 'java', items: [
           { text: '集合', link: '/java/collection/' },
-          { text: '并发编程', link: '/java/JDK/con' },
-          { text: 'jacoco', link: '/java/JDK/jacoco' },
-          { text: 'Java8', link: '/java/JDK/Java8' },
-          { text: 'JVM一', link: '/java/JDK/JVM' },
+          { text: '并发编程', link: '/java/jdk/con' },
+          { text: 'jacoco', link: '/java/jdk/jacoco' },
+          { text: 'Java8', link: '/java/jdk/Java8' },
+          { text: 'JVM一', link: '/java/jdk/jvm' },
           { text: 'JVM二', link: '/java/jvm/' },
           { text: '源码', link: '/java/source/' },
           { text: 'spring', link: '/java/spring/' },
@@ -200,10 +200,10 @@ module.exports = {
       '/java/thread/': threadSc(),
       '/java/spring/': springSc(),
       '/java/source/': sourceSc(),
-      '/java/JDK/con/': javajdkconSC(),
-      '/java/JDK/jacoco/': javajdkjacocoSC(),
-      '/java/JDK/Java8/': javajdkJava8SC(),
-      '/java/JDK/JVM/': javajdkJVMSC(),
+      '/java/jdk/con/': javajdkconSC(),
+      '/java/jdk/jacoco/': javajdkjacocoSC(),
+      '/java/jdk/Java8/': javajdkJava8SC(),
+      '/java/jdk/jvm/': javajdkJVMSC(),
       '/java/jvm/': javajvmSC(),
       '/java/source/': javasourceSC(),
       '/java/spring/': javaspringSC(),
