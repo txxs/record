@@ -118,10 +118,10 @@ module.exports = {
       {
         text: 'java', items: [
           { text: '集合', link: '/java/collection/' },
-          { text: '并发编程', link: '/java/jdk/con' },
-          { text: 'jacoco', link: '/java/jdk/jacoco' },
-          { text: 'Java8', link: '/java/jdk/Java8' },
-          { text: 'JVM一', link: '/java/jdk/jvm' },
+          { text: '并发编程', link: '/java/jdk/con/' },
+          { text: 'jacoco', link: '/java/jdk/jacoco/' },
+          { text: 'Java8', link: '/java/jdk/Java8/' },
+          { text: 'JVM一', link: '/java/jdk/jvm/' },
           { text: 'JVM二', link: '/java/jvm/' },
           { text: '源码', link: '/java/source/' },
           { text: 'spring', link: '/java/spring/' },
