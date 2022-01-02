@@ -16,7 +16,6 @@ module.exports = () => {
                 'MySQL-FAQ.md',
                 'Network-FAQ.md',
                 'networks-interview.md',
-                'README.md',
                 'Redis-FAQ.md',
                 'Spring-FAQ.md',
                 'SpringBoot-FAQ.md',
