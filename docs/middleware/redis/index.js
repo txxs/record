@@ -12,7 +12,6 @@ module.exports = () => {
                 'RedisUserful.md',
                 'redis知识点&面试题总结.md',
                 '数据库-Redis.md'
-                ''
             ]
         }
     ]

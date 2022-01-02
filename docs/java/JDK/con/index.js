@@ -6,7 +6,7 @@ module.exports = () => {
             children: [
                 'AQS原理分析.md',
                 'Java-Fork-Join-框架.md',
-                'Java信号量模型Semaphore.md,
+                'Java信号量模型Semaphore.md',
                 'Java内存模型与volatile关键字.md',
                 'Java并发编程实战系列5之基础构建模块.md',
                 'Java并发编程实战系列6之任务执行(Task-Execution).md',

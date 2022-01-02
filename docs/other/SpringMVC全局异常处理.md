@@ -1,12 +1,4 @@
----
-title: SpringMVC全局异常处理
-date: 2020-06-14 15:13:07
-index_img: https://static.lovebilibili.com/exceptionResolver_index.jpg
-tags:
-	- java
-	- SpringMVC
-	- 源码分析
----
+
 
 # SpringMVC全局异常处理
 

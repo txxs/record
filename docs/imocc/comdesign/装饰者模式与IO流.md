@@ -1,12 +1,4 @@
----
 
-title: 装饰者模式与IO流
-date: 2020-05-04 22:10:01
-index_img: https://static.lovebilibili.com/decorator_index.jpg
-tags:
-	- java
-	- 设计模式
----
 
 # 装饰者模式
 

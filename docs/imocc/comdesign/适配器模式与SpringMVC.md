@@ -1,11 +1,4 @@
----
-title: 适配器模式与SpringMVC
-date: 2020-05-31 13:41:20
-index_img: https://static.lovebilibili.com/adaptera_index.jpg
-tags:
-	- java
-	- 设计模式
----
+
 
 # 适配器模式
 

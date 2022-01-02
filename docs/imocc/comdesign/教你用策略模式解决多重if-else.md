@@ -1,12 +1,4 @@
----
 
-title: 教你用策略模式解决多重if-else
-date: 2020-04-05 14:12:40
-index_img: https://static.lovebilibili.com/strategy_index.jpg
-tags:
-	- 设计模式
-	- java
----
 
 # 写在前面
 
