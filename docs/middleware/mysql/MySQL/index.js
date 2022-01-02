@@ -1,7 +1,7 @@
 module.exports = () => {
     return [
         {
-            title: "",
+            title: "mysql二",
             collapsable: false,
             children: [
                 'MyBatis or JPA.md',
@@ -37,11 +37,7 @@ module.exports = () => {
                 'MySQL锁.md',
                 'SQL注入.md',
                 '我是如何一步步让公司的MySQL支撑亿级流量的.md',
-                '数据库表设计的最佳实践.md',
-                '',
-                '',
-                '',
-                ''
+                '数据库表设计的最佳实践.md'
             ]
         }
     ]

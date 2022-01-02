@@ -1,7 +1,7 @@
 module.exports = () => {
     return [
         {
-            title: "",
+            title: "java8",
             collapsable: false,
             children: [
                 'Iterator迭代器到底是什么.md',
@@ -37,11 +37,7 @@ module.exports = () => {
                 '一文搞懂Java的SPI机制.md',
                 '子类可以继承到父类上的注解吗.md',
                 '深入分析-Java-的枚举-enum.md',
-                '深入解析Java的注解机制.md',
-                '',
-                '',
-                '',
-                ''
+                '深入解析Java的注解机制.md'
             ]
         }
     ]

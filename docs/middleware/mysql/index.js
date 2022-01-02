@@ -17,12 +17,7 @@ module.exports = () => {
                 'mysql知识点&面试题总结.md',
                 'some-thoughts-on-database-storage-time.md',
                 'transaction-isolation-level.md',
-                '数据库-MySQL.md',
-                '',
-                '',
-                '',
-                '',
-                ''
+                '数据库-MySQL.md'
             ]
         }
     ]

@@ -1,7 +1,7 @@
 module.exports = () => {
     return [
         {
-            title: "",
+            title: "JVM一",
             collapsable: false,
             children: [
                 'Java性能调优工具之JDK命令行.md',
@@ -24,12 +24,7 @@ module.exports = () => {
                 'JVM类加载器的双亲委派模型.md',
                 'JVM逃逸分析.md',
                 '一个线程 OOM 后，其他线程还能运行吗？.md',
-                '编译JDK13.md',
-                '',
-                '',
-                '',
-                '',
-                ''
+                '编译JDK13.md'
             ]
         }
     ]

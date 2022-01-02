@@ -1,7 +1,7 @@
 module.exports = () => {
     return [
         {
-            title: "",
+            title: "算法",
             collapsable: false,
             children: [
                 'bytedance/backend.md',
@@ -43,14 +43,8 @@ module.exports = () => {
                 'alibaba/client.md',
                 'alibaba/frontend.md',
                 'alibaba/data.md',
-                'alibaba/test.md',
-                '',
-                '',
-                '',
-                '',
-                '',
-                '',
-                ''
+                'alibaba/test.md'
+
             ]
         }
     ]

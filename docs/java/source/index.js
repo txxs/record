@@ -1,7 +1,7 @@
 module.exports = () => {
     return [
         {
-            title: "",
+            title: "源码",
             collapsable: false,
             children: [
                 'AbstractQueuedSynchronizer原理解析.md',
@@ -16,13 +16,7 @@ module.exports = () => {
                 'ReentrantLock源码解析.md',
                 'ThreadLocal.md',
                 'Thread源码解析.md',
-                '【死磕JDK源码】ThreadPoolExecutor源码保姆级详解.md',
-                '',
-                '',
-                '',
-                '',
-                '',
-                ''
+                '【死磕JDK源码】ThreadPoolExecutor源码保姆级详解.md'
             ]
         }
     ]

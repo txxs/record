@@ -172,8 +172,8 @@ module.exports = {
       },
       {
         text: '更多', items: [
-          { text: '其他', link: '/design/other/' },
-          { text: '网络', link: '/design/network/' },
+          { text: '其他', link: '/other/' },
+          { text: '网络', link: '/network/' },
           { text: '本笔记介绍', link: '/introduce/' }
         ]
       }

@@ -10,19 +10,7 @@ module.exports = () => {
                 'MyBatis实战(〇)-Mybatis初始化机制详解.md',
                 'MyBatis实战(三)-二级缓存原理解析.md',
                 'MyBatis实战(二)-一级缓存原理解析.md',
-                'MyBatis缓存机制设计.md',
-                '',
-                '',
-                '',
-                '',
-                '',
-                '',
-                '',
-                '',
-                '',
-                '',
-                '',
-                ''
+                'MyBatis缓存机制设计.md'
             ]
         }
     ]
