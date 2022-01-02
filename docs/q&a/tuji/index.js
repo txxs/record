@@ -6,7 +6,7 @@ module.exports = () => {
             children: [
                 'MySQL分库分表.md',
                 '分布式事务解决方案.md',
-                '突破Java面试(02) - Redis如何通过读写分离来承载读请求QPS超过10万+？.md',
+                '突破Java面试(02) - Redis如何通过读写分离来承载读请求QPS超过10万.md',
                 '突破Java面试(06)-如何保证消息队列的高可用性.md',
                 '突破Java面试(8)-MQ的数据去哪了.md',
                 '突破Java面试(9)-如何保证消息队列的顺序性.md',

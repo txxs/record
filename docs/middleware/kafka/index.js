@@ -6,7 +6,7 @@ module.exports = () => {
             children: [
                 'Java 高性能的异步网络IO传输.md',
                 'Java高性能系统缓存的最佳实践.md',
-                'Kafka实战(1)-为何大厂都在使用Kafka消息引擎系统?.md',
+                'Kafka实战(1)-为何大厂都在使用Kafka消息引擎系统.md',
                 'Kafka实战(2)-Kafka消息模型核心概念.md',
                 'Kafka实战(3)-Kafka的自我定位.md',
                 'Kafka实战(4) -Kafka门派知多少.md',
