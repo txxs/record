@@ -6,7 +6,9 @@ module.exports = () => {
             children: [
                 '',
                 'ArrayList.md',
-                'HashMap.md'
+                'HashMap.md',
+                'Java基础-集合.md',
+                'List集合的坑.md'
             ]
         }
     ]
