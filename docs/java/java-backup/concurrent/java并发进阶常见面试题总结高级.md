@@ -1,9 +1,4 @@
----
-title:  Java 并发常见知识点&面试题总结（进阶篇）
-category: Java
-tag:
-  - Java并发
----
+
 
 ## 1.synchronized 关键字
 
@@ -410,7 +405,7 @@ static class Entry extends WeakReference<ThreadLocal<?>> {
 
 ## 4. 线程池
 
-### 4.1. 为什么要用线程池？
+### 4.1. 为什么要用线程池
 
 > **池化技术想必大家已经屡见不鲜了，线程池、数据库连接池、Http 连接池等等都是对这个思想的应用。池化技术的思想主要是为了减少每次获取资源的消耗，提高对资源的利用率。**
 
@@ -454,7 +449,7 @@ public interface Callable<V> {
 }
 ```
 
-### 4.3. 执行 execute()方法和 submit()方法的区别是什么呢？
+### 4.3. 执行 execute()方法和 submit()方法的区别是什么呢
 
 1. **`execute()`方法用于提交不需要返回值的任务，所以无法判断任务是否被线程池执行成功与否；**
 2. **`submit()`方法用于提交需要返回值的任务。线程池会返回一个 `Future` 类型的对象，通过这个 `Future` 对象可以判断任务是否执行成功**，并且可以通过 `Future` 的 `get()`方法来获取返回值，`get()`方法会阻塞当前线程直到任务完成，而使用 `get(long timeout，TimeUnit unit)`方法则会阻塞当前线程一段时间后立即返回，这时候有可能任务没有执行完。
@@ -768,7 +763,7 @@ public void execute(Runnable command) {
 
 ![JUC原子类概览](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-6/JUC原子类概览.png)
 
-### 5.2. JUC 包中的原子类是哪 4 类?
+### 5.2. JUC 包中的原子类是哪 4 类
 
 **基本类型**
 

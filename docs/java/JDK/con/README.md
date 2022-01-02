@@ -23,6 +23,6 @@
 - [使用CAS、FAA实现无锁编程.md](使用CAS、FAA实现无锁编程.md)
 - [可重入读写锁ReentrantReadWriteLock.md](可重入读写锁ReentrantReadWriteLock.md)
 - [并发编程框架Disruptor之高性能设计.md](并发编程框架Disruptor之高性能设计.md)
-- [异步调用为什么要复制线程上下文信息?.md](异步调用为什么要复制线程上下文信息?.md)
+- [异步调用为什么要复制线程上下文信息.md](异步调用为什么要复制线程上下文信息.md)
 - [由于不知道Java线程池的bug,某程序员叕被祭天.md]由于不知道Java线程池的bug,某程序员叕被祭天.md()
 - [锁的分类.md](锁的分类.md)
