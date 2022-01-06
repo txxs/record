@@ -156,7 +156,7 @@ public void fun1() {
  部门汇报：内容是...
 ```
 
-![](assets/markdown-img-paste-20181225231757405.png)
+![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20181225231757405.png)
 
 关于内部外部状态这个例子，让我有点懵逼，可能是这个例子太简单了，不太好阐述清楚；
 

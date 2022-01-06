@@ -56,7 +56,7 @@ public class Test {
 在线课程数量是：20
 ```
 
-![](assets/markdown-img-paste-2018082614551049.png)
+![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-2018082614551049.png)
 
 对于这个场景来说，boss 是不需要知道 Course 的，只要给 TeamLeader 下达指令，然后 TeamLeader 报告结果即可。
 
@@ -66,7 +66,7 @@ public class Test {
 
 ## 迪米特原则改造
 
-![](assets/markdown-img-paste-2018082614593442.png)
+![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-2018082614593442.png)
 
 只是把非朋友类逻辑移动到 TeamLeader 中了。
 

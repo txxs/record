@@ -6,7 +6,7 @@
 
 
 ### 结构和说明：
-![](assets/1.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/factorymethod1.jpg)
 
 * **Product：** 定义工厂方法所创建的对象的接口，也就是实际需要使用的对象的接口
 * **ConcreteProduct：** 具体的product接口的实现对象
@@ -135,7 +135,7 @@ public class Client {
 对于实现导出数据的业务功能对象，它需要创建exportFileApi的具体实例对象，但是它只知道ExportFileApi接口，而不知道其具体的实现。那该怎么办呢？
 
 ### 使用模式的解决方案
-![](assets/2.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/factorymethod2.jpg)
 
 * **ExportOperate ：** `使用api`，但是定义了一个`工厂方法`，把具体的实例实现延迟到了具体的子类，利用了继承，客户端使用，只需要创建对应的 operate 就成了
 * **ExportOperate ：** `只知道接口，不知道实现，扩展灵活`。如需要扩展另外一种xml的格式打印，ExportOperate 中不需要修改代码，就能实现功能
@@ -340,9 +340,9 @@ public class Client {
 
 ### 调用顺序示意图
 时序图就不画完整的返回虚线了，学java的都能看懂这个调用吧
-![](assets/3.png)
+![](https://txxs.github.io/pic/imocc/designpatternli/factorymethod3.png)
 
-![](assets/4.png)
+![](https://txxs.github.io/pic/imocc/designpatternli/factorymethod4.png)
 
 ### 工厂方法模式与Ioc/DI
 
@@ -382,15 +382,15 @@ public class Client {
 
 **没有Ioc/Di的时候，常规的A类使用C类示意图**
 
-![](assets/5.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/factorymethod5.jpg)
 
 **有了IOc/DI的时候，A类不再主动去创建C了**
 
-![](assets/6.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/factorymethod6.jpg)
 
 **而是被动等待，等待IOC/DI的容器获取一个C的实例，然后反向的注入到A类中**
 
-![](assets/7.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/factorymethod7.jpg)
 
 #### 思想
 
@@ -470,7 +470,7 @@ public class C2 implements C1{
 
 简单点说，假如有两个类层次结构，其中一个类层次中的每个类在另一个类层次中都有一个对应的类的结构，就被认为平行的类层次结构
 
-![](assets/8.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/factorymethod8.jpg)
 
 硬盘 --> 台式机希捷硬盘 --> 硬盘对象的行为  --> 台式机希捷硬盘的行为
 
@@ -482,7 +482,7 @@ public class C2 implements C1{
 
 这样的话，一个类的职责就过多了。难于扩展复用，如果需要加上电脑的属性，可以拆分成下面这样
 
-![](assets/9.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/factorymethod9.jpg)
 
 ```java
 /**
@@ -711,7 +711,7 @@ public class Client {
 
 依赖倒置原则告诉我们`“要依赖抽象”`，`不要依赖于具体类`，简单点说就是：不能让高层组件依赖于底层组件，而且不管高层组件还是底层组件，都应该依赖于抽象。（和面向接口编程差不多的意思，这里是面向抽象编程）
 
-![](assets/10.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/factorymethod10.jpg)
 
 虚线表示：Api接口是属于上层结构的。
 

@@ -177,7 +177,7 @@ public class CourseCatalog extends CatalogComponent {
 
 ```
 
-![](assets/markdown-img-paste-20181226223111118.png)
+![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20181226223111118.png)
 
 可以看到这个排版，是有层级的，而且是一个树形结构。把课程和目录都以相同的抽象操作；
 
@@ -257,7 +257,7 @@ org.apache.ibatis.scripting.xmltags.SqlNode
 
 一条 SQL 语句的解析，就有很多 node，实现类如下图
 
-![](assets/markdown-img-paste-20181226222527400.png)
+![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20181226222527400.png)
 
 通过 org.apache.ibatis.scripting.xmltags.MixedSqlNode 将多个 sqlNode 聚合成一个对象的，
 相当于练习代码中的目录类
@@ -285,7 +285,7 @@ SqlNode 这个接口在开源框架中是对组合模式描述得很清楚的一
 ## 学习源码方法之一
 通过查看类图：找到接口，然后右键->show implementations 就能显示所有的实现类，选中实现类后就会出现在类图中了
 
-![](assets/markdown-img-paste-20181226223417543.png)
+![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20181226223417543.png)
 
 如图，对于 sqlNode 的结构一幕了然，有一对多的，有不是一对多的，对于这些差异，也可以着重看一下
 

@@ -5,7 +5,7 @@
 为子系统中`一组接口`提供一个`一致的界面`，Facade模式定义了`一个高层接口`，这个接口使得这一子系统`更加容易使用`
 
 ### 结构和说明：
-![](assets/1.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/facade1.jpg)
 
 **界面：**从客户端来看待这个系统，能看到的东西
 **Facade ：** 定义子系统的多个模块对外的高层接口，通常需要调用内部多个模块，从而`把客户的请求代理给适当的子系统对象`。
@@ -17,24 +17,24 @@
 ## 体会外观模式
 ###  生活中的示列：组装电脑
 1. 完全自己组装
-![](assets/2.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/facade2.jpg)
 
 2. 找专业装机公司组装
-![](assets/3.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/facade3.jpg)
 
 ###  工具示例：代码生成工具
-![](assets/4.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/facade4.jpg)
 
 `问题：`如果现在客户端需要使用这个代码生成工具来生成需要的基础代码，该如何来实现呢？
 
 ###  不用模式解决方案
 
-![](assets/5.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/facade5.jpg)
 
 `存在的问题：`客户端为了使用生成代码的功能，需要与生成代码子系统内部的多个模块交互
 
 ### 使用模式解决方案
-![](assets/6.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/facade6.jpg)
 
 ```java
 public interface AModuleApi {
@@ -95,7 +95,7 @@ public class Client {
 
 2. 使用外观跟不使用外观有何变化？
 	Facade方便了客户端的调用、封装了系统内部的细节功能、实现功能的共享和复用
-![](assets/7.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/facade7.jpg)
 	`重点在于Facade的位置`，Facade属于红框中的一部分。所以facade是可以知道具体实现的。 而客户端确是不知道的
 
 3. 有外观，但是可以不使用
@@ -104,12 +104,12 @@ public class Client {
 	（对常用的进行一些包装，如果有特殊的需求，就使用第三点，直接调用具体的实现）
 
 5. 外观模式的调用顺序示意图
-![](assets/8.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/facade8.jpg)
 
 ### 外观模式的实现
 1. 把外观类当成一个辅助工具类实现
 2. facade可以实现为interface
-![](assets/9.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/facade9.jpg)
 
 3. Facade实现称为interface的附带好处
 	能够有选择性的暴露接口方法，尽量减少模块对 外提供的接口方法。

@@ -9,7 +9,7 @@
 
 ### 结构和说明
 
-![](assets/1.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/proxy1.jpg)
 
 **Proxy：**代理对象，通常具有如下功能：
 1. 实现与具体的目标对象一样的接口，这样就可以使用代理来代替具体的目标对象
@@ -202,7 +202,7 @@ public class Client {
 那么该怎么实现，才能既把多条用户数据 姓名显示出来，而又能节省内存空间，当然还要实现在客户想要看到更多数据的时候，能正确访问到数据呢？
 
 ### 使用模式的解决方案
-![](assets/2.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/proxy2.jpg)
 
 ```java
 /**
@@ -484,7 +484,7 @@ public class Client {
 
 6. 代理模式的调用顺序示意图
 
-![](assets/3.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/proxy3.jpg)
 
 ### 保护代理
 保护代理是一种`控制对原始对象访问`的代理，多用于对象应该有不同的访问权限的时候。保护代理会检查调用者是否具有请求所必须的访问权限，如果没有相应的权限，那么就不会调用目标对象，从而实现对目标对象的保护。

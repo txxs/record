@@ -244,7 +244,7 @@ public class SausageDecorator extends ABattercakeDecorator {
 可以看出来这个结构，装饰器也是被装饰者类型，但是它是持有被装饰者，
 这样就可以无限装饰。
 
-![](assets/markdown-img-paste-20181224160522632.png)
+![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20181224160522632.png)
 
 对于这里的抽象装饰类来说，没有抽象相关的成员也能完成功能，那么这里的抽象装饰类存在的意义不太大。
 
@@ -298,7 +298,7 @@ org.springframework.session.web.http.SessionRepositoryFilter.SessionRepositoryRe
 
 也是，看下面的类图
 
-![](assets/markdown-img-paste-20181224163402603.png)
+![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20181224163402603.png)
 
 适配器模式和装饰者模式有时候也统称包装模式
 
@@ -320,4 +320,4 @@ public class FifoCache implements Cache {
     this.size = 1024;
   }
 ```
-![](assets/markdown-img-paste-20181224164117293.png)
+![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20181224164117293.png)

@@ -9,7 +9,7 @@
 
 ### 结构和说明
 实际上就是一个职责分离的体系
-![](assets/1.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/mediator1.jpg)
 
 **Mediator：**中介者接口。在里面定义各个同事之间交互需要的方法，可以是公共的通讯方法，比如changed方法，大家都用，也可以是小范围的交互方法。
 **ConcreteMediator：**具体中介者实现对象。它需要了解并维护各个同事对象，并负责具体的协调同事对象的交互关系。
@@ -126,9 +126,9 @@ public class ConcreteColleagueB extends Colleague {
 ### 问题：如果没有主板
 
 如果电脑里面没有了主板，那么各个配件之间就必须自行相互交互，以互相传送数据，理论上说，基本上各个配件相互之间都存在交互数据的可能。
-![](assets/2.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/mediator2.jpg)
 画图表示的话。就是一团乱。
-![](assets/3.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/mediator3.jpg)
 有了主板，各个配件的交互完全通过主板来完成，每个配件都只需要和主板交互，而主板知道如何和所有的配件打交道，那就简单多了。
 
 ### 存在的问题（对象之间太耦合了）
@@ -151,7 +151,7 @@ public class ConcreteColleagueB extends Colleague {
 3. CPU处理完后，把数据分成了视频数据和音频数据，通知主板，它处理完了。
 4. 主板去得到CPU处理过后的数据，分别把数据交给显卡和声卡，，去显示出视频和发出声音
 
-![](assets/4.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/mediator4.jpg)
 当然这是一个持续的、不断重复的过程，从而形成不间断的视频和声音，具体的运行过程不再讨论之列，假设就有如上简单的交互关系就可以了，也就是说想看电影，把光盘放入光驱，光驱开始读盘，就可以看电影了
 
 这种实现的好处，同事类之间松散耦合了。比如：光驱只管读取数据，读完之后交给主板，由主板来协调对应的具体同事类去处理
@@ -418,7 +418,7 @@ public class Client {
 
 6. 中介者模式的调用顺序示意图
 
-![](assets/5.png)
+![](https://txxs.github.io/pic/imocc/designpatternli/mediator5.png)
 
 
 ### 广义中介者

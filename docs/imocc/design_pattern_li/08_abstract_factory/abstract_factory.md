@@ -5,7 +5,7 @@
 提供一个`创建一系列相关或相互依赖对象`的接口，而无需指定他们具体的类。
 
 ### 结构和说明
-![](assets/1.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/abstractfactory1.jpg)
 
 
 * **AbstractFactory：** 抽象工厂，定义创建一系列产品对象的操作接口
@@ -337,7 +337,7 @@ engineer.makeComputer(1,2);
 
 2. 每个装机的客户，会提出他们自己的具体装机方案，或则是选择已有的装机方案，相当于为抽象工厂提供了具体的子类，在这些具体的装机方案类里面，会创建具体的 cpu 和主板实现对象。
 
-![](assets/2.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/abstractfactory2.jpg)
 
 ```java
 /**
@@ -557,7 +557,7 @@ public class Client {
 
 5. 抽象工厂模式的调用顺序示意图
 
-  ![](assets/3.jpg)
+  ![](https://txxs.github.io/pic/imocc/designpatternli/abstractfactory3.jpg)
 
 ### 定义可扩展的工厂
 在前面的实例中，抽象工厂为每一种它能创建的产品对象都定义了相应的方法，比如创建 cpu 的方法和创建主板的方法等。
@@ -826,7 +826,7 @@ public class Client {
 
 4. 使用 Dao 的系统结构图
 
-  ![](assets/4.jpg)
+  ![](https://txxs.github.io/pic/imocc/designpatternli/abstractfactory4.jpg)
 
 
 ### DAO 和抽象工厂的关系
@@ -835,11 +835,11 @@ public class Client {
 
 ### DAO模式采用工厂方法模式来实现的策略
 
-![](assets/5.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/abstractfactory5.jpg)
 
 
 ### DAO 模式采用抽象工厂模式来实现的策略
-![](assets/6.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/abstractfactory6.jpg)
 
 ```java
 /**

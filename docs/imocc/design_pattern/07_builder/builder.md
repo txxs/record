@@ -152,7 +152,7 @@ public class Test {
 }
 ```
 
-![](assets/markdown-img-paste-20180830224506584.png)
+![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180830224506584.png)
 
 应用层代码是不需要知道创建的逻辑的，这里看起来其实就优点繁琐了，实际的业务可能会更繁琐复杂
 
@@ -250,7 +250,7 @@ public class Test {
 }
 ```
 
-![](assets/markdown-img-paste-20180830225910248.png)
+![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180830225910248.png)
 
 可以看到，通过流式构建者进行参数的选择，然后执行构建得到一个计算机
 

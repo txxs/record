@@ -12,7 +12,7 @@
 
 希望通过这门课程的学习，让大家真正学懂设计模式，并在面试中脱颖而出。
 
-![](assets/master.png)
+![](https://txxs.github.io/pic/imocc/designpattern/master.png)
 
 > 我自己使用jdk8.
 

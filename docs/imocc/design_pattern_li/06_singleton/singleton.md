@@ -7,7 +7,7 @@
 
 
 ## 结构和说明
-![](assets/1.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/singleton1.jpg)
 
 Singleton：负责创建 singleton 类自己的唯一实例，并提供一个 getInstance 的方法，让外部来访问这个类的唯一实例。
 
@@ -140,7 +140,7 @@ public class Singleton {
 ```
 
 ### 单例模式的调用顺序示意图
-![](assets/2.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/singleton2.jpg)
 
 ### 延迟加载的思想
 **什么是延迟加载呢？**
@@ -246,7 +246,7 @@ public class Singleton {
 
 	懒汉式：不加同步的懒汉式是`线程不安全`的
 
-	![](assets/3.jpg)
+	![](https://txxs.github.io/pic/imocc/designpatternli/singleton3.jpg)
 
 	恶汉式：是`线程安全`的，因为虚拟机保证了只会装载一次
 

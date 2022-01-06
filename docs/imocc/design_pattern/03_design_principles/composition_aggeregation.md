@@ -45,7 +45,7 @@ public class Test {
     }
 }
 ```
-![](assets/markdown-img-paste-20180826210352150.png)
+![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180826210352150.png)
 
 需求来了：增加了 Postgresql 数据库，要切换数据源怎么办？
 
@@ -101,6 +101,6 @@ public class Test {
 }
 ```
 
-![](assets/markdown-img-paste-2018082621124512.png)
+![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-2018082621124512.png)
 
 组合，一对一，强依赖。符合开闭原则，也符合里氏替换原则。随意替换数据源

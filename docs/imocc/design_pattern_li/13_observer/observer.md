@@ -6,7 +6,7 @@
 定义`对象间的一种一对多的依赖关系`，当`一个对象的状态`发生`改变时`，`所有依赖`于它的`对象`都`得到通知`并被自动更新。
 
 ### 结构和说明
-![](assets/1.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/observer1.jpg)
 
 **Subject：**目标对象，通常具有如下功能：
 
@@ -105,10 +105,10 @@ public class ConcreteObserver implements Observer {
 ## 体会观察者模式
 ### 订阅报纸的过程
 
-![](assets/2.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/observer2.jpg)
 
 在整个过程中，邮局只不过起到一个中专的作用，为了简单，我们去掉邮局，让订阅者直接和报社交互
-![](assets/3.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/observer3.jpg)
 
 ### 订阅报纸的问题
 在上述过程中，`订阅者在完成订阅后`，最关心的问题就是`何时能收到新出的报纸`。幸好在现实生活中，报纸都是定期出版，这样发放到订阅者手中也基本上有一个大致的时间范围，差不多到时间了，订阅者就会看看邮箱，查收新的报纸
@@ -132,7 +132,7 @@ public class ConcreteObserver implements Observer {
 
 ### 不用模式的解决方案：无
 ### 使用模式的解决方案
-![](assets/4.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/observer4.jpg)
 
 ```java
 /**
@@ -302,8 +302,8 @@ public class Client {
 7. 观察者模式的调用顺序示意图
 
 	在使用观察者模式时，会很明显的分成两个阶段，第一个阶段是准备阶段，也就是维护目标和观察者关系的阶段，这个阶段的调用顺序如图：
-![](assets/5.jpg)
-![](assets/6.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/observer5.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/observer6.jpg)
 
 8. 通知的顺序
 

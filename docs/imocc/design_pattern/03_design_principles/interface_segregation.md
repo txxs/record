@@ -84,7 +84,7 @@ public class Bird implements IFlyAnimalAction, IEatAnimalAction {
 }
 ```
 
-![](assets/markdown-img-paste-20180826141002886.png)
+![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180826141002886.png)
 
 这样就将行为给隔离开了。也不会有空实现方法了；
 

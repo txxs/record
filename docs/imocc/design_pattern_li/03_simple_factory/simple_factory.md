@@ -8,7 +8,7 @@
 
 ### 结构和说明
 
-![](assets/1.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/1.jpg)
 
 **APi：** 定义客户所需要的功能接口
 
@@ -90,7 +90,7 @@ public class Client {
 
 ### 不用模式的解决方案
 
-![](assets/2.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/2.jpg)
 
 ```java
 public interface Api {
@@ -124,7 +124,7 @@ public class Client {
 
 `理解这个问题的重点就在于理解简单工厂所处的位置。`
 
-![](assets/3.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/3.jpg)
 
 红框代表一个封装体，完全在红框中的为封装体内部的，工厂和接口暴露了一部分给外部。
 
@@ -148,7 +148,7 @@ public class Client {
 
 5. 简单工厂的调用顺序示意图
 
-  ![](assets/4.jpg)
+  ![](https://txxs.github.io/pic/imocc/designpatternli/4.jpg)
 
 6. 简单工厂命名的建议
 

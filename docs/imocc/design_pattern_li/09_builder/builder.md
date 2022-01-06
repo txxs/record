@@ -4,7 +4,7 @@
 将一个`复杂对象`的`构建`与它的`表示分离`，使得`同样的构建过程`可以`创建不同的表示`。
 
 ### 结构和说明
-![](assets/1.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/builder1.jpg)
 
 * **Builder**：生成器接口，定义创建一个 Product 对象所需的各个部件的操作。（表现,由具体的实现类来实现）
 * **ConcreteBuilder**：具体的生成器实现，实现各个部件的创建，并负责组装 Product 对象的各个部件，同时还提供一个让用户获取组装完成后的产品对象的方法。
@@ -309,7 +309,7 @@ public class Client {
 ❶：构建和表现 进行分离
 
 ### 使用模式的解决方案
-![](assets/2.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/builder2.jpg)
 
 数据对象就不粘贴了
 ```java
@@ -526,7 +526,7 @@ public class Client {
 
 4. 生成器模式的调用顺序示意图
 
-  ![](assets/3.jpg)
+  ![](https://txxs.github.io/pic/imocc/designpatternli/builder3.jpg)
 
 ### 生成器模式的实现
 

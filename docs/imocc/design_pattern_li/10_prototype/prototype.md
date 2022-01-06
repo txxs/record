@@ -8,7 +8,7 @@
 用原型实例指定创建对象的种类，并通过`拷贝`这些原型`创建新的对象`
 
 ### 结构和说明
-![](assets/1.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/prototype1.jpg)
 
 **Prototype：**声明一个克隆自身的接口，用来约束想要克隆自己的类，要求他们都要实现这里定义的克隆方法。
 **ConcretePrototype：**实现Prototype接口的类，这些类真正实现克隆自身的功能。
@@ -280,7 +280,7 @@ public class OrderClient {
 因此：上面的实现是不太好的，把上面的问题再抽象描述一下：已经有了某个对象实例后，如何能够快速简单地创建出更多的这种对象？？
 
 ### 使用模式的解决方案
-![](assets/2.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/prototype2.jpg)
 
 ```java
 /**
@@ -477,7 +477,7 @@ public class OrderClient {
 
 4. 原型模式的调用顺序示意图
 
-![](assets/3.jpg)
+![](https://txxs.github.io/pic/imocc/designpatternli/prototype3.jpg)
 
 
 ### Java中的克隆方法

@@ -28,7 +28,7 @@
 
 ## 产品登记结构与产品族
 
-![](assets/markdown-img-paste-20180829221321395.png)
+![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180829221321395.png)
 
 产品族：相同颜色的代表一个产品族。
 
@@ -38,7 +38,7 @@
 
 工厂方法是针对 产品等级结构，抽象工厂针对的是产品族
 
-![](assets/markdown-img-paste-2018082922284577.png)
+![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-2018082922284577.png)
 
 ----
 
@@ -103,11 +103,11 @@ public class Test {
 }
 ```
 
-![](assets/markdown-img-paste-20180829230746796.png)
+![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180829230746796.png)
 
 依赖关系就是下面这样
 
-![](assets/markdown-img-paste-20180829230222369.png)
+![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180829230222369.png)
 
 可以看到，客户端只依赖抽象工厂，然后获取一系列的产品，比如这里的 java 的产品
 
