@@ -58,7 +58,7 @@ you			*
 - segment：lucene 底层的 index 是分为多个 segment 的，每个 segment 都会存放部分数据
 - commit：将 buffer 的数据写入到 segment 中
 
-![](./assets/markdown-img-paste-20190120151200920.png)
+![](../../../../pic/imocc/elasticsearch-core/markdown-img-paste-20190120151200920.png)
 
 一个 document 的写入如上图流程：
 
@@ -80,7 +80,7 @@ you			*
 对于这个原理概念思路的东西，听一听就好了，至于怎么实现的，貌似所有书籍教程基本上都不会解说
 :::
 
-![](./assets/markdown-img-paste-20190120151937731.png)
+![](../../../../pic/imocc/elasticsearch-core/markdown-img-paste-20190120151937731.png)
 
 ## NRT 实现
 
@@ -98,7 +98,7 @@ you			*
 数据写入 os cache，并被打开供搜索的过程，叫做 refresh，默认是每隔 1秒 refresh 一次。
 也就是说，每隔一秒就会将 buffer 中的数据写入一个新的 index segment file，先写入 os cache 中。所以，es 是近实时的，数据写入到可以被搜索，默认是 1秒。
 
-![](./assets/markdown-img-paste-2019012015381449.png)
+![](../../../../pic/imocc/elasticsearch-core/markdown-img-paste-2019012015381449.png)
 
 ## refresh 间隔修改
 
@@ -132,13 +132,13 @@ PUT /my_index
     3. 一个 commit ponit 被写入磁盘，标明了所有的 index segment
     4. filesystem cache 中的所有 index segment file 缓存数据，被 fsync 强行刷到磁盘上
 
-![](./assets/markdown-img-paste-20190120155115281.png)
+![](../../../../pic/imocc/elasticsearch-core/markdown-img-paste-20190120155115281.png)
 
 ## 宕机后数据恢复流程
 
 基于 translog 和 commit point，如何进行数据恢复
 
-![](./assets/markdown-img-paste-20190120155716894.png)
+![](../../../../pic/imocc/elasticsearch-core/markdown-img-paste-20190120155716894.png)
 
 
 > flush 操作
@@ -174,7 +174,7 @@ PUT /my_index/_settings
 4. 将新的 segment 打开供搜索
 5. 将旧的 segment 删除
 
-![](./assets/markdown-img-paste-20190120160400697.png)
+![](../../../../pic/imocc/elasticsearch-core/markdown-img-paste-20190120160400697.png)
 
 ## `_optimize`
 

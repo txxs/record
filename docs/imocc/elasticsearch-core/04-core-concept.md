@@ -30,7 +30,7 @@ elasticsearch 基于 lucene，隐藏复杂性，提供简单易用的 restful ap
 
     基于es执行搜索和分析可以达到秒级
 
-    ![](./assets/markdown-img-paste-20181231121955923.png)
+    ![](../../../../pic/imocc/elasticsearch-core/markdown-img-paste-20181231121955923.png)
 
 2. Cluster 集群
 
@@ -116,7 +116,7 @@ elasticsearch 基于 lucene，隐藏复杂性，提供简单易用的 restful ap
 
     默认每个索引 10 个 shard，5个 primary shard，5个 replica shard，最小的高可用配置，是 2台 服务器。
 
-![](./assets/markdown-img-paste-20181231122031193.png)
+![](../../../../pic/imocc/elasticsearch-core/markdown-img-paste-20181231122031193.png)
 
 
 ## 核心概念 vs 数据库核心概念

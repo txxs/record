@@ -40,7 +40,7 @@ post /index/type/id/_update
 ### 图解 partial update 实现原理以及其优点
 partial update，看起来很方便的操作，实际内部的原理是什么样子的，然后它的优点是什么
 
-![](./assets/markdown-img-paste-20190106152319579.png)
+![](https://txxs.github.io/pic/imocc/elasticsearch-core/markdown-img-paste-20190106152319579.png)
 
 **要明白在原理上与全量替换方法几乎一致：**
 
@@ -458,7 +458,7 @@ GET _tasks?detailed=true&actions=*byquery
 
 ## 图解乐观锁并发控制原理与操作
 
-![](./assets/markdown-img-paste-20190106162031154.png)
+![](https://txxs.github.io/pic/imocc/elasticsearch-core/markdown-img-paste-20190106162031154.png)
 
 1. partial update 内置乐观锁并发控制
 2. retry_on_conflict

@@ -9,7 +9,7 @@
 
 这个流程就叫 query phase （查询阶段）
 
-![](./assets/markdown-img-paste-20190113215801435.png)
+![](https://txxs.github.io/pic/imocc/elasticsearch-core/markdown-img-paste-20190113215801435.png)
 
 ::: tip
 这个过程还是经典的做法，有一个节点来做聚合，所以就会有单节点聚合占用资源过多的情况发生

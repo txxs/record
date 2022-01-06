@@ -59,7 +59,7 @@ PUT /test_index/test_type/1
 
 下面图解不类似的情况下出现的性能问题
 
-![](./assets/markdown-img-paste-20190101155232556.png)
+![](https://txxs.github.io/pic/imocc/elasticsearch-core/markdown-img-paste-20190101155232556.png)
 
 ## `_type元数据`
 

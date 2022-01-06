@@ -24,7 +24,7 @@
 
 如：test 的 pri=2，rep=2；那么将产生 2个 primary shard 和 4个 replica shard
 
-![](./assets/markdown-img-paste-20190101140921494.png)
+![](../../../../pic/imocc/elasticsearch-core/markdown-img-paste-20190101140921494.png)
 
 ## 图解单 node 环境下创建 index 是什么样子的
 
@@ -66,6 +66,6 @@ yellow open   .kibana    id1SV_oGSjyGosKxeJApww   1   1          1            0 
 
 也就是说，一共会产生 18 个 shard；这里只有 9个，还有 9个没有被分配
 
-![](./assets/markdown-img-paste-20190101142046399.png)
+![](../../../../pic/imocc/elasticsearch-core/markdown-img-paste-20190101142046399.png)
 
 而 pri 的数据却可以再同一台机器上，这里创建的 3个 pri 都会在这个 node 上存在

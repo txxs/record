@@ -70,7 +70,7 @@ PUT my_index/my_type/4
 
 什么叫某个矩形地址位置范围呢？下图给出说明
 
-![](assets/markdown-img-paste-20190312212641701.png)
+![](https://txxs.github.io/pic/imocc/elasticsearch-senior/markdown-img-paste-20190312212641701.png)
 
 左上角坐标和右下角坐标可以绘制出一个矩形，这个矩形覆盖的范围就是要搜索的数据坐标
 

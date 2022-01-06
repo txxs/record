@@ -19,4 +19,4 @@
 
 ## 初步图解一下简单的搜索原理
 
-![](./assets/markdown-img-paste-20190112163551615.png)
+![](https://txxs.github.io/pic/imocc/elasticsearch-core/markdown-img-paste-20190112163551615.png)

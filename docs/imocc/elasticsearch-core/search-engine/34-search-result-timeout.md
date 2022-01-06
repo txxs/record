@@ -74,7 +74,7 @@ timeout 机制：指定每个 shard 就只能在 timeout 时间范围内，将�
 
 确保一次搜索请求可以再用户指定 timeout 时长内完成。为一些时间敏感的搜索应用提供良好的支持
 
-![](./assets/markdown-img-paste-20190106231310300.png)
+![](https://txxs.github.io/pic/imocc/elasticsearch-core/markdown-img-paste-20190106231310300.png)
 
 简单说：在指定超时时长内返回结果，这个结果可能不是所有结果；
 

@@ -1,5 +1,5 @@
 # geo_distance 实战搜索距离当前位置一定范围内的酒店
-![](assets/markdown-img-paste-20190312214618391.png)
+![](https://txxs.github.io/pic/imocc/elasticsearch-senior/markdown-img-paste-20190312214618391.png)
 
 之前讲解了在某一个范围内搜索，应用场景比如：上面的图，我指定 北京理工大学 和 新街口 这两个点，
 要搜索这个范围内的酒店

@@ -21,4 +21,4 @@ master 写入后，slave 还没有来得及同步，这个时候流量被转发�
 :::
 
 
-![](./assets/markdown-img-paste-20190106221035878.png)
+![](https://txxs.github.io/pic/imocc/elasticsearch-core/markdown-img-paste-20190106221035878.png)

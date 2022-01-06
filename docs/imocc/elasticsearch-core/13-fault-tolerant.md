@@ -2,7 +2,7 @@
 
 图解 Elasticsearch 容错机制：master 选举，replica 容错，数据恢复
 
-![](./assets/markdown-img-paste-20190101152512479.png)
+![](../../../../pic/imocc/elasticsearch-core/markdown-img-paste-20190101152512479.png)
 
 还是使用上一章的例子，9 shard，3 node 来说明 es 的一个最基本的容错机制
 

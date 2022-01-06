@@ -29,7 +29,7 @@ IT系统的搜索：OA软件，办公自动化软件，会议管理，日程管�
 
 数据库来处理的话，不考虑数据库的全文索引什么的，假如商品有 1000万 个，那么基本上就要查找 1000 万次，且每次都需要加载商品的名称字段的整段字符串，并挨个寻找。
 
-![](assets/markdown-img-paste-20181230231539116.png)
+![](https://txxs.github.io/pic/imocc/elasticsearch-core/markdown-img-paste-20181230231539116.png)
 
 1. 比方说，每条记录的指定字段的文本，可能会很长，比如说“商品描述”字段的长度，有长达数千个，甚至数万个字符，这个时候，每次都要对每条记录的所有文本进行扫描，懒判断说，你包不包含我指定的这个关键词（比如说“牙膏”）
 
@@ -49,7 +49,7 @@ IT系统的搜索：OA软件，办公自动化软件，会议管理，日程管�
 ## 全文索检索和倒排索引简述
 简单说就如下图
 
-![](assets/markdown-img-paste-20181230232157115.png)
+![](https://txxs.github.io/pic/imocc/elasticsearch-core/markdown-img-paste-20181230232157115.png)
 
 场景：搜索“生化机”（有可能是手抖打错了，本来是生化危机），但是期望需要出来右侧的 4条 记录
 
@@ -62,7 +62,7 @@ IT系统的搜索：OA软件，办公自动化软件，会议管理，日程管�
 
 ## 什么是Elasticsearch？
 
-![](assets/markdown-img-paste-20181230234230899.png)
+![](https://txxs.github.io/pic/imocc/elasticsearch-core/markdown-img-paste-20181230234230899.png)
 
 我们可以使用 lucene 开发搜索服务，部署在一台机器上面，但是无法解决当数据量增大的时候出现的问题（图上右侧）。那么 elasticsearch 就是解决这种场景的工具；
 

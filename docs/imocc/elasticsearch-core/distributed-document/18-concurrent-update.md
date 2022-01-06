@@ -17,14 +17,14 @@
 
 为什么会超卖，这个就太基础了，不记录笔记了；
 
-![](./assets/markdown-img-paste-20190106131626576.png)
+![](https://txxs.github.io/pic/imocc/elasticsearch-core/markdown-img-paste-20190106131626576.png)
 
 ## 深度图解剖析悲观锁与乐观锁两种并发控制方案
 
 ### 悲观锁
 悲观锁：通过锁定某一条数据（独占），进行解决并发控制
 
-![](./assets/markdown-img-paste-20190106134912696.png)
+![](https://txxs.github.io/pic/imocc/elasticsearch-core/markdown-img-paste-20190106134912696.png)
 
 ### 乐观锁
 
@@ -40,7 +40,7 @@
 关于条件更新：是需要依赖数据库的按指定条件更新的功能，而不是自行在程序中处理
 :::
 
-![](./assets/markdown-img-paste-20190106135147969.png)
+![](https://txxs.github.io/pic/imocc/elasticsearch-core/markdown-img-paste-20190106135147969.png)
 
 ### 优缺点
 
@@ -74,7 +74,7 @@
 
 es 内部是基于 `_version` 版本号控制。
 
-![](./assets/markdown-img-paste-20190106141919670.png)
+![](https://txxs.github.io/pic/imocc/elasticsearch-core/markdown-img-paste-20190106141919670.png)
 
 对于上图流程总结：
 

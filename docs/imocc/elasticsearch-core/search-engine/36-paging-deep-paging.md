@@ -50,4 +50,4 @@ GET /test_index/test_type/_search?from=6&size=3
 这资源耗费是很大的，就如同 mycat 中的分页是一个原理，需要协调节点来聚合并返回结果，但是这个 es 是怎么解决的呢?
 
 
-![](./assets/markdown-img-paste-20190112170019724.png)
+![](https://txxs.github.io/pic/imocc/elasticsearch-core/markdown-img-paste-20190112170019724.png)

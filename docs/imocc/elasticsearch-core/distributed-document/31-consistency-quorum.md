@@ -63,4 +63,4 @@ green  open   .kibana    id1SV_oGSjyGosKxeJApww   1   1          1            0 
 ```
 :::
 
-![](./assets/markdown-img-paste-20190106213737933.png)
+![](https://txxs.github.io/pic/imocc/elasticsearch-core/markdown-img-paste-20190106213737933.png)

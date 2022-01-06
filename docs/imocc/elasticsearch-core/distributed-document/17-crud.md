@@ -21,7 +21,7 @@ document 的全量替换、强制创建以及图解 lazy delete 机制
 
     然后新增我们给定的一个 document，当我们创建越来越多的 document 的时候，es 会在适当的时机在后台自动删除标记为 deleted 的 document
 
-![](./assets/markdown-img-paste-2019010223394843.png)
+![](https://txxs.github.io/pic/imocc/elasticsearch-core/markdown-img-paste-2019010223394843.png)
 
 ## document 的强制创建
 

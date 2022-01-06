@@ -35,4 +35,4 @@
 
 路由算法限制，更改之后，那么就有部分旧数据的路由错误
 
-![](./assets/markdown-img-paste-20190106174604653.png)
+![](https://txxs.github.io/pic/imocc/elasticsearch-core/markdown-img-paste-20190106174604653.png)

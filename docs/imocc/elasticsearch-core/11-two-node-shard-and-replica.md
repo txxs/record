@@ -31,4 +31,4 @@ green  open   .kibana    id1SV_oGSjyGosKxeJApww   1   1          1            0 
 
 ```
 
-![](./assets/markdown-img-paste-2019010114333074.png)
+![](../../../../pic/imocc/elasticsearch-core/markdown-img-paste-2019010114333074.png)
