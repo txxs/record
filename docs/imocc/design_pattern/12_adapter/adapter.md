@@ -116,7 +116,7 @@ public void fun1() {
 
 类图里面是以继承为主的，所有被称为类适配器
 
-![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20181225205246329.png)
+![](https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20181225205246329.png)
 
 
 ### 对象适配器
@@ -145,7 +145,7 @@ public class Adapter implements Target {
 
 也就是上面说的，在使用 set 的时候希望像使用 arraylst 一样的感觉
 
-![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-2018122520593555.png)
+![](https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-2018122520593555.png)
 
 
 ### 场景

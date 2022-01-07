@@ -85,17 +85,17 @@ public class TestDemo {
 ```
 
 ## 多线程 debug 教程
-![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180927220918119.png)
+![](https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180927220918119.png)
 
 先打上断点，然后在断点上右键，即可出现上图中的内容；选择 thread 方式，并设置为默认
 
-![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180927222127272.png)
+![](https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180927222127272.png)
 
 看上图，因为现在在 main 线程中，使用 debug 停留了。
 
 切换到 线程0 中，可以看到一直阻塞在这里的。这样一来多线程调试就更方便了
 
-![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180927222157927.png)
+![](https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180927222157927.png)
 
 
 ## 懒汉式 - synchronized
@@ -153,9 +153,9 @@ public class LazyDoubleCheckSingleton {
 
 也就是下图中描述的情况；
 
-![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180927215712289.png)
+![](https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180927215712289.png)
 
-![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-2018092722525135.png)
+![](https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-2018092722525135.png)
 
 要解决这个问题：
 1. volatile 变量：
@@ -234,7 +234,7 @@ StaticInnerClassSingleton.print();
 
 原理是：
 
-![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180927215721962.png)
+![](https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180927215721962.png)
 
 在类初始化的时候 jvm 会获取一个初始化锁，保证多个线程对同一个对象的初始化安全问题
 

@@ -144,7 +144,7 @@ public class GiftExchangeService {
 }
 ```
 
-![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20181224101020749.png)
+![](https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20181224101020749.png)
 
 可以看到外观服务组合了三个子系统（菱形）
 
@@ -164,7 +164,7 @@ PointsGift{name='iphone8'} 进入物流系统
 PointsGift{name='iphone8'} 返回的订单号 6666
 ```
 
-![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20181224101851441.png)
+![](https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20181224101851441.png)
 
 如果上图，客户端其实是不需要创建子系统的，在这里不是分布式的服务所以能看到客户端创建了子系统；
 抛开这个因素，可以看到，客户端只和外观类交互了；
@@ -172,7 +172,7 @@ PointsGift{name='iphone8'} 返回的订单号 6666
 来模拟下上面所说的，让外观类去创建子系统服务，就如下图了，下图才是外观类使用的一个标准类图：
 客户端只和外观类交互
 
-![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20181224102433912.png)
+![](https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20181224102433912.png)
 
 对于不经常变化的来说，直接使用实体外观类，如果对于经常变化的，就需要使用抽象外观类了
 

@@ -62,7 +62,7 @@ UML2.2中一共定义了14种图示，分类如下
 * 实现-继承：is a关系，扩展目的，不虚，很结实
 * 虚线-实现：虚线代表”虚”，无实体
 
-![](../https://txxs.github.io/pic/imocc/designpattern/snipaste_20180822_235544.png)
+![](https://txxs.github.io/pic/imocc/designpattern/snipaste_20180822_235544.png)
 
 
 ### 实线-关联 | 虚线-依赖
@@ -74,9 +74,9 @@ UML2.2中一共定义了14种图示，分类如下
   - 表示一个类对象和另一个类对象有关联
   - 通常是一个类中有另一个类对象作为属性
 
-![  ](../https://txxs.github.io/pic/imocc/designpattern/snipaste_20180823_000148.png)
+![  ](https://txxs.github.io/pic/imocc/designpattern/snipaste_20180823_000148.png)
 
-![  ](../https://txxs.github.io/pic/imocc/designpattern/snipaste_20180823_000356.png)
+![  ](https://txxs.github.io/pic/imocc/designpattern/snipaste_20180823_000356.png)
 
 ### 空心菱形-聚合 | 实心菱形-组合
 
@@ -85,9 +85,9 @@ UML2.2中一共定义了14种图示，分类如下
 * 聚合 ： 代表空器皿里可以放很多相同的东西，聚在一起（箭头方向所指的类）
 * 组合 ： 代表满器皿里已经有实体结构的存在，生死与共
 
-![  ](../https://txxs.github.io/pic/imocc/designpattern/snipaste_20180823_001317.png)
+![  ](https://txxs.github.io/pic/imocc/designpattern/snipaste_20180823_001317.png)
 
-![  ](../https://txxs.github.io/pic/imocc/designpattern/snipaste_20180823_001432.png)
+![  ](https://txxs.github.io/pic/imocc/designpattern/snipaste_20180823_001432.png)
 
 * 空心菱形-聚合
   - 整体和局部的关系，两者有着独立的生命周期，是 has a 的关系
@@ -119,6 +119,6 @@ Sequence Diagram ：是显示对象之间交互的图，这些对象是按时间
 * 控制焦点（Focus of control）
 * 消息（Message）等
 
-![](../https://txxs.github.io/pic/imocc/designpattern/snipaste_20180823_003712.png)
+![](https://txxs.github.io/pic/imocc/designpattern/snipaste_20180823_003712.png)
 
 三个对象实例之间的调用关系；强调生命线，代表时间的流逝，从上往下，注意调用之间的箭头的高低，表示了时间的流逝

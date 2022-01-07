@@ -84,7 +84,7 @@ public class Test {
 }
 ```
 
-![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180824000236410.png)
+![](https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180824000236410.png)
 
 注意看现在的类图结构：JavaCourse 继承了 ICourse （实心箭头）
 
@@ -159,7 +159,7 @@ public static void main(String[] args) {
 ID:96，课程名称：设计模式，价格：311.20000000000005, 原价：389.0
 ```
 
-![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180824001852665.png)
+![](https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180824001852665.png)
 
 看现在的类图：这里没有严格按照我们之前讲解的图形来演示，而是有颜色和标识，反正差别不大，更容易看明白
 

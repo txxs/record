@@ -101,7 +101,7 @@ public static void main(String[] args) {
 }
 ```
 
-![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180826105433811.png)
+![](https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180826105433811.png)
 
 上面这个示例：
 

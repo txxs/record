@@ -96,7 +96,7 @@ WalkBird walkBird = new WalkBird();
 walkBird.mainMoveMode("鸵鸟");
 ```
 
-![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180826131725881.png)
+![](https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180826131725881.png)
 
 ## 接口级别
 ```java
@@ -159,7 +159,7 @@ public class CourseImpl implements ICourseContent, ICourseManager {
 }
 ```
 
-![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180826133031296.png)
+![](https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180826133031296.png)
 
 由具体的实现选择来组合实现哪些功能（也可以只实现其中一个），
 

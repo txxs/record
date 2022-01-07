@@ -27,7 +27,7 @@
 
 ## Coding
 
-![](../https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180828232609685.png)
+![](https://txxs.github.io/pic/imocc/designpattern/markdown-img-paste-20180828232609685.png)
 
 代码很简单，改造之前简单工厂为工厂方法。创建了抽象类 VideoFactory，具体的课程由专门的课程工厂去创建实例
 
