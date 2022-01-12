@@ -39,7 +39,8 @@ module.exports = () => {
         '10_facade/facade.md',
         '11_decorator/decorator.md',
         '12_adapter/adapter.md',
-        '13_flyweight/flyweight.md'
+        '13_flyweight/flyweight.md',
+        '设计模式区别.md'
       ]
     }
   ]
