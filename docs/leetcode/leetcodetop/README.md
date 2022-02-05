@@ -19,8 +19,6 @@
 
 :speech_balloon:面试交流：若想加入大厂面试真题交流群，请在公众号「一个搬砖的胖子」后台回复「加群」，添加我的微信后即被拉群
 
-![公众号：一个搬砖的胖子](img/wechat.png)
-
 
 :information_source:数据来源：牛客网笔经面经，题目的原始文章链接已放在[issues](https://github.com/afatcoder/LeetcodeTop/issues)中
 
