@@ -13,6 +13,18 @@ module.exports = () => {
             ]
         },
         {
+            title: "字节跳动last",
+            collapsable: true,
+            children: [
+                'bytedance/latest/backend.md',
+                'bytedance/latest/algorithm.md',
+                'bytedance/latest/client.md',
+                'bytedance/latest/frontend.md',
+                'bytedance/latest/test.md',
+                'bytedance/latest/data.md'
+            ]
+        },
+        {
             title: "腾讯",
             collapsable: true,
             children: [
@@ -56,6 +68,18 @@ module.exports = () => {
                 'alibaba/frontend.md',
                 'alibaba/data.md',
                 'alibaba/test.md'
+            ]
+        },
+        {
+            title: "shopee",
+            collapsable: true,
+            children: [
+                'shopee/backend.md',
+                'shopee/algorithm.md',
+                'shopee/client.md',
+                'shopee/frontend.md',
+                'shopee/data.md',
+                'shopee/test.md'
             ]
         },
         {

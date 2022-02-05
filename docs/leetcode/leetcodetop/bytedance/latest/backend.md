@@ -1,27 +1,27 @@
 # 字节跳动（牛客07.07~07.18的高频题目统计）
 
-| 公司   | 岗位 | 题目                    | 次数 |
+| 公司   | 岗位 | 题目                    | 次数 |题目地址|题解|
 |------|----|-----------------------|----|
-| 字节跳动 | 后端 | 234\. 回文链表            | 4  |
-| 字节跳动 | 后端 | 141\. 环形链表            | 3  |
-| 字节跳动 | 后端 | 25\. K 个一组翻转链表        | 3  |
-| 字节跳动 | 后端 | 206\. 反转链表            | 3  |
-| 字节跳动 | 后端 | 103\. 二叉树的锯齿形层次遍历     | 3  |
-| 字节跳动 | 后端 | 2\. 两数相加              | 3  |
-| 字节跳动 | 后端 | 15\. 三数之和             | 2  |
-| 字节跳动 | 后端 | 69\. x 的平方根           | 2  |
-| 字节跳动 | 后端 | 3\. 无重复字符的最长子串        | 2  |
-| 字节跳动 | 后端 | 20\. 有效的括号            | 2  |
-| 字节跳动 | 后端 | 143\. 重排链表            | 2  |
-| 字节跳动 | 后端 | 162\. 寻找峰值            | 2  |
-| 字节跳动 | 后端 | 215\. 数组中的第K个最大元素     | 2  |
-| 字节跳动 | 后端 | 124\. 二叉树中的最大路径和      | 2  |
-| 字节跳动 | 后端 | 105\. 从前序与中序遍历序列构造二叉树 | 2  |
-| 字节跳动 | 后端 | 113\. 路径总和 II         | 2  |
-| 字节跳动 | 后端 | 160\. 相交链表            | 2  |
-| 字节跳动 | 后端 | 114\. 二叉树展开为链表        | 2  |
-| 字节跳动 | 后端 | 146\. LRU缓存机制         | 2  |
-| 字节跳动 | 后端 | 128\. 最长连续序列          | 2  |
+| 字节跳动 | 后端 | 234\. 回文链表            | 4  |https://leetcode-cn.com/problems/palindrome-linked-list/| |
+| 字节跳动 | 后端 | 141\. 环形链表            | 3  |https://leetcode-cn.com/problems/linked-list-cycle/| |
+| 字节跳动 | 后端 | 25\. K 个一组翻转链表        | 3  |https://leetcode-cn.com/problems/reverse-nodes-in-k-group/| |
+| 字节跳动 | 后端 | 206\. 反转链表            | 3  |https://leetcode-cn.com/problems/reverse-linked-list/| |
+| 字节跳动 | 后端 | 103\. 二叉树的锯齿形层次遍历     | 3  |https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/| |
+| 字节跳动 | 后端 | 2\. 两数相加              | 3  |https://leetcode-cn.com/problems/add-two-numbers/| |
+| 字节跳动 | 后端 | 15\. 三数之和             | 2  |https://leetcode-cn.com/problems/3sum/| |
+| 字节跳动 | 后端 | 69\. x 的平方根           | 2  |https://leetcode-cn.com/problems/sqrtx/| |
+| 字节跳动 | 后端 | 3\. 无重复字符的最长子串        | 2  |https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/| |
+| 字节跳动 | 后端 | 20\. 有效的括号            | 2  |https://leetcode-cn.com/problems/valid-parentheses/| |
+| 字节跳动 | 后端 | 143\. 重排链表            | 2  |https://leetcode-cn.com/problems/reorder-list/| |
+| 字节跳动 | 后端 | 162\. 寻找峰值            | 2  |https://leetcode-cn.com/problems/find-peak-element/| |
+| 字节跳动 | 后端 | 215\. 数组中的第K个最大元素     | 2  |https://leetcode-cn.com/problems/kth-largest-element-in-an-array/| |
+| 字节跳动 | 后端 | 124\. 二叉树中的最大路径和      | 2  |https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/| |
+| 字节跳动 | 后端 | 105\. 从前序与中序遍历序列构造二叉树 | 2  |https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/| |
+| 字节跳动 | 后端 | 113\. 路径总和 II         | 2  |https://leetcode-cn.com/problems/path-sum-ii/| |
+| 字节跳动 | 后端 | 160\. 相交链表            | 2  |https://leetcode-cn.com/problems/intersection-of-two-linked-lists/|https://programmercarl.com/%E9%9D%A2%E8%AF%95%E9%A2%9802.07.%E9%93%BE%E8%A1%A8%E7%9B%B8%E4%BA%A4.html |
+| 字节跳动 | 后端 | 114\. 二叉树展开为链表        | 2  |https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/| |
+| 字节跳动 | 后端 | 146\. LRU缓存机制         | 2  |https://leetcode-cn.com/problems/lru-cache/| |
+| 字节跳动 | 后端 | 128\. 最长连续序列          | 2  |https://leetcode-cn.com/problems/longest-consecutive-sequence/| |
 
 建议大家优先把高频题目刷完
 
