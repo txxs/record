@@ -20,8 +20,7 @@ module.exports = () => {
                 'bytedance/latest/algorithm.md',
                 'bytedance/latest/client.md',
                 'bytedance/latest/frontend.md',
-                'bytedance/latest/test.md',
-                'bytedance/latest/data.md'
+                'bytedance/latest/test.md'
             ]
         },
         {
