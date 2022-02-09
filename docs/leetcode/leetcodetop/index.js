@@ -1,6 +1,13 @@
 module.exports = () => {
     return [
         {
+            title: "基础重要",
+            collapsable: false,
+            children: [
+                'basic/basic.md'
+            ]
+        },
+        {
             title: "字节跳动",
             collapsable: true,
             children: [
