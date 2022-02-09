@@ -12,16 +12,16 @@
 | 字节跳动 | 后端 | 69\. x 的平方根           | 2  |[](https://leetcode-cn.com/problems/sqrtx/)|[](https://leetcode-cn.com/problems/sqrtx/solution/x-de-ping-fang-gen-by-leetcode-solution/) |
 | 字节跳动 | 后端 | 3\. 无重复字符的最长子串        | 2  |[](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)|[](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/solution/) |
 | 字节跳动 | 后端 | 20\. 有效的括号            | 2  |[](https://leetcode-cn.com/problems/valid-parentheses/)| [](https://programmercarl.com/0020.%E6%9C%89%E6%95%88%E7%9A%84%E6%8B%AC%E5%8F%B7.html#%E8%BF%9B%E5%85%A5%E6%AD%A3%E9%A2%98)|
-| 字节跳动 | 后端 | 143\. 重排链表            | 2  |[](https://leetcode-cn.com/problems/reorder-list/)| |
+| 字节跳动 | 后端 | 143\. 重排链表            | 2  |[](https://leetcode-cn.com/problems/reorder-list/)|[记住思路，熟悉操作](https://leetcode-cn.com/problems/reorder-list/solution/javatong-su-yi-dong-jie-fa-by-crazypokerk/) |
 | 字节跳动 | 后端 | 162\. 寻找峰值            | 2  |[](https://leetcode-cn.com/problems/find-peak-element/)|[不错的思路](https://leetcode-cn.com/problems/find-peak-element/solution/hua-jie-suan-fa-162-xun-zhao-feng-zhi-by-guanpengc/) |
 | 字节跳动 | 后端 | 215\. 数组中的第K个最大元素     | 2  |[](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)|[](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/solution/partitionfen-er-zhi-zhi-you-xian-dui-lie-java-dai-/) |
 | 字节跳动 | 后端 | 124\. 二叉树中的最大路径和      | 2  |[](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)|[](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/solution/er-cha-shu-zhong-de-zui-da-lu-jing-he-by-leetcode-/) |
-| 字节跳动 | 后端 | 105\. 从前序与中序遍历序列构造二叉树 | 2  |[](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)| |
+| 字节跳动 | 后端 | 105\. 从前序与中序遍历序列构造二叉树 | 2  |[](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)| [要看](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/solution/cong-qian-xu-yu-zhong-xu-bian-li-xu-lie-gou-zao-9/)|
 | 字节跳动 | 后端 | 113\. 路径总和 II         | 2  |[](https://leetcode-cn.com/problems/path-sum-ii/)|[](https://leetcode-cn.com/problems/path-sum-ii/solution/lu-jing-zong-he-ii-by-leetcode-solution/) |
 | 字节跳动 | 后端 | 160\. 相交链表            | 2  |[](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)|[](https://programmercarl.com/%E9%9D%A2%E8%AF%95%E9%A2%9802.07.%E9%93%BE%E8%A1%A8%E7%9B%B8%E4%BA%A4.html) |
 | 字节跳动 | 后端 | 114\. 二叉树展开为链表        | 2  |[](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/)|[难](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/solution/xiang-xi-tong-su-de-si-lu-fen-xi-duo-jie-fa-by--26/) |
-| 字节跳动 | 后端 | 146\. LRU缓存机制         | 2  |[](https://leetcode-cn.com/problems/lru-cache/)| |
-| 字节跳动 | 后端 | 128\. 最长连续序列          | 2  |[](https://leetcode-cn.com/problems/longest-consecutive-sequence/)| |
+| 字节跳动 | 后端 | 146\. LRU缓存机制         | 2  |[](https://leetcode-cn.com/problems/lru-cache/)|[这个要掌握](https://leetcode-cn.com/problems/lru-cache/solution/san-chong-fang-fa-dai-ni-shou-si-lrusuan-fa-javaba/)|
+| 字节跳动 | 后端 | 128\. 最长连续序列          | 2  |[](https://leetcode-cn.com/problems/longest-consecutive-sequence/)|[不错的思路](https://leetcode-cn.com/problems/longest-consecutive-sequence/solution/jian-dan-yi-dong-tu-jie-ha-xi-by-sevente-lcvl/) |
 
 建议大家优先把高频题目刷完
 
