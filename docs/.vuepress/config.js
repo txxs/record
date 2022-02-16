@@ -49,6 +49,7 @@ const middlewazkSc = require('../middleware/zk')
 const networkSc = require('../network')
 
 const otherSc = require('../other')
+const importantSc = require('../important')
 
 const qainterviewSc = require('../q&a/interview')
 const qaselfSc = require('../q&a/self')
@@ -172,9 +173,11 @@ module.exports = {
       },
       {
         text: '更多', items: [
+          { text: '重要入口', link: '/important/' },
           { text: '其他', link: '/other/' },
           { text: '网络', link: '/network/' },
           { text: '本笔记介绍', link: '/introduce/' }
+
         ]
       }
     ],
@@ -230,6 +233,7 @@ module.exports = {
       '/network/': networkSc(),
 
       '/other/': otherSc(),
+      '/important/': importantSc(),
 
       '/q&a/interview/': qainterviewSc(),
       '/q&a/self/': qaselfSc(),
