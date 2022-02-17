@@ -3,7 +3,7 @@
 |题目|出现次数|链接|解答|
 |-|-|-|-|
 |146. LRU缓存机制|32|[](https://leetcode-cn.com/problems/lru-cache)|  |
-|206. 反转链表|30|[](https://leetcode-cn.com/problems/reverse-linked-list)|  |
+|206. 反转链表|30|[](https://leetcode-cn.com/problems/reverse-linked-list)| [](https://leetcode-cn.com/problems/reverse-linked-list/solution/fan-zhuan-lian-biao-by-leetcode-solution-d1k2/)) |
 |补充题4. 手撕快速排序|24|[](https://leetcode-cn.com/problems/sort-an-array)|  |
 |21. 合并两个有序链表|18|[](https://leetcode-cn.com/problems/merge-two-sorted-lists)|  |
 |470. 用 Rand7() 实现 Rand10()|15|[](https://leetcode-cn.com/problems/implement-rand10-using-rand7)|  |
