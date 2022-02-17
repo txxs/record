@@ -9,7 +9,8 @@ module.exports = () => {
                 '剑指offer部分编程题.md',
                 'leetcode算法题分享(字符串).md',
                 'leetcode经典算法题分享(哈希表).md',
-                '八种经典排序算法.md'
+                '八种经典排序算法.md',
+                '基本题目套路.md'
             ]
         }
     ]

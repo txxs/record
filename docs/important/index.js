@@ -4,7 +4,7 @@ module.exports = () => {
             title: "重要",
             collapsable: false,
             children: [
-                'README.md'
+                'important.md'
             ]
         }
     ]
