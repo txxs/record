@@ -4,11 +4,11 @@
 |-|-|-|-|
 |146. LRU缓存机制|32|[](https://leetcode-cn.com/problems/lru-cache)|  |
 |206. 反转链表|30|[](https://leetcode-cn.com/problems/reverse-linked-list)| [](https://leetcode-cn.com/problems/reverse-linked-list/solution/fan-zhuan-lian-biao-by-leetcode-solution-d1k2/)) |
-|补充题4. 手撕快速排序|24|[](https://leetcode-cn.com/problems/sort-an-array)|  |
-|21. 合并两个有序链表|18|[](https://leetcode-cn.com/problems/merge-two-sorted-lists)|  |
+|补充题4. 手撕快速排序|24|[](https://leetcode-cn.com/problems/sort-an-array)| [](https://txxs.github.io/mark/algo/%E6%8E%92%E5%BA%8F.html)  |
+|21. 合并两个有序链表|18|[](https://leetcode-cn.com/problems/merge-two-sorted-lists)| [登陆后看](https://leetcode-cn.com/problems/merge-two-sorted-lists/submissions/)) |
 |470. 用 Rand7() 实现 Rand10()|15|[](https://leetcode-cn.com/problems/implement-rand10-using-rand7)|  |
-|234. 回文链表|14|[](https://leetcode-cn.com/problems/palindrome-linked-list)|  |
-|8. 字符串转换整数 (atoi)|13|[](https://leetcode-cn.com/problems/string-to-integer-atoi)|  |
+|234. 回文链表|14|[](https://leetcode-cn.com/problems/palindrome-linked-list)| [两个思路都要掌握](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0234.%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8.html#java)) |
+|8. 字符串转换整数 (atoi)|13|[](https://leetcode-cn.com/problems/string-to-integer-atoi)| [里边思路很好](https://leetcode-cn.com/problems/string-to-integer-atoi/submissions/)) |
 |53. 最大子序和|12|[](https://leetcode-cn.com/problems/maximum-subarray)|  |
 |460. LFU缓存|12|[](https://leetcode-cn.com/problems/lfu-cache)|  |
 |215. 数组中的第K个最大元素|10|[](https://leetcode-cn.com/problems/kth-largest-element-in-an-array)|  |
