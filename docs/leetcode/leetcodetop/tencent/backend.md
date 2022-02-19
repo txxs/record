@@ -3,19 +3,19 @@
 |题目|出现次数|链接|解答|
 |-|-|-|-|
 |146. LRU缓存机制|32|[](https://leetcode-cn.com/problems/lru-cache)|  |
-|206. 反转链表|30|[](https://leetcode-cn.com/problems/reverse-linked-list)| [](https://leetcode-cn.com/problems/reverse-linked-list/solution/fan-zhuan-lian-biao-by-leetcode-solution-d1k2/)) |
+|206. 反转链表|30|[](https://leetcode-cn.com/problems/reverse-linked-list)| [](https://leetcode-cn.com/problems/reverse-linked-list/solution/fan-zhuan-lian-biao-by-leetcode-solution-d1k2/) |
 |补充题4. 手撕快速排序|24|[](https://leetcode-cn.com/problems/sort-an-array)| [](https://txxs.github.io/mark/algo/%E6%8E%92%E5%BA%8F.html)  |
-|21. 合并两个有序链表|18|[](https://leetcode-cn.com/problems/merge-two-sorted-lists)| [登陆后看](https://leetcode-cn.com/problems/merge-two-sorted-lists/submissions/)) |
+|21. 合并两个有序链表|18|[](https://leetcode-cn.com/problems/merge-two-sorted-lists)| [登陆后看](https://leetcode-cn.com/problems/merge-two-sorted-lists/submissions/) |
 |470. 用 Rand7() 实现 Rand10()|15|[](https://leetcode-cn.com/problems/implement-rand10-using-rand7)|  |
-|234. 回文链表|14|[](https://leetcode-cn.com/problems/palindrome-linked-list)| [两个思路都要掌握](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0234.%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8.html#java)) |
-|8. 字符串转换整数 (atoi)|13|[](https://leetcode-cn.com/problems/string-to-integer-atoi)| [里边思路很好](https://leetcode-cn.com/problems/string-to-integer-atoi/submissions/)) |
-|53. 最大子序和|12|[](https://leetcode-cn.com/problems/maximum-subarray)|  |
+|234. 回文链表|14|[](https://leetcode-cn.com/problems/palindrome-linked-list)| [两个思路都要掌握](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0234.%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8.html#java) |
+|8. 字符串转换整数 (atoi)|13|[](https://leetcode-cn.com/problems/string-to-integer-atoi)| [里边思路很好](https://leetcode-cn.com/problems/string-to-integer-atoi/submissions/) |
+|53. 最大子序和|12|[](https://leetcode-cn.com/problems/maximum-subarray)| [动态规划的题目](https://leetcode-cn.com/problems/maximum-subarray/submissions/) |
 |460. LFU缓存|12|[](https://leetcode-cn.com/problems/lfu-cache)|  |
-|215. 数组中的第K个最大元素|10|[](https://leetcode-cn.com/problems/kth-largest-element-in-an-array)|  |
+|215. 数组中的第K个最大元素|10|[](https://leetcode-cn.com/problems/kth-largest-element-in-an-array)| [头条有](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/) |
 |153. 寻找旋转排序数组中的最小值|10|[](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array)|  |
-|3. 无重复字符的最长子串|10|[](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters)|  |
-|704. 二分查找|10|[](https://leetcode-cn.com/problems/binary-search)|  |
-|415. 字符串相加|10|[](https://leetcode-cn.com/problems/add-strings)|  |
+|3. 无重复字符的最长子串|10|[](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters)| [头条有](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) |
+|704. 二分查找|10|[](https://leetcode-cn.com/problems/binary-search)| [一下想不起来怎么写](https://leetcode-cn.com/problems/binary-search/solution/er-fen-cha-zhao-by-leetcode-solution-f0xw/) |
+|415. 字符串相加|10|[](https://leetcode-cn.com/problems/add-strings)| [](https://www.bbsmax.com/A/rV57w8bE5P/) |
 |补充题6. 手撕堆排序|9|[](https://leetcode-cn.com/problems/sort-an-array)|  |
 |剑指 Offer 54. 二叉搜索树的第k大节点|9|[](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof)|  |
 |160. 相交链表|8|[](https://leetcode-cn.com/problems/intersection-of-two-linked-lists)|  |
