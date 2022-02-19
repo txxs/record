@@ -4,25 +4,25 @@
 |题目|出现次数|链接|题解|
 |-|-|-|-|
 |25. K 个一组翻转链表|60|[](https://leetcode-cn.com/problems/reverse-nodes-in-k-group)|  |
-|3. 无重复字符的最长子串|57|[](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters)|  |
-|146. LRU缓存机制|53|[](https://leetcode-cn.com/problems/lru-cache)|  |
-|215. 数组中的第K个最大元素|52|[](https://leetcode-cn.com/problems/kth-largest-element-in-an-array)|  |
-|206. 反转链表|51|[](https://leetcode-cn.com/problems/reverse-linked-list)|  |
-|103. 二叉树的锯齿形层次遍历|47|[](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal)|  |
-|15. 三数之和|42|[](https://leetcode-cn.com/problems/3sum)|  |
-|121. 买卖股票的最佳时机|41|[](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock)|  |
-|160. 相交链表|32|[](https://leetcode-cn.com/problems/intersection-of-two-linked-lists)|  |
-|236. 二叉树的最近公共祖先|32|[](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree)|  |
-|42. 接雨水|31|[](https://leetcode-cn.com/problems/trapping-rain-water)|  |
+|3. 无重复字符的最长子串|57|[](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters)| [自己写出](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) |
+|146. LRU缓存机制|53|[](https://leetcode-cn.com/problems/lru-cache)| [这个很关键，多次出现](https://leetcode-cn.com/problems/lru-cache/submissions/) |
+|215. 数组中的第K个最大元素|52|[](https://leetcode-cn.com/problems/kth-largest-element-in-an-array)| [思路要记一下](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/) |
+|206. 反转链表|51|[](https://leetcode-cn.com/problems/reverse-linked-list)| [十分基础](https://leetcode-cn.com/problems/reverse-linked-list/) |
+|103. 二叉树的锯齿形层次遍历|47|[](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal)| [这个也写了，但是忘记了](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/) |
+|15. 三数之和|42|[](https://leetcode-cn.com/problems/3sum)| [重复出现的](https://leetcode-cn.com/problems/3sum/) |
+|121. 买卖股票的最佳时机|41|[](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock)| [贪心算法，要好好看](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0121.%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA.html#%E5%85%B6%E4%BB%96%E8%AF%AD%E8%A8%80%E7%89%88%E6%9C%AC)  |
+|160. 相交链表|32|[](https://leetcode-cn.com/problems/intersection-of-two-linked-lists)|  [自己写出，思路不错](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)|
+|236. 二叉树的最近公共祖先|32|[](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree)| [没有想出来](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0236.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88.html#java) |
+|42. 接雨水|31|[](https://leetcode-cn.com/problems/trapping-rain-water)| [多次出现，还不会做](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0042.%E6%8E%A5%E9%9B%A8%E6%B0%B4.html#%E5%8F%8C%E6%8C%87%E9%92%88%E8%A7%A3%E6%B3%95)) |
 |33. 搜索旋转排序数组|27|[](https://leetcode-cn.com/problems/search-in-rotated-sorted-array)|  |
 |31. 下一个排列|27|[](https://leetcode-cn.com/problems/next-permutation)|  |
-|199. 二叉树的右视图|24|[](https://leetcode-cn.com/problems/binary-tree-right-side-view)|  |
+|199. 二叉树的右视图|24|[](https://leetcode-cn.com/problems/binary-tree-right-side-view)| [层次遍历的思路](https://leetcode-cn.com/problems/binary-tree-right-side-view/solution/jian-dan-bfsdfs-bi-xu-miao-dong-by-sweetiee/)) |
 |54. 螺旋矩阵|24|[](https://leetcode-cn.com/problems/spiral-matrix)|  |
-|143. 重排链表|24|[](https://leetcode-cn.com/problems/reorder-list)|  |
-|23. 合并K个排序链表|23|[](https://leetcode-cn.com/problems/merge-k-sorted-lists)|  |
-|21. 合并两个有序链表|22|[](https://leetcode-cn.com/problems/merge-two-sorted-lists)|  |
-|300. 最长上升子序列|21|[](https://leetcode-cn.com/problems/longest-increasing-subsequence)|  |
-|69. x 的平方根|20|[](https://leetcode-cn.com/problems/sqrtx)|  |
+|143. 重排链表|24|[](https://leetcode-cn.com/problems/reorder-list)| [这个也多次出现](https://leetcode-cn.com/problems/reorder-list/) |
+|23. 合并K个排序链表|23|[](https://leetcode-cn.com/problems/merge-k-sorted-lists)| [两两进行合并，思路不错](https://leetcode-cn.com/problems/merge-k-sorted-lists/solution/he-bing-kge-pai-xu-lian-biao-by-leetcode-solutio-2/) |
+|21. 合并两个有序链表|22|[](https://leetcode-cn.com/problems/merge-two-sorted-lists)| [这个多次出现](https://leetcode-cn.com/problems/merge-two-sorted-lists/) |
+|300. 最长上升子序列|21|[](https://leetcode-cn.com/problems/longest-increasing-subsequence)| [重复出现，动态规划](https://leetcode-cn.com/problems/longest-increasing-subsequence/) |
+|69. x 的平方根|20|[](https://leetcode-cn.com/problems/sqrtx)| [已经做出，但是有细节](https://leetcode-cn.com/problems/sqrtx/) |
 |92. 反转链表 II|20|[](https://leetcode-cn.com/problems/reverse-linked-list-ii)|  |
 |105. 从前序与中序遍历序列构造二叉树|19|[](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal)|  |
 |1. 两数之和|19|[](https://leetcode-cn.com/problems/two-sum)|  |
