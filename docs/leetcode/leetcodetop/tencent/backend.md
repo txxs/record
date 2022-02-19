@@ -17,22 +17,22 @@
 |704. 二分查找|10|[](https://leetcode-cn.com/problems/binary-search)| [一下想不起来怎么写](https://leetcode-cn.com/problems/binary-search/solution/er-fen-cha-zhao-by-leetcode-solution-f0xw/) |
 |415. 字符串相加|10|[](https://leetcode-cn.com/problems/add-strings)| [](https://www.bbsmax.com/A/rV57w8bE5P/) |
 |补充题6. 手撕堆排序|9|[](https://leetcode-cn.com/problems/sort-an-array)|  |
-|剑指 Offer 54. 二叉搜索树的第k大节点|9|[](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof)|  |
-|160. 相交链表|8|[](https://leetcode-cn.com/problems/intersection-of-two-linked-lists)|  |
-|141. 环形链表|8|[](https://leetcode-cn.com/problems/linked-list-cycle)|  |
-|151. 翻转字符串里的单词|8|[](https://leetcode-cn.com/problems/reverse-words-in-a-string)|  |
+|剑指 Offer 54. 二叉搜索树的第k大节点|9|[](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof)| [中序遍历的性质](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/solution/mian-shi-ti-54-er-cha-sou-suo-shu-de-di-k-da-jie-d/) |
+|160. 相交链表|8|[](https://leetcode-cn.com/problems/intersection-of-two-linked-lists)|  [链表相交了最后一个一定是对其的](https://programmercarl.com/%E9%9D%A2%E8%AF%95%E9%A2%9802.07.%E9%93%BE%E8%A1%A8%E7%9B%B8%E4%BA%A4.html#%E6%80%9D%E8%B7%AF) |
+|141. 环形链表|8|[](https://leetcode-cn.com/problems/linked-list-cycle)|  [字节里的](https://leetcode-cn.com/problems/linked-list-cycle/)|
+|151. 翻转字符串里的单词|8|[](https://leetcode-cn.com/problems/reverse-words-in-a-string)| [这里有标准解法](https://leetcode-cn.com/problems/reverse-words-in-a-string/solution/java-zi-fu-chuan-de-duo-chong-cao-zuo-xi-epov/) |
 |4. 寻找两个正序数组的中位数|7|[](https://leetcode-cn.com/problems/median-of-two-sorted-arrays)|  |
-|42. 接雨水|7|[](https://leetcode-cn.com/problems/trapping-rain-water)|  |
-|102. 二叉树的层序遍历|7|[](https://leetcode-cn.com/problems/binary-tree-level-order-traversal)|  |
-|144. 二叉树的前序遍历|7|[](https://leetcode-cn.com/problems/binary-tree-preorder-traversal)|  |
-|300. 最长上升子序列|6|[](https://leetcode-cn.com/problems/longest-increasing-subsequence)|  |
-|110. 平衡二叉树|6|[](https://leetcode-cn.com/problems/balanced-binary-tree)|  |
-|2. 两数相加|6|[](https://leetcode-cn.com/problems/add-two-numbers)|  |
-|70. 爬楼梯|6|[](https://leetcode-cn.com/problems/climbing-stairs)|  |
-|213. 打家劫舍 II|6|[](https://leetcode-cn.com/problems/house-robber-ii)|  |
-|5. 最长回文子串|6|[](https://leetcode-cn.com/problems/longest-palindromic-substring)|  |
-|494. 目标和|6|[](https://leetcode-cn.com/problems/target-sum)|  |
-|15. 三数之和|6|[](https://leetcode-cn.com/problems/3sum)|  |
+|42. 接雨水|7|[](https://leetcode-cn.com/problems/trapping-rain-water)| [还未好好看](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0042.%E6%8E%A5%E9%9B%A8%E6%B0%B4.html) |
+|102. 二叉树的层序遍历|7|[](https://leetcode-cn.com/problems/binary-tree-level-order-traversal)|[一定背熟熟的](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0102.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%B1%82%E5%BA%8F%E9%81%8D%E5%8E%86.html)  |
+|144. 二叉树的前序遍历|7|[](https://leetcode-cn.com/problems/binary-tree-preorder-traversal)| [一定要背熟](https://txxs.github.io/record/leetcode/daimasuixiang/problems/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86.html) |
+|300. 最长上升子序列|6|[](https://leetcode-cn.com/problems/longest-increasing-subsequence)| [动态规划](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0300.%E6%9C%80%E9%95%BF%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97.html#%E6%80%9D%E8%B7%AF) |
+|110. 平衡二叉树|6|[](https://leetcode-cn.com/problems/balanced-binary-tree)| [这个也很基础](https://leetcode-cn.com/problems/balanced-binary-tree/solution/zi-ding-xiang-xia-he-zi-di-xiang-shang-by-powcai/) |
+|2. 两数相加|6|[](https://leetcode-cn.com/problems/add-two-numbers)| [字节包含](https://leetcode-cn.com/problems/add-two-numbers/)) |
+|70. 爬楼梯|6|[](https://leetcode-cn.com/problems/climbing-stairs)| [动态规划](https://leetcode-cn.com/problems/climbing-stairs/submissions/)) |
+|213. 打家劫舍 II|6|[](https://leetcode-cn.com/problems/house-robber-ii)| [还未看](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0213.%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8DII.html#%E6%80%9D%E8%B7%AF) |
+|5. 最长回文子串|6|[](https://leetcode-cn.com/problems/longest-palindromic-substring)| [未做，有难度的动态规划](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0516.%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E5%BA%8F%E5%88%97.html#%E6%80%9D%E8%B7%AF)) |
+|494. 目标和|6|[](https://leetcode-cn.com/problems/target-sum)| [未做，有难度的动态规划](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0494.%E7%9B%AE%E6%A0%87%E5%92%8C.html#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92)) |
+|15. 三数之和|6|[](https://leetcode-cn.com/problems/3sum)| [字节题目](https://leetcode-cn.com/problems/3sum/)) |
 |1. 两数之和|5|[](https://leetcode-cn.com/problems/two-sum)|  |
 |239. 滑动窗口最大值|5|[](https://leetcode-cn.com/problems/sliding-window-maximum)|  |
 |136. 只出现一次的数字|5|[](https://leetcode-cn.com/problems/single-number)|  |
