@@ -13,10 +13,10 @@
 |121. 买卖股票的最佳时机|41|[](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock)| [贪心算法，要好好看](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0121.%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA.html#%E5%85%B6%E4%BB%96%E8%AF%AD%E8%A8%80%E7%89%88%E6%9C%AC)  |
 |160. 相交链表|32|[](https://leetcode-cn.com/problems/intersection-of-two-linked-lists)|  [自己写出，思路不错](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)|
 |236. 二叉树的最近公共祖先|32|[](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree)| [没有想出来](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0236.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88.html#java) |
-|42. 接雨水|31|[](https://leetcode-cn.com/problems/trapping-rain-water)| [多次出现，还不会做](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0042.%E6%8E%A5%E9%9B%A8%E6%B0%B4.html#%E5%8F%8C%E6%8C%87%E9%92%88%E8%A7%A3%E6%B3%95)) |
+|42. 接雨水|31|[](https://leetcode-cn.com/problems/trapping-rain-water)| [多次出现，还不会做](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0042.%E6%8E%A5%E9%9B%A8%E6%B0%B4.html#%E5%8F%8C%E6%8C%87%E9%92%88%E8%A7%A3%E6%B3%95) |
 |33. 搜索旋转排序数组|27|[](https://leetcode-cn.com/problems/search-in-rotated-sorted-array)|  |
 |31. 下一个排列|27|[](https://leetcode-cn.com/problems/next-permutation)|  |
-|199. 二叉树的右视图|24|[](https://leetcode-cn.com/problems/binary-tree-right-side-view)| [层次遍历的思路](https://leetcode-cn.com/problems/binary-tree-right-side-view/solution/jian-dan-bfsdfs-bi-xu-miao-dong-by-sweetiee/)) |
+|199. 二叉树的右视图|24|[](https://leetcode-cn.com/problems/binary-tree-right-side-view)| [层次遍历的思路](https://leetcode-cn.com/problems/binary-tree-right-side-view/solution/jian-dan-bfsdfs-bi-xu-miao-dong-by-sweetiee/) |
 |54. 螺旋矩阵|24|[](https://leetcode-cn.com/problems/spiral-matrix)|  |
 |143. 重排链表|24|[](https://leetcode-cn.com/problems/reorder-list)| [这个也多次出现](https://leetcode-cn.com/problems/reorder-list/) |
 |23. 合并K个排序链表|23|[](https://leetcode-cn.com/problems/merge-k-sorted-lists)| [两两进行合并，思路不错](https://leetcode-cn.com/problems/merge-k-sorted-lists/solution/he-bing-kge-pai-xu-lian-biao-by-leetcode-solutio-2/) |
@@ -24,25 +24,25 @@
 |300. 最长上升子序列|21|[](https://leetcode-cn.com/problems/longest-increasing-subsequence)| [重复出现，动态规划](https://leetcode-cn.com/problems/longest-increasing-subsequence/) |
 |69. x 的平方根|20|[](https://leetcode-cn.com/problems/sqrtx)| [已经做出，但是有细节](https://leetcode-cn.com/problems/sqrtx/) |
 |92. 反转链表 II|20|[](https://leetcode-cn.com/problems/reverse-linked-list-ii)|  |
-|105. 从前序与中序遍历序列构造二叉树|19|[](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal)|  |
-|1. 两数之和|19|[](https://leetcode-cn.com/problems/two-sum)|  |
-|124. 二叉树中的最大路径和|18|[](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum)|  |
-|200. 岛屿数量|18|[](https://leetcode-cn.com/problems/number-of-islands)|  |
-|41. 缺失的第一个正数|17|[](https://leetcode-cn.com/problems/first-missing-positive)|  |
-|101. 对称二叉树|16|[](https://leetcode-cn.com/problems/symmetric-tree)|  |
-|56. 合并区间|16|[](https://leetcode-cn.com/problems/merge-intervals)|  |
-|415. 字符串相加|16|[](https://leetcode-cn.com/problems/add-strings)|  |
-|155. 最小栈|16|[](https://leetcode-cn.com/problems/min-stack)|  |
-|46. 全排列|16|[](https://leetcode-cn.com/problems/permutations)|  |
+|105. 从前序与中序遍历序列构造二叉树|19|[](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal)| [多次出现](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)  |
+|1. 两数之和|19|[](https://leetcode-cn.com/problems/two-sum)| [还是不会](https://leetcode-cn.com/problems/two-sum/solution/java-qing-xi-jie-shi-ha-xi-biao-si-lu-by-z8g7/) |
+|124. 二叉树中的最大路径和|18|[](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum)| [多次出现](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/) |
+|200. 岛屿数量|18|[](https://leetcode-cn.com/problems/number-of-islands)| [这个是很好的思路，好好学](https://leetcode-cn.com/problems/number-of-islands/solution/number-of-islands-shen-du-you-xian-bian-li-dfs-or-/) |
+|41. 缺失的第一个正数|17|[](https://leetcode-cn.com/problems/first-missing-positive)| [这个题目很好](https://leetcode-cn.com/problems/first-missing-positive/solution/41-que-shi-de-di-yi-ge-zheng-shu-yuan-di-wdcs/)  |
+|101. 对称二叉树|16|[](https://leetcode-cn.com/problems/symmetric-tree)| [递归的思路一定要掌握](https://leetcode-cn.com/problems/symmetric-tree/solution/dui-cheng-er-cha-shu-by-leetcode-solution/) |
+|56. 合并区间|16|[](https://leetcode-cn.com/problems/merge-intervals)| [排序函数要掌握](https://leetcode-cn.com/problems/merge-intervals/solution/56-he-bing-qu-jian-jian-dan-yi-dong-liao-uxbo/) |
+|415. 字符串相加|16|[](https://leetcode-cn.com/problems/add-strings)| [多次出现](https://leetcode-cn.com/problems/add-strings/) |
+|155. 最小栈|16|[](https://leetcode-cn.com/problems/min-stack)| [关键是最小值](https://leetcode-cn.com/problems/min-stack/solution/shi-yong-fu-zhu-zhan-tong-bu-he-bu-tong-bu-python-/) |
+|46. 全排列|16|[](https://leetcode-cn.com/problems/permutations)| [回朔题目](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0046.%E5%85%A8%E6%8E%92%E5%88%97.html#java) |
 |76. 最小覆盖子串|16|[](https://leetcode-cn.com/problems/minimum-window-substring)|  |
 |补充题1. 排序奇升偶降链表|16|[](https://mp.weixin.qq.com/s/0WVa2wIAeG0nYnVndZiEXQ)|  |
-|141. 环形链表|14|[](https://leetcode-cn.com/problems/linked-list-cycle)|  |
+|141. 环形链表|14|[](https://leetcode-cn.com/problems/linked-list-cycle)| [多次出现](https://leetcode-cn.com/problems/linked-list-cycle/) |
 |221. 最大正方形|14|[](https://leetcode-cn.com/problems/maximal-square)|  |
-|20. 有效的括号|14|[](https://leetcode-cn.com/problems/valid-parentheses)|  |
-|98. 验证二叉搜索树|14|[](https://leetcode-cn.com/problems/validate-binary-search-tree)|  |
-|39. 组合总和|14|[](https://leetcode-cn.com/problems/combination-sum)|  |
-|102. 二叉树的层序遍历|13|[](https://leetcode-cn.com/problems/binary-tree-level-order-traversal)|  |
-|53. 最大子序和|13|[](https://leetcode-cn.com/problems/maximum-subarray)|  |
+|20. 有效的括号|14|[](https://leetcode-cn.com/problems/valid-parentheses)| [简单但是易错](https://leetcode-cn.com/problems/valid-parentheses/) |
+|98. 验证二叉搜索树|14|[](https://leetcode-cn.com/problems/validate-binary-search-tree)| [递归呀](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0098.%E9%AA%8C%E8%AF%81%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91.html#%E8%BF%AD%E4%BB%A3%E6%B3%95) |
+|39. 组合总和|14|[](https://leetcode-cn.com/problems/combination-sum)| [回朔题目，很好](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0039.%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8C.html#%E5%89%AA%E6%9E%9D%E4%BC%98%E5%8C%96) |
+|102. 二叉树的层序遍历|13|[](https://leetcode-cn.com/problems/binary-tree-level-order-traversal)| [多次出现](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/) |
+|53. 最大子序和|13|[](https://leetcode-cn.com/problems/maximum-subarray)| [动态规划，多次出现](https://leetcode-cn.com/problems/maximum-subarray/) |
 |322. 零钱兑换|13|[](https://leetcode-cn.com/problems/coin-change)|  |
 |162. 寻找峰值|13|[](https://leetcode-cn.com/problems/find-peak-element)|  |
 |122. 买卖股票的最佳时机 II|13|[](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii)|  |
@@ -50,7 +50,7 @@
 |48. 旋转图像|13|[](https://leetcode-cn.com/problems/rotate-image)|  |
 |470. 用 Rand7() 实现 Rand10()|13|[](https://leetcode-cn.com/problems/implement-rand10-using-rand7)|  |
 |补充题2. 圆环回原点问题|13|[](https://mp.weixin.qq.com/s/NZPaFsFrTybO3K3s7p7EVg)|  |
-|234. 回文链表|12|[](https://leetcode-cn.com/problems/palindrome-linked-list)|  |
+|234. 回文链表|12|[](https://leetcode-cn.com/problems/palindrome-linked-list)| [多次出现](https://leetcode-cn.com/problems/palindrome-linked-list/) |
 |518. 零钱兑换 II|12|[](https://leetcode-cn.com/problems/coin-change-2)|  |
 |88. 合并两个有序数组|12|[](https://leetcode-cn.com/problems/merge-sorted-array)|  |
 |2. 两数相加|12|[](https://leetcode-cn.com/problems/add-two-numbers)|  |
