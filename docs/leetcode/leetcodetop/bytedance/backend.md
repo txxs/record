@@ -3,7 +3,7 @@
 
 |题目|出现次数|链接|题解|
 |-|-|-|-|
-|25. K 个一组翻转链表|60|[](https://leetcode-cn.com/problems/reverse-nodes-in-k-group)|  |
+|25. K 个一组翻转链表|60|[](https://leetcode-cn.com/problems/reverse-nodes-in-k-group)| [很关键](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/solution/k-ge-yi-zu-fan-zhuan-lian-biao-by-leetcode-solutio/) |
 |3. 无重复字符的最长子串|57|[](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters)| [自己写出](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) |
 |146. LRU缓存机制|53|[](https://leetcode-cn.com/problems/lru-cache)| [这个很关键，多次出现](https://leetcode-cn.com/problems/lru-cache/submissions/) |
 |215. 数组中的第K个最大元素|52|[](https://leetcode-cn.com/problems/kth-largest-element-in-an-array)| [思路要记一下](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/) |
