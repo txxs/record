@@ -46,7 +46,7 @@
 |322. 零钱兑换|13|[](https://leetcode-cn.com/problems/coin-change)| [还不会](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0322.%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2.html#%E6%80%9D%E8%B7%AF) |
 |162. 寻找峰值|13|[](https://leetcode-cn.com/problems/find-peak-element)| [多次出现，爬山，二分思路](https://leetcode-cn.com/problems/find-peak-element/solution/hua-jie-suan-fa-162-xun-zhao-feng-zhi-by-guanpengc/) |
 |122. 买卖股票的最佳时机 II|13|[](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii)|  |
-|142. 环形链表 II|13|[](https://leetcode-cn.com/problems/linked-list-cycle-ii)|  |
+|142. 环形链表 II|13|[](https://leetcode-cn.com/problems/linked-list-cycle-ii)| [这里边有数学算法](https://leetcode-cn.com/problems/linked-list-cycle-ii/solution/linked-list-cycle-ii-kuai-man-zhi-zhen-shuang-zhi-/) |
 |48. 旋转图像|13|[](https://leetcode-cn.com/problems/rotate-image)|  |
 |470. 用 Rand7() 实现 Rand10()|13|[](https://leetcode-cn.com/problems/implement-rand10-using-rand7)| [一种算法思路](https://leetcode-cn.com/problems/implement-rand10-using-rand7/solution/xiang-xi-si-lu-ji-you-hua-si-lu-fen-xi-zhu-xing-ji/) |
 |补充题2. 圆环回原点问题|13|[](https://mp.weixin.qq.com/s/NZPaFsFrTybO3K3s7p7EVg)|  |
@@ -59,10 +59,10 @@
 |148. 排序链表|12|[](https://leetcode-cn.com/problems/sort-list)|  |
 |198. 打家劫舍|12|[](https://leetcode-cn.com/problems/house-robber)|  |
 |232. 用栈实现队列|12|[](https://leetcode-cn.com/problems/implement-queue-using-stacks)|  |
-|补充题4. 手撕快速排序|12|[](https://leetcode-cn.com/problems/sort-an-array)|  |
-|113. 路径总和 II|11|[](https://leetcode-cn.com/problems/path-sum-ii)|  |
+|补充题4. 手撕快速排序|12|[](https://leetcode-cn.com/problems/sort-an-array)| [反复出现](https://leetcode-cn.com/problems/sort-an-array/) |
+|113. 路径总和 II|11|[](https://leetcode-cn.com/problems/path-sum-ii)| [二叉树递归可以解决所有问题，总结掌握](https://leetcode-cn.com/problems/path-sum-ii/) |
 |5. 最长回文子串|11|[](https://leetcode-cn.com/problems/longest-palindromic-substring)|  |
-|543. 二叉树的直径|10|[](https://leetcode-cn.com/problems/diameter-of-binary-tree)|  |
+|543. 二叉树的直径|10|[](https://leetcode-cn.com/problems/diameter-of-binary-tree)| [就是最长路径](https://leetcode-cn.com/problems/diameter-of-binary-tree/solution/er-cha-shu-de-zhi-jing-by-leetcode-solution/) |
 |79. 单词搜索|10|[](https://leetcode-cn.com/problems/word-search)|  |
 |82. 删除排序链表中的重复元素 II|10|[](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii)|  |
 |83. 删除排序链表中的重复元素|9|[](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list)|  |
