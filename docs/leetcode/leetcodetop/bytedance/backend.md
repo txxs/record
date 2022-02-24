@@ -55,10 +55,10 @@
 |88. 合并两个有序数组|12|[](https://leetcode-cn.com/problems/merge-sorted-array)| [申请一个新的数组](https://leetcode-cn.com/problems/merge-sorted-array/solution/he-bing-liang-ge-you-xu-shu-zu-by-leetco-rrb0/) |
 |2. 两数相加|12|[](https://leetcode-cn.com/problems/add-two-numbers)| [多次出现](https://leetcode-cn.com/problems/add-two-numbers/) |
 |32. 最长有效括号|12|[](https://leetcode-cn.com/problems/longest-valid-parentheses)|  |
-|958. 二叉树的完全性检验|12|[](https://leetcode-cn.com/problems/check-completeness-of-a-binary-tree)|  |
-|148. 排序链表|12|[](https://leetcode-cn.com/problems/sort-list)|  |
-|198. 打家劫舍|12|[](https://leetcode-cn.com/problems/house-robber)|  |
-|232. 用栈实现队列|12|[](https://leetcode-cn.com/problems/implement-queue-using-stacks)|  |
+|958. 二叉树的完全性检验|12|[](https://leetcode-cn.com/problems/check-completeness-of-a-binary-tree)| [解答，看思路](https://leetcode-cn.com/problems/check-completeness-of-a-binary-tree/solution/jian-lou-ti-jie-kan-kan-jiu-hao-by-liudu-vsxn/) |
+|148. 排序链表|12|[](https://leetcode-cn.com/problems/sort-list)| [非常好，链表归并的思想](https://leetcode-cn.com/problems/sort-list/solution/pai-xu-lian-biao-by-leetcode-solution/) |
+|198. 打家劫舍|12|[](https://leetcode-cn.com/problems/house-robber)| [动态规划题目，非常好](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0198.%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D.html#%E6%80%9D%E8%B7%AF) |
+|232. 用栈实现队列|12|[](https://leetcode-cn.com/problems/implement-queue-using-stacks)| [两个必须要掌握](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0232.%E7%94%A8%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97.html#%E5%85%B6%E4%BB%96%E8%AF%AD%E8%A8%80%E7%89%88%E6%9C%AC) |
 |补充题4. 手撕快速排序|12|[](https://leetcode-cn.com/problems/sort-an-array)| [反复出现](https://leetcode-cn.com/problems/sort-an-array/) |
 |113. 路径总和 II|11|[](https://leetcode-cn.com/problems/path-sum-ii)| [二叉树递归可以解决所有问题，总结掌握](https://leetcode-cn.com/problems/path-sum-ii/) |
 |5. 最长回文子串|11|[](https://leetcode-cn.com/problems/longest-palindromic-substring)|  |
