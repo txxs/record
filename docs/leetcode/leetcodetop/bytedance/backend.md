@@ -14,10 +14,10 @@
 |160. 相交链表|32|[](https://leetcode-cn.com/problems/intersection-of-two-linked-lists)|  [自己写出，思路不错](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)|
 |236. 二叉树的最近公共祖先|32|[](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree)| [没有想出来](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0236.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88.html#java) |
 |42. 接雨水|31|[](https://leetcode-cn.com/problems/trapping-rain-water)| [多次出现，还不会做](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0042.%E6%8E%A5%E9%9B%A8%E6%B0%B4.html#%E5%8F%8C%E6%8C%87%E9%92%88%E8%A7%A3%E6%B3%95) |
-|33. 搜索旋转排序数组|27|[](https://leetcode-cn.com/problems/search-in-rotated-sorted-array)|  |
-|31. 下一个排列|27|[](https://leetcode-cn.com/problems/next-permutation)|  |
+|33. 搜索旋转排序数组|27|[](https://leetcode-cn.com/problems/search-in-rotated-sorted-array)| [---不会----]()  |
+|31. 下一个排列|27|[](https://leetcode-cn.com/problems/next-permutation)| [---不会----](https://leetcode-cn.com/problems/next-permutation/solution/xia-yi-ge-pai-lie-by-leetcode-solution/) |
 |199. 二叉树的右视图|24|[](https://leetcode-cn.com/problems/binary-tree-right-side-view)| [层次遍历的思路](https://leetcode-cn.com/problems/binary-tree-right-side-view/solution/jian-dan-bfsdfs-bi-xu-miao-dong-by-sweetiee/) |
-|54. 螺旋矩阵|24|[](https://leetcode-cn.com/problems/spiral-matrix)|  |
+|54. 螺旋矩阵|24|[](https://leetcode-cn.com/problems/spiral-matrix)| [---不会----]() |
 |143. 重排链表|24|[](https://leetcode-cn.com/problems/reorder-list)| [这个也多次出现](https://leetcode-cn.com/problems/reorder-list/) |
 |23. 合并K个排序链表|23|[](https://leetcode-cn.com/problems/merge-k-sorted-lists)| [两两进行合并，思路不错](https://leetcode-cn.com/problems/merge-k-sorted-lists/solution/he-bing-kge-pai-xu-lian-biao-by-leetcode-solutio-2/) |
 |21. 合并两个有序链表|22|[](https://leetcode-cn.com/problems/merge-two-sorted-lists)| [这个多次出现](https://leetcode-cn.com/problems/merge-two-sorted-lists/) |
@@ -37,7 +37,7 @@
 |76. 最小覆盖子串|16|[](https://leetcode-cn.com/problems/minimum-window-substring)| [滑动窗口](https://leetcode-cn.com/problems/minimum-window-substring/solution/java-hua-dong-chuang-kou-xiang-xi-zhu-sh-ienf/) |
 |补充题1. 排序奇升偶降链表|16|[](https://mp.weixin.qq.com/s/0WVa2wIAeG0nYnVndZiEXQ)| [非leetcode上的题目](https://mp.weixin.qq.com/s/0WVa2wIAeG0nYnVndZiEXQ) |
 |141. 环形链表|14|[](https://leetcode-cn.com/problems/linked-list-cycle)| [多次出现](https://leetcode-cn.com/problems/linked-list-cycle/) |
-|221. 最大正方形|14|[](https://leetcode-cn.com/problems/maximal-square)|  |
+|221. 最大正方形|14|[](https://leetcode-cn.com/problems/maximal-square)| [[---不会----]]() |
 |20. 有效的括号|14|[](https://leetcode-cn.com/problems/valid-parentheses)| [简单但是易错](https://leetcode-cn.com/problems/valid-parentheses/) |
 |98. 验证二叉搜索树|14|[](https://leetcode-cn.com/problems/validate-binary-search-tree)| [递归呀](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0098.%E9%AA%8C%E8%AF%81%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91.html#%E8%BF%AD%E4%BB%A3%E6%B3%95) |
 |39. 组合总和|14|[](https://leetcode-cn.com/problems/combination-sum)| [回朔题目，很好](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0039.%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8C.html#%E5%89%AA%E6%9E%9D%E4%BC%98%E5%8C%96) |
@@ -45,23 +45,23 @@
 |53. 最大子序和|13|[](https://leetcode-cn.com/problems/maximum-subarray)| [动态规划，多次出现](https://leetcode-cn.com/problems/maximum-subarray/) |
 |322. 零钱兑换|13|[](https://leetcode-cn.com/problems/coin-change)| [还不会](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0322.%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2.html#%E6%80%9D%E8%B7%AF) |
 |162. 寻找峰值|13|[](https://leetcode-cn.com/problems/find-peak-element)| [多次出现，爬山，二分思路](https://leetcode-cn.com/problems/find-peak-element/solution/hua-jie-suan-fa-162-xun-zhao-feng-zhi-by-guanpengc/) |
-|122. 买卖股票的最佳时机 II|13|[](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii)|  |
+|122. 买卖股票的最佳时机 II|13|[](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii)| [---不会----]() |
 |142. 环形链表 II|13|[](https://leetcode-cn.com/problems/linked-list-cycle-ii)| [这里边有数学算法](https://leetcode-cn.com/problems/linked-list-cycle-ii/solution/linked-list-cycle-ii-kuai-man-zhi-zhen-shuang-zhi-/) |
-|48. 旋转图像|13|[](https://leetcode-cn.com/problems/rotate-image)|  |
+|48. 旋转图像|13|[](https://leetcode-cn.com/problems/rotate-image)| [---不会----]() |
 |470. 用 Rand7() 实现 Rand10()|13|[](https://leetcode-cn.com/problems/implement-rand10-using-rand7)| [一种算法思路](https://leetcode-cn.com/problems/implement-rand10-using-rand7/solution/xiang-xi-si-lu-ji-you-hua-si-lu-fen-xi-zhu-xing-ji/) |
-|补充题2. 圆环回原点问题|13|[](https://mp.weixin.qq.com/s/NZPaFsFrTybO3K3s7p7EVg)|  |
+|补充题2. 圆环回原点问题|13|[](https://mp.weixin.qq.com/s/NZPaFsFrTybO3K3s7p7EVg)| [---不会----]() |
 |234. 回文链表|12|[](https://leetcode-cn.com/problems/palindrome-linked-list)| [多次出现](https://leetcode-cn.com/problems/palindrome-linked-list/) |
-|518. 零钱兑换 II|12|[](https://leetcode-cn.com/problems/coin-change-2)|  |
+|518. 零钱兑换 II|12|[](https://leetcode-cn.com/problems/coin-change-2)| [不会](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0518.%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2II.html#_518-%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2-ii) |
 |88. 合并两个有序数组|12|[](https://leetcode-cn.com/problems/merge-sorted-array)| [申请一个新的数组](https://leetcode-cn.com/problems/merge-sorted-array/solution/he-bing-liang-ge-you-xu-shu-zu-by-leetco-rrb0/) |
 |2. 两数相加|12|[](https://leetcode-cn.com/problems/add-two-numbers)| [多次出现](https://leetcode-cn.com/problems/add-two-numbers/) |
-|32. 最长有效括号|12|[](https://leetcode-cn.com/problems/longest-valid-parentheses)|  |
+|32. 最长有效括号|12|[](https://leetcode-cn.com/problems/longest-valid-parentheses)| [挺好的思路](https://leetcode-cn.com/problems/longest-valid-parentheses/solution/zui-chang-you-xiao-gua-hao-by-leetcode-solution/) |
 |958. 二叉树的完全性检验|12|[](https://leetcode-cn.com/problems/check-completeness-of-a-binary-tree)| [解答，看思路](https://leetcode-cn.com/problems/check-completeness-of-a-binary-tree/solution/jian-lou-ti-jie-kan-kan-jiu-hao-by-liudu-vsxn/) |
 |148. 排序链表|12|[](https://leetcode-cn.com/problems/sort-list)| [非常好，链表归并的思想](https://leetcode-cn.com/problems/sort-list/solution/pai-xu-lian-biao-by-leetcode-solution/) |
 |198. 打家劫舍|12|[](https://leetcode-cn.com/problems/house-robber)| [动态规划题目，非常好](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0198.%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D.html#%E6%80%9D%E8%B7%AF) |
 |232. 用栈实现队列|12|[](https://leetcode-cn.com/problems/implement-queue-using-stacks)| [两个必须要掌握](https://txxs.github.io/record/leetcode/daimasuixiang/problems/0232.%E7%94%A8%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97.html#%E5%85%B6%E4%BB%96%E8%AF%AD%E8%A8%80%E7%89%88%E6%9C%AC) |
 |补充题4. 手撕快速排序|12|[](https://leetcode-cn.com/problems/sort-an-array)| [反复出现](https://leetcode-cn.com/problems/sort-an-array/) |
 |113. 路径总和 II|11|[](https://leetcode-cn.com/problems/path-sum-ii)| [二叉树递归可以解决所有问题，总结掌握](https://leetcode-cn.com/problems/path-sum-ii/) |
-|5. 最长回文子串|11|[](https://leetcode-cn.com/problems/longest-palindromic-substring)|  |
+|5. 最长回文子串|11|[](https://leetcode-cn.com/problems/longest-palindromic-substring)| [最少能知道暴力](https://leetcode-cn.com/problems/longest-palindromic-substring/) |
 |543. 二叉树的直径|10|[](https://leetcode-cn.com/problems/diameter-of-binary-tree)| [就是最长路径](https://leetcode-cn.com/problems/diameter-of-binary-tree/solution/er-cha-shu-de-zhi-jing-by-leetcode-solution/) |
 |79. 单词搜索|10|[](https://leetcode-cn.com/problems/word-search)|  |
 |82. 删除排序链表中的重复元素 II|10|[](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii)|  |
